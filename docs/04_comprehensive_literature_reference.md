@@ -97,16 +97,23 @@ In the rapidly advancing era of educational technology, customized learning mate
 
 **作者**: M. K. H. Kanchon et al.  
 **年份**: 2024  
-**会议/期刊**: International Journal of Educational Technology in Higher Education  
+**会议/期刊**: International Journal of Cognitive Computing in Engineering  
+**Venue全称**: International Journal of Cognitive Computing in Engineering  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 33（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 40（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 4/5  
 **关键方法**: AI-driven style identification, Web tracking log analysis, Feedback-based learning profile  
 **预测/适配目标**: Learning style detection and content adaptation  
 **评估指标**: Learning style prediction accuracy, Learning engagement, Learning outcomes
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **偏好识别的直接范例**: 使用网络追踪日志（web tracking logs）和反馈分类来识别学习风格的方法可直接迁移到眼动和行为交互日志的特征工程中——506样本的中等规模数据集和22特征的特征空间大小与Exp1A的预期规模相当，为特征选择和模型训练提供了参考。
 2. **Moodle生态的适配性**: 论文使用Moodle LMS系统的实验环境为Nancy的研究系统集成提供了实际参考——若选择Moodle或兼容系统，现有的学习风格分类模型（visual/auditory/kinesthetic）可与眼动驱动的注意力分类相融合。
 3. **学习风格vs.认知状态的互补性**: 虽然论文关注的是相对静态的学习风格偏好，但其多模态特征提取方法（web logs+feedback responses）与Exp1A的动态认知状态推断形成互补——学习风格可作为长期用户模型，认知状态作为短期自适应触发条件。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是DOI、题名、期刊与引文可由Crossref直接核验；但期刊分区当前未获得稳定可核验来源，建议作为“方法与数据规模参考”，并在正式稿中补齐分区证据或标注unknown。
 
 **直接转移指数**: ⭐⭐⭐⭐ (4/5)
 
@@ -127,15 +134,22 @@ This paper focuses on assessing if cognitive interferences that affect the gaze 
 **作者**: A. Rizzo et al.  
 **年份**: 2022  
 **会议/期刊**: Frontiers in Human Neuroscience  
+**Venue全称**: Frontiers in Human Neuroscience  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 217（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 18（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 4/5  
 **关键方法**: Multiple ML classifiers (SVM, decision trees, etc.), Eye-tracking feature extraction  
 **预测/适配目标**: Cognitive interference detection  
 **评估指标**: Classification accuracy (>80%)
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **眼动特征工程的完整案例**: 论文系统地演示了从原始眼动数据（注视持续时间、扫视幅度/速度、瞳孔直径变化）到认知状态分类的完整管道——这正是Exp1A需要建立的特征工程基础，80%以上的准确率证实了眼动特征的强预测值。
 2. **多分类框架的适用性**: 虽然论文关注的是二元干扰条件分类，但其使用的多种ML分类器评估方法（对比多个模型性能）可直接借鉴用于Exp1A的多分类任务（如不同认知负荷等级分类），为模型选择提供了参考标准。
 3. **认知状态推断的因果性验证**: 论文通过在明确的任务条件变化（reading vs. naming, with/without interference）下测试眼动特征的敏感性，为使用眼动特征推断学习状态的因果性提供了方法论证据——这也是Exp1A需要确立的学习-眼动关系。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是Crossref与出版社页面对DOI和期刊信息一致且引文可核验；建议将其作为Exp1A眼动特征工程主证据之一，但分区信息暂以unknown保守处理。
 
 **直接转移指数**: ⭐⭐⭐⭐⭐ (5/5)
 
@@ -156,15 +170,22 @@ The paper is focused on the assessment of cognitive workload level using selecte
 **作者**: M. Kaczorowska et al.  
 **年份**: 2021  
 **会议/期刊**: Brain Sciences (MDPI open access journal)  
+**Venue全称**: Brain Sciences  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 109（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 30（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 4/5  
 **关键方法**: Interpretable logistic regression, Feature selection, Fixation and saccade metrics  
 **预测/适配目标**: Three-level cognitive workload classification  
 **评估指标**: Classification performance metrics
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **可解释性与性能的平衡**: 论文选择可解释的逻辑回归而非黑箱模型来实现三级工作负荷分类，这对确保Exp1A系统的透明性和可观测性至关重要——在教育场景中，教师和学生需要理解自适应决策的依据。
 2. **特征最小化的设计原则**: 使用6个特征的最小集合（而非特征全套）进行三级分类，反映了特征工程中的奥卡姆剃刀原则——这对Exp1A的实时系统实现至关重要，可减少计算负荷并提高系统可部署性。
 3. **认知负荷多级划分的适用性**: 三级分类框架（低/中/高认知负荷）可直接映射到Exp1A的自适应策略触发阈值，为确定何时插入休息建议、调整内容难度或更改呈现方式提供了量化基础。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是DOI、题名与引文在Crossref可核验且与MDPI原文一致；建议将其作为“可解释分类基线”引用，并在你自己的数据上复验特征稳定性。
 
 **直接转移指数**: ⭐⭐⭐⭐⭐ (5/5)
 
@@ -185,15 +206,22 @@ Using traces of behaviors to predict outcomes is useful in varied contexts rangi
 **作者**: C. J. Arizmendi, M. L. Bernacki, M. Raković et al.  
 **年份**: 2023  
 **会议/期刊**: Behavior Research Methods (Springer)  
+**Venue全称**: Behavior Research Methods  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 195（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 50（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 4/5  
 **关键方法**: Learning log feature engineering, LMS data analysis, Predictive modeling  
 **预测/适配目标**: Student outcomes (retention, success, well-being)  
 **评估指标**: Prediction accuracy, Model generalization
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **学习日志特征基础的标准参考**: 作为行为预测的系统综述，论文为从原始学习交互日志（点击流、任务时间、资源访问）到建模特征的标准化提供了权威指导——这补充了Exp1A中眼动特征的不足，眼动可视为LMS点击流的"生理测量对应物"。
 2. **伦理和透明性的警示**: 综述着重强调了在教育系统中使用预测模型的伦理考量和学生隐私保护，这对确保Exp1A的伦理合规性至关重要，特别是在处理神经多样性群体敏感信息时。
 3. **多源数据整合的框架**: 论文提出的特征工程标准（从LMS日志）为Exp1A整合眼动、交互日志、学习成果等多源数据提供了方法论框架，特别是在特征选择和跨模态数据融合的规范化上。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是DOI、venue与引文可核验且期刊影响稳定；建议作为“日志特征标准化”核心参考，并与眼动实证论文联合使用构建多模态证据链。
 
 **直接转移指数**: ⭐⭐⭐⭐ (4/5)
 
@@ -213,16 +241,23 @@ Previous learning analytics efforts have attempted to leverage the link between 
 
 **作者**: A. Y. Wong, R. L. Bryck, R. S. Baker, S. Hutt et al.  
 **年份**: 2023  
-**会议/期刊**: ACM Learning at Scale (L@S) - 13th international learning conference  
+**会议/期刊**: LAK23 (13th International Learning Analytics and Knowledge Conference)  
+**Venue全称**: LAK23: 13th International Learning Analytics and Knowledge Conference  
+**Venue层级**: A（CORE2023）  
+**H-index**: N/A（会议不使用期刊H-index口径）  
+**引用数**: 10（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 4/5  
 **关键方法**: Webcam-based eye tracking, Gaze analysis, Real-time monitoring  
 **预测/适配目标**: Attention and comprehension patterns in neurodivergent learners  
 **评估指标**: Gaze metrics, Error rates
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **神经多样性群体的直接实证验证**: 这是已有的少数几项使用眼动数据研究神经多样性学生群体的经验研究之一——43名样本规模虽不大但足以证明眼动特征对检测如"思维脱离困难"等学习障碍的敏感性，为Exp1A选择神经多样性参与者提供了可行性论据。
 2. **网络摄像头眼动技术的可行性证明**: 论文使用低成本网络摄像头追踪而非高端眼动仪，展示了在教室现场环境中的适用性——这对Nancy的研究的可持续性和可扩展性至关重要，特别是如果目标是开发现实可用的教室干预系统。
 3. **思维脱离与文本熟悉度的多维分析**: 论文区分了学生"难以从想法脱离"（task-irrelevant thought）和"文本熟悉度"作为两个独立的可观测眼动现象，暗示眼动特征可能编码了注意力的多个维度——这为Exp1A的特征优先级排序和多变量自适应策略提供了维度参考。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是Crossref与ACM页面可互证DOI与venue，且已有可核验引文积累；建议将其作为神经多样性课堂眼动可行性的关键实证，但保持对小样本局限的说明。
 
 **直接转移指数**: ⭐⭐⭐⭐⭐ (5/5)
 
@@ -315,15 +350,22 @@ Adaptive Educational Hypermedia Systems (AEHS) play a crucial role in supporting
 **作者**: O. O. Mwambe et al.  
 **年份**: 2020  
 **会议/期刊**: Education Sciences (MDPI open access)  
+**Venue全称**: Education Sciences  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 108（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 13（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 3/5  
+**工程可用性评级（Engineering Usability）**: 4/5  
 **关键方法**: Bioinformatics algorithms, EyeTracking for motivation detection, Real-time content adaptation  
 **预测/适配目标**: Real-time e-learning content personalization based on motivation states  
 **评估指标**: Learning performance increase (up to 78%)
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **眼动+动机状态的实时适配证明**: 论文直接展示了如何从眼动信号（瞳孔扩张、阅读反应时间）推断学习者动机状态并基于此实时调整内容的可行性——这与Exp1A使用眼动状态推断和自适应干预的目标高度一致，78%的性能提升证实了眼动驱动自适应的有效性。
 2. **生物信息学方法的跨域应用**: 虽然论文名称提及"生物信息学"（通常指基因信息分析），但其实质方法是眼动+教育内容的自适应系统——这提示Exp1A应借鉴从多模态生理信号（pupil, reading time等）进行实时状态推断的工程范式。
 3. **学习对象（LOs）时间锁定的创新设计**: 论文提及的"自适应时间锁定的学习对象"概念向任务释放时间点的动态调整提供了范例——可为Exp1A的内容呈现策略（如在最优认知窗口内呈现支持性提示或休息建议）提供设计灵感。
+4. **可信度与使用建议**: 学术可信度评为3/5，依据是DOI与引文可核验且与期刊页面一致，但分区信息当前未获得稳定来源；建议作为“实时适配机制案例”使用，并避免单独作为效果强证据。
 
 **直接转移指数**: ⭐⭐⭐⭐⭐ (5/5)
 
@@ -344,15 +386,22 @@ This paper presents advances in adaptive learning systems by integrating Natural
 **作者**: M. Mejeh et al.  
 **年份**: 2024  
 **会议/期刊**: Educational Technology Research & Development (Springer)  
+**Venue全称**: Educational Technology Research and Development  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 171（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 44（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 4/5  
 **关键方法**: NLP for learner response analysis, Linguistic pattern mining, Context-aware personalization  
 **预测/适配目标**: NLP-enhanced adaptive content and support strategies  
 **评估指标**: Learning engagement, Knowledge retention
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **眼动+NLP的多模态融合前景**: 论文展示了NLP如何从文本反应中提取学习者的概念误解和情感状态，与Exp1A的眼动驱动认知/情感状态推断形成互补——未来的自适应系统可将眼动（快速、无意识的生理反应）与NLP（深层、显性的认知表达）相融合。
 2. **实时上下文感知的实现机制**: 论文描述的基于语言模式的实时适配框架可迁移到基于眼动特征的实时适配——关键是建立清晰的映射规则：眼动模式→认知/情感状态→适配行动。
 3. **情感识别与学习动力的重要性**: NLP能从冗长文本识别情感状态的能力暗示眼动系统也应重视情感/动力维度（而非仅关注认知负荷），为Exp1A的多维自适应决策提供了设计参考。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是Crossref可核验DOI、venue与引文且被引积累较好；建议作为“眼动+语言多模态扩展”的主参考之一，同时在正式稿中补充分区来源或维持unknown标注。
 
 **直接转移指数**: ⭐⭐⭐⭐ (4/5)
 
@@ -373,15 +422,22 @@ This article proposes an adaptive online learning platform based on deep reinfor
 **作者**: S. Ruan et al.  
 **年份**: 2025  
 **会议/期刊**: Computers and Education: Artificial Intelligence (Elsevier)  
+**Venue全称**: Computers and Education: Artificial Intelligence  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 95（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 4（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 5/5  
 **关键方法**: Deep Reinforcement Learning (DRL), Multimodal data fusion, Real-time feedback optimization  
 **预测/适配目标**: Personalized learning path generation and optimization  
 **评估指标**: Learning effectiveness, User satisfaction, Learning burden reduction
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **深度强化学习的尖端应用**: 作为2025年最新论文，B009展示了DRL在自适应学习中的最前沿应用——从单纯的内容推荐演进到整体学习路径动态规划，这对Exp1A超越点式干预（如单一休息建议）进步到序列化自适应策略提供了技术范例。
 2. **多模态信息融合的实证验证**: 论文明确指出整合用户交互、学习成果和多模态数据的必要性，与Exp1A计划整合眼动、行为日志和学习成果的设计不谋而合——DRL可作为融合的核心算法选择。
 3. **情感+认知的同步建模**: 不同于传统系统仅关注认知负荷，B009强调同时追踪和优化情感与认知状态——这扩展了Exp1A的自适应维度，应考虑使用眼动瞳孔扩张等指标推断学习者的情感/动力状态并据此调整介入策略。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是DOI与期刊信息可核验且已有初步引文；建议作为“DRL序列决策框架”高优先参考，但应对新文献低引文阶段保持效果外推谨慎。
 
 **直接转移指数**: ⭐⭐⭐⭐⭐ (5/5)
 
@@ -406,13 +462,20 @@ This article proposes an adaptive online learning platform based on deep reinfor
 **作者**: Z. Xu et al.  
 **年份**: 2025  
 **会议/期刊**: Disability and Rehabilitation: Assistive Technology  
+**Venue全称**: Disability and Rehabilitation: Assistive Technology  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 79（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 0（OpenAlex cited_by_count，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 4/5  
 **关键内容**: 伦理框架、设计原则、包容性设计建议  
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **伦理框架的权威基础**: 作为新发表的综述，A001为Exp1A提供了开发神经多样性系统必需的伦理和原则性基础——特别是在强调"以神经多样性声音为中心"vs."单纯合规性"的区分上，确保Exp1A不仅从技术角度而更从价值观角度开展工作。
 2. **包容性设计的四大支柱**: 综述总结的感官适应、注意力管理、认知脚手架和定制化等四个维度，为Exp1A系统的设计评估清单提供了参考框架——在任何自适应决策前应确认是否触及这四个维度。
 3. **参与式设计的必要性**: 强调神经多样性用户的参与而非被动适配的重要性，对Nancy研究的定量实验设计提出了补充性建议——应考虑在Exp1A中嵌入定性反馈和迭代改进循环。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是DOI与期刊信息可核验；但作为新近综述当前引文仍少，建议主要用于伦理与设计原则框架，而非量化效果论证。
 
 **直接转移指数**: ⭐⭐⭐ (3/5)
 
@@ -433,14 +496,21 @@ This article proposes an adaptive online learning platform based on deep reinfor
 **作者**: Sheejamol P.T., Anu Mary Chacko, S. D Madhu Kumar  
 **年份**: 2025  
 **会议/期刊**: Electronic Journal of e-Learning (Vol. 23, No. 3)  
+**Venue全称**: Electronic Journal of e-Learning  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 49（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 1（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 3/5  
+**工程可用性评级（Engineering Usability）**: 3/5  
 **关键内容**: 游戏化、适应性、多感官内容、AI分析综述  
 **审视文献**: 82篇研究 (2020-2024)
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **最新系统综述的证据基础**: 作为2025年最新发表且范围最广的神经多样性e-Learning综述（82篇文献），A003为Exp1A的个性化策略选择提供了最新的证据映射——特别是游戏化、多感官呈现和实时反馈的有效性已被2020年后的研究反复验证。
 2. **个性化维度的系统框架**: 综述区分了自适应游戏化、多感官呈现和AI分析三个关键维度，这可直接指导Exp1A系统的功能架构设计——眼动推断应被映射到这三个维度的自适应决策。
 3. **游戏化与眼动的组合潜力**: 虽然综述本身未探讨眼动技术，但其对游戏化有效性的强调暗示Exp1A可考虑将游戏化元素与眼动反馈相结合（如通过眼动行为触发游戏奖励和进度反馈）以增强参与度。
+4. **可信度与使用建议**: 学术可信度评为3/5，依据是文献覆盖面大但当前引文积累有限且分区信息未稳定核验；建议用于“变量与方向归纳”，并与实证论文配套引用。
 
 **直接转移指数**: ⭐⭐⭐⭐ (4/5)
 
@@ -461,14 +531,21 @@ This review synthesizes the landscape of AI-enabled personalized assistive tools
 **作者**: P. D. Barua et al.  
 **年份**: 2022  
 **会议/期刊**: International Journal of Environmental Research and Public Health (MDPI)  
+**Venue全称**: International Journal of Environmental Research and Public Health  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 309（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 183（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 3/5  
 **关键方法框架**: 设计变量分类、AI模态映射、工具评估  
 **审视工具**: 45+ 个系统
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **设计变量的权威检查清单**: A005列举的五个关键设计变量（个性化脚手架、多模态、实时反馈、上下文感知、纵向适应）为Exp1A的系统设计提供了完整的需求规范——每个变量可直接映射到眼动自适应系统的具体功能（如眼动→实时反馈、多种凝视行为→多模态适应）。
 2. **AI模态的综合视图**: 虽然综述本身未提及眼动，但其展示的对话、追踪和推荐的AI模态与眼动驱动的自适应系统相兼容——眼动可作为"追踪"维度的生理增强，提供比行为日志更细粒度的信息。
 3. **评估缺陷的警示**: 综述指出仅60%的工具报告了教育成果，提示Exp1A须从项目初期就确立清晰的评估框架和成果指标，避免重复该共同问题。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是DOI与期刊信息可核验且引文积累高；建议将其作为“研究背景与变量框架”核心综述，但不要把综述结论替代任务级实证结果。
 
 **直接转移指数**: ⭐⭐⭐⭐ (4/5)
 
@@ -524,13 +601,20 @@ Accessibility is a critical dimension of user experience, yet many digital syste
 **作者**: M. Kristic et al.  
 **年份**: 2025  
 **会议/期刊**: Applied Sciences (MDPI open access)  
+**Venue全称**: Applied Sciences  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 215（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 0（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 3/5  
+**工程可用性评级（Engineering Usability）**: 3/5  
 **关键方法**: 三域框架（输入-内容-反馈）、案例研究  
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **无障碍设计原则的系统整理**: B004提出的三域框架（输入-内容-反馈）为Exp1A的系统架构提供了权威的功能分解——眼动作为"输入适应"的创新模态，应与传统输入结合以最大化可接近性。
 2. **眼鼻凝视适应的明确认可**: 论文明确指出眼凝视适应是新兴机会，为Exp1A采用眼动技术提供了行业背书——这可在研究提案中作为参考论据。
 3. **用户代理的保留原则**: 强调在自适应过程中保留用户控制和选择权的重要性，对Exp1A的系统设计提出了需求——应允许学生覆盖自动建议（如休息建议可被用户拒绝而继续学习）。
+4. **可信度与使用建议**: 学术可信度评为3/5，依据是DOI和期刊信息可核验但作为综述且新文献尚无引文积累；建议作为可及性设计背景文献，不单独承担效果论证。
 
 **直接转移指数**: ⭐⭐⭐ (3/5)
 
@@ -550,14 +634,21 @@ Accessibility is a critical dimension of user experience, yet many digital syste
 
 **作者**: M. Murtaza et al.  
 **年份**: 2022  
-**会议/期刊**: IEEE  
+**会议/期刊**: IEEE Access  
+**Venue全称**: IEEE Access  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 358（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 268（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 3/5  
 **关键框架**: 六域问题分析（技术-教学法-伦理-用户-推荐-评估）
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **六域设计清单的系统指导**: B006的问题矩阵为Exp1A的完整系统设计提供了全面的需求检查清单——从技术细节（数据质量、实时处理）到伦理考量（隐私、算法偏差），确保任何设计决策都不会留下盲点。
 2. **伦理和透明性的强调**: 论文将伦理和透明性列为独立挑战，与众多仅技术取向的研究形成对比，对Exp1A强调了在涉及神经多样性敏感群体时伦理合规的不可协商性。
 3. **用户建模与推荐平衡的困境**: 论文指出用户建模中的"最小数据"需求和推荐中的"探索-利用权衡"两个经典难题，提示Exp1A应采用贝叶斯或主动学习等方法来高效利用有限数据。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是Crossref可核验且被引较高；建议作为系统级风险与架构框架参考，而非任务效果的直接证据。
 
 **直接转移指数**: ⭐⭐⭐ (3/5)
 
@@ -582,14 +673,21 @@ Accessibility is a critical dimension of user experience, yet many digital syste
 **作者**: A. A. Mubarak et al.  
 **年份**: 2022  
 **会议/期刊**: Interactive Learning Environments (Taylor & Francis)  
+**Venue全称**: Interactive Learning Environments  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 119（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 115（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 4/5  
 **关键方法**: 交互日志特征提取、多分类器比较  
 **关键成果**: AUC-ROC 0.78，第3周早期检测
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **行为信号的早期预测价值**: C005结合眼动数据为Exp1A内的"学习危险"检测提供了参考框架——虽然论文关注辍学而非认知状态，但其展示的行为日志特征（engagement patterns、resource access）可与眼动特征补充，形成多维危险信号检测系统。
 2. **3周检测窗口的时间参考**: 论文的"第3周即可检测"的设计有了一个实际的时间窗口类比——这对Exp1A的纵向研究设计提供了参考（如应在学期的前几周内重点收集眼动数据以建立个人基线）。
-3. **自动化干预的有效性证证**: 15%的留存率改进证实了及时的自动化干预（如系统提示）的实效性，为Exp1A的自动化眼动驱动干预（如自动暂停和休息建议）提供了效果预期。
+3. **自动化干预的有效性验证**: 15%的留存率改进证实了及时的自动化干预（如系统提示）的实效性，为Exp1A的自动化眼动驱动干预（如自动暂停和休息建议）提供了效果预期。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是DOI、期刊与引文均可核验且被引积累充分；建议将其作为“行为日志预警”强参考，并在Exp1A中明确区分辍学风险与认知状态标签。
 
 **直接转移指数**: ⭐⭐⭐⭐ (4/5)
 
@@ -614,13 +712,20 @@ This project presents the creation of a minimal viable prototype (MVP) of an art
 **作者**: Henry Leung  
 **年份**: 2024  
 **所在机构**: Simon Fraser University, Interactive Arts & Technology  
+**Venue全称**: Simon Fraser University Summit Research Repository (Thesis)  
+**Venue层级**: 学位论文（非同行评审期刊/会议）  
+**H-index**: N/A（机构仓储条目不适用）  
+**引用数**: 暂无稳定公开计数（OpenAlex/Crossref未检索到稳定记录，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 3/5  
 **关键创新**: GPT + 小数据模型融合、对话反馈模块  
 
-**中文评价** (3句):
+**中文评价** (4句):
 
 1. **学位论文的复现性限制**: A002作为学位论文而非同行评审期刊文献，缺乏标准的评估指标和可复现性验证——这限制了其作为Exp1A直接基准的价值，但其对话反馈和GPT融合的设计理念可作为参考。
 2. **对话+反思的教学法创新**: 虽然论文未涉及眼动，但其强调对话支持反思和批判性思维的框架与Exp1A中"自适应反馈"的目标相通——两种系统可互补。
 3. **小数据模型的质量风险**: 论文使用"小数据模型"与GPT融合的方式在资源受限的场景下有创新性，但小数据规模可能影响模型质量和泛化性，对Exp1A的数据收集和模型训练规划有警示意义。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是机构仓储元数据完整且可追溯；但其非同行评审出版，建议作为原型灵感来源而非主证据。
 
 **直接转移指数**: ⭐⭐ (2/5)
 
@@ -643,14 +748,21 @@ Autism Spectrum Disorder (ASD) and Attention-Deficit/Hyperactivity Disorder (ADH
 **作者**: N. Wolff et al.  
 **年份**: 2022  
 **会议/期刊**: Scientific Reports (Nature Publishing Group)  
+**Venue全称**: Scientific Reports  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 451（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 9（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 3/5  
 **关键方法**: SVM/RF/NN分类、特征重要性分析  
 **关键成果**: 87%分类准确率、行为特征鉴别
 
-**中文评价** (3句):
+**中文评价** (4句):
 
 1. **临床诊断导向的局限性**: A006的重点是诊断准确率而非学习适应，其120人临床样本与Exp1A的学习情境样本存在显著差异——虽然行为特征（眼神接触、重复行为）有参考价值，但临床诊断数据的直接迁移需谨慎。
 2. **行为特征的眼动映射潜力**: 论文中的眼神接触回避作为ASD关键特征可能与扫视行为、凝视方向等眼动指标相关——这提示Exp1A中眼动特征可能编码了诊断级信息，但需验证其与学习状态的独立关系以避免混淆。
 3. **特征工程的启发但不可直用**: 虽然论文的87%准确率很高，但其特征来自诊断工具而非学习日志——Exp1A不应假设能直接复用这些诊断特征，而需在学习任务环境中独立验证。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是DOI、期刊与引文可核验；建议用于“临床特征启发”，并在文中标明与教育情境迁移的边界。
 
 **直接转移指数**: ⭐⭐ (2/5)
 
@@ -673,14 +785,21 @@ This paper presents an adaptive interface system using reinforcement learning (R
 **作者**: A. Khamaj et al.  
 **年份**: 2024  
 **会议/期刊**: Alexandria Engineering Journal  
+**Venue全称**: Alexandria Engineering Journal  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 136（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 49（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 3/5  
+**工程可用性评级（Engineering Usability）**: 3/5  
 **关键方法**: Q-learning, 实时行为追踪  
 **关键成果**: 22%完成时间改进，18%满意度改进
 
-**中文评价** (3句):
+**中文评价** (4句):
 
 1. **适应学习曲线的现实约束**: B003的"前10-15次交互学习期"提示Exp1A应该准备相似的学习/预热阶段，而非期望从第一次交互就实现完全个性化——这对Exp1A的纵向时程规划有实际指导意义。
 2. **高度多样化行为的模型挑战**: 论文声称"高度多样化用户行为会减少性能收益"与神经多样性学习者的高度异质性相呼应——这暗示Exp1A可能需要子群特定模型而不是通用模型，但样本规模限制的权衡需要仔细权衡。
 3. **期刊质量与方法适配性的不确定性**: Alexandria Engineering Journal不是顶级教育或HCI期刊，论文的方法在e-commerce场景而非教育环境下验证——迁移到学习情境时需谨慎论证其可适配性。
+4. **可信度与使用建议**: 学术可信度评为3/5，依据是DOI与引文可核验但场景外推风险较高；建议作为“RL交互预热期”补充证据，不作为教育效果主证据。
 
 **直接转移指数**: ⭐⭐ (2/5)
 
@@ -702,14 +821,21 @@ Online and digital learning platforms increasingly employ recommendation systems
 
 **作者**: D. Gm et al.  
 **年份**: 2024  
-**会议/期刊**: IEEE  
+**会议/期刊**: IEEE Access  
+**Venue全称**: IEEE Access  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 358（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 89（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 3/5  
 **关键内容**: 推荐系统综述，混合方法效果对比  
 
-**中文评价** (3句):
+**中文评价** (4句):
 
 1. **推荐算法的冷启动问题**: B007强调的新学习者冷启动困题与Exp1A的个人基线建立直接相关——系统需要设计初期数据收集策略来快速积累眼动基线而不增加用户负担。
 2. **混合推荐的证明价值**: 论文论证混合多源数据优于单一推荐与Exp1A的多模态设计理念一致，暗示眼动数据应与学习成果、交互日志、偏好等多源数据整合而非单独使用。
-3. **70%系统的长期效果缺失**: 综述指出大多数系统缺乏长期教室验证的严肃警告——这强调了Exp1A需要设计纵向评估和真实教室部署验证，而不は仅在实验室条件下测试。
+3. **70%系统的长期效果缺失**: 综述指出大多数系统缺乏长期教室验证的严肃警告——这强调了Exp1A需要设计纵向评估和真实教室部署验证，而不仅在实验室条件下测试。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是DOI、venue与引文可核验且被引较高；建议用于推荐系统机制归纳，并与任务级实证论文配套引用。
 
 **直接转移指数**: ⭐⭐ (2/5)
 
@@ -732,14 +858,21 @@ This field study investigates using eye-tracking technology in realistic, natura
 **作者**: M. Langner et al.  
 **年份**: 2024  
 **会议/期刊**: i-com (Journal for Interactive Media)  
+**Venue全称**: i-com  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 21（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 4（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 3/5  
+**工程可用性评级（Engineering Usability）**: 4/5  
 **关键方法**: 场景眼动追踪、经验取样、现实数据采集  
 **关键成果**: 现场70%分类准确率、个体差异高
 
-**中文评价** (3句):
+**中文评价** (4句):
 
 1. **现场部署的真实挑战**: C003在非教育场景（办公）的现场研究为Exp1A的真实教室部署提供了宝贵教训——头部运动、光照、个体差异等现实约束应早期纳入Exp1A的原型设计而不是事后解决。
 2. **个体差异的模型设计启示**: 论文强调的"个体间可变性高、通用模型泛化差"与Exp1A对神经多样性群体的高内部异质性相呼应——强调了定制化模型或自适应该用户校准的必要性。
 3. **经验取样设计的平衡**: 论文关于ESM频率的权衡（太频→干扰，太少→遗漏）对Exp1A的反馈提示策略设计有启示——应设计动态采样而非固定频率的干预来避免过度打扰。
+4. **可信度与使用建议**: 学术可信度评为3/5，依据是DOI与引文可核验但样本规模偏小；建议作为“现场部署约束”证据，避免外推为大样本性能结论。
 
 **直接转移指数**: ⭐⭐⭐ (3/5)
 
@@ -762,14 +895,21 @@ This study develops models of student e-learning interactions based on system lo
 **作者**: S. Keskin et al.  
 **年份**: 2022  
 **会议/期刊**: Journal of Educational Technology and Online Learning  
+**Venue全称**: Journal of Educational Technology and Online Learning  
+**Venue层级**: unknown（未检索到稳定可核验分区）  
+**H-index**: 23（OpenAlex Source，检索日期：2026-03-30）  
+**引用数**: 11（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 3/5  
+**工程可用性评级（Engineering Usability）**: 3/5  
 **关键方法**: 序列挖掘、聚类、关联规则  
 **关键成果**: 时间模式与成绩关联、30%性能差异
 
-**中文评价** (3句):
+**中文评价** (4句):
 
 1. **时间模式的行为蕴含**: C006的"晚期集中"学习者性能下降30%的发现提示眼动数据也应采集随时间的变化模式——单个时刻的眼动特征可能不足，应建立时间线上的眼动演变特征以识别学习策略和困境。
 2. **日志聚类与神经多样性的配对**: 论文的行为聚类方法（高/中/低参与）可与眼动数据结合进行更细粒度的学习风格识别——特别是眼动稳定性、凝视模式等可能区分不同神经多样性群体的学习风格。
 3. **因果机制的缺失**: 论文坦诚承认的"缺乏为什么学生遵循特定模式的洞察"正是眼动数据能补充的维度——眼动可记录学生在看什么、多久看一次，这些"行为上游"信息可帮助解释交互日志中观察到的模式。
+4. **可信度与使用建议**: 学术可信度评为3/5，依据是DOI与引文可核验但跨源被引计数存在差异；建议作为日志模式建模补充材料，并与更强实验设计文献交叉使用。
 
 **直接转移指数**: ⭐⭐ (2/5)
 
@@ -827,6 +967,36 @@ This study develops models of student e-learning interactions based on system lo
 
 ---
 
+## 🧾 证据来源与计量口径（统一说明）
+
+### 1. 元数据核验优先级
+
+1. **DOI/题名/venue 全称**: 以 Crossref 与出版社页面一致性为主。  
+2. **引用数**: 优先采用 Crossref cited-by；如仅 OpenAlex 可得，则明确标注。  
+3. **H-index**: 采用 OpenAlex Source 的 `summary_stats.h_index`。  
+4. **Venue 层级**: 仅在有稳定可核验来源时填写；否则统一标注 `unknown`。  
+
+### 2. 冲突处理规则
+
+- 若不同来源引用数不一致（常见于 Crossref vs OpenAlex/Semantic Scholar），正文保留一个主值并在可信度句中说明“口径/更新时间差异”。  
+- 若会议无统一期刊口径的 H-index，统一写 `N/A`，不进行推断。  
+- 若分区/Q值来源不可稳定访问（如页面拦截/403），统一写 `unknown`，不猜测。  
+
+### 3. 本文档主要核验通道
+
+- **Crossref API**: DOI、venue 全称、`is-referenced-by-count`  
+- **OpenAlex API**: 期刊 Source 信息、`h_index`、补充引用计数  
+- **出版社落地页**: 题名、出版类型、卷期页（可访问时）  
+- **机构仓储（学位论文）**: 机构记录ID与元数据（例如 A002）  
+
+### 4. 字段解释（避免误读）
+
+- **Academic Trust**: 反映“学术证据强度与可核验程度”，不等于“一定可迁移到Exp1A”。  
+- **Engineering Usability**: 反映“对Exp1A工程实现的可直接借鉴性”。  
+- **直接转移指数**: 反映“任务匹配度”，与期刊等级不完全同一维度。  
+
+---
+
 **文档更新日期**: 2026-03-30  
-**状态**: Keep-High 和 Keep-Medium 详细内容完成；Maybe 列表概览完成  
-**下一步**: 为 Keep-Medium 补充详细摘要和简评；为整体文档编制快速索引
+**状态**: 25篇条目均已完成“4句简评/评价 + 核验后元数据字段”更新  
+**下一步**: 若进入答辩稿阶段，可将每篇 DOI 与证据链接汇总为附录表（按 record_id 排序）
