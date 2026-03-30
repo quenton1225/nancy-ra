@@ -72,6 +72,47 @@
 - Prediction of students' early dropout based on their interaction logs in online learning environment (2022)
 - E-learning experience: Modeling students' e-learning interactions using log data (2022)
 
-### Update Summary
+### Update Summary (Round 2)
 - CSV records expanded from 10 to 19.
-- 本轮新增条目以 2020+ 为主，优先“可迁移到实验1A”的学习适配/日志建模证据。
+- 本轮新增条目以 2020+ 为主，优先"可迁移到实验1A"的学习适配/日志建模证据。
+
+---
+
+## Round 3 (final prioritization on 2026-03-30)
+
+### Additional Queries Used (empirical & neurodivergent-specific)
+10. `adaptive learning real-time personalization experimental study` + `as_ylo=2020`
+11. `neurodivergent learners experiment eye tracking interaction` + `as_ylo=2020`
+12. `learning analytics user modeling AI inference` + `as_ylo=2020`
+
+### Query URLs
+- https://scholar.google.com/scholar?q=adaptive+learning+real-time+personalization+experimental+study&as_ylo=2020
+- https://scholar.google.com/scholar?q=neurodivergent+learners+experiment+eye+tracking+interaction&as_ylo=2020
+- https://scholar.google.com/scholar?q=learning+analytics+user+modeling+AI+inference&as_ylo=2020
+
+### Selected Results Added in Round 3
+- Using a webcam based eye-tracker to understand students' thought patterns in neurodivergent classrooms (2023, ACM)
+- Using webcam-based eye tracking during a learning task to understand neurodivergence (2025, EDM)
+- One Size Does Not Fit All: Eye Tracking Models for Neurodivergent Learners' Attention & Comprehension (2025, CHI)
+- Bioinformatics-based adaptive system towards real-time dynamic e-learning content personalization (2020, MDPI)
+- Taking adaptive learning to next level: NLP for improved personalization (2024, Springer)
+- Adaptive deep reinforcement learning for personalized learning pathways (2025, Elsevier)
+
+### Prioritization Summary (All 25 Records)
+**keep-high** (11 records, 44% / direct & empirical):
+- A007, C007, A008: Eye-tracking + neurodivergent learners empirical studies
+- C008, B001, B008, B009: Real-time adaptive systems & RL/NLP methods
+- C001, C002, A004, B005: Core eye-tracking & learning adaptation methods
+
+**keep-medium** (8 records, 32% / support & framework):
+- A001, A003, A005: Neurodiversity education reviews & frameworks
+- B002, B004, C004, C005, B006: Adaptation design, analytics standards, system design
+
+**maybe** (6 records, 24% / secondary value):
+- A002, A006, B003, C003, B007, C006: Thesis, clinical diagnosis, alternative venues, exemplars
+
+### Evidence Profile
+- Total: 25 records | 16 empirical (64%) | 9 review-based (36%)
+- 2025 latest: 5 papers (20%) — hot research area
+- With neurodivergent sample: 9 records (36%) — high relevance
+- 2020+: 25/25 (100%) — all recent
