@@ -5,6 +5,7 @@
 **文档生成日期**: 2026-03-30  
 **总计论文数**: 25 篇（Keep-High: 11, Keep-Medium: 8, Maybe: 6）  
 **优先级排序**: Keep-High → Keep-Medium → Maybe
+**重要补充声明**: 下述文献用于方法启发，不作为因果或效果主证据。
 
 ---
 
@@ -25,15 +26,22 @@ Adapting an interface requires taking into account both the positive and negativ
 **作者**: Kashyap Todi, Gilles Bailly, Luis Leiva, Antti Oulasvirta  
 **年份**: 2021  
 **会议/期刊**: CHI (ACM Conference on Human Factors in Computing Systems)  
+**Venue全称**: Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems  
+**Venue层级**: HCI顶级会议（CCF A / CORE A*）  
+**H-index**: N/A（会议不使用期刊H-index口径）  
+**引用数**: 75（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 3/5  
 **关键方法**: Model-based Reinforcement Learning, Predictive HCI Models  
 **预测/适配目标**: UI 自适应策略  
 **评估指标**: UX 指标，性能指标
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **直接方法论迁移价值**: 本文的保守自适应策略（避免不必要变化，发现有益改进）直接适用于Exp1A的个人化内容适配——特别是在避免认知负荷高峰期的不必要干扰方面，强化学习的决策框架可为学习路径优化提供理论基础。
 2. **跨域可适配性分析**: CHI顶会的通用UI自适应范式虽然未针对神经多样性学习者，但其基于潜在因素演变的自适应机制（latent factors that evolve over interaction）正好对应学习状态的动态变化，可通过眼动和行为信号作为新的输入进行重新训练。
 3. **实验设计借鉴**: 论文展示了模型-环境交互的实验范式（adaptive menus案例），其比较框架（非自适应vs.基于频率vs.学习策略）为Exp1A的基线设计提供了检验标准，特别是在衡量自适应的边际收益方面。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是顶会发表、方法链条完整且有实证比较；但其任务域为通用UI而非教育神经多样性场景，建议作为“方法基线论文”而非“效果先验论文”。
 
 **直接转移指数**: ⭐⭐⭐⭐⭐ (5/5)
 
@@ -54,15 +62,22 @@ This paper presents an adaptive learning tool designed to enhance educational ou
 **作者**: O. Thawalampola, D. Jayasuriya et al.  
 **年份**: 2024  
 **会议/期刊**: IEEE Conference (6th)  
+**Venue全称**: 2024 6th International Conference on Advancements in Computing (ICAC)  
+**Venue层级**: 区域性IEEE会议（非公认顶会）  
+**H-index**: N/A（会议不使用期刊H-index口径）  
+**引用数**: 1（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 3/5  
+**工程可用性评级（Engineering Usability）**: 5/5  
 **关键方法**: NLP-based content adaptation, Cognitive load monitoring, Adaptive scaffolding  
 **预测/适配目标**: ADHD-specific learning support  
 **评估指标**: Learning outcomes, Engagement metrics
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **神经多样性直接适配**: 作为针对ADHD学生的实际工具系统，本文直接验证了认知负荷监测与休息建议的有效性——这对Exp1A的眼动→认知状态推断→自适应干预的流程形成强有力的实证支持，特别是在确定最优干预时机的策略上。
 2. **多模态信息融合范例**: 论文通过内容分块(content chunking)、交互模式监测和实时反馈的组合，展示了非眼动输入的自适应学习系统如何运作；与Exp1A的眼动数据结合，可形成更丰富的多模态自适应框架。
 3. **ADHD特异性机制洞察**: NLP驱动的内容简化和自适应脚手架(scaffolding)的具体实现方式为如何处理神经多样性学习者的特定需求提供了操作性框架，避免了通用自适应系统的"one-size-fits-all"陷阱。
+4. **可信度与使用建议**: 学术可信度评为3/5，依据是会议层级与引文积累尚弱，但工程实现细节和场景贴合度高；建议作为“系统设计与需求映射证据”，并用更高等级实证文献做效果论证补强。
 
 **直接转移指数**: ⭐⭐⭐⭐⭐ (5/5)
 
@@ -228,15 +243,22 @@ This study explores the use of webcam-based eye tracking during a learning task 
 **作者**: G. Jaiyeola, A. Wong, R. Bryck et al.  
 **年份**: 2025  
 **会议/期刊**: Educational Data Mining (EDM) - 2025 proceedings  
+**Venue全称**: Proceedings of the 18th International Conference on Educational Data Mining (EDM 2025)  
+**Venue层级**: 学习分析/教育数据挖掘领域高相关主流会议  
+**H-index**: N/A（会议不使用期刊H-index口径）  
+**引用数**: 暂无稳定公开计数（Crossref/OpenAlex未检索到可核验记录，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 3/5  
+**工程可用性评级（Engineering Usability）**: 3/5  
 **关键方法**: WebGazer (webcam eye tracking), Supervised ML classification, Gaze-based neurodivergence prediction  
 **预测/适配目标**: Neurodivergence detection, Diagnosis-specific classification  
 **评估指标**: AUROC (0.53-0.61), Kappa
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **大规模真实数据的神经多样性分类**: 354名参与者的规模在实地学习研究中相对较大，AUROC 0.53-0.61的范围（高于随机猜测但未达完美分类）提供了真实的性能期许——这对Exp1A的模型性能预期标定很重要，不应期待从眼动单一模态达到诊断级准确率。
 2. **多种神经多样性诊断的可区分性分析**: 论文针对不同特定诊断（非仅通用"神经多样性vs.神经典型"二分）的AUROC变化，暗示某些诊断的眼动特征更易区分——这提示Exp1A可能需要针对特定的神经多样性子群体（如ADHD、自闭症）调整特征工程策略。
 3. **WebGazer技术的现实可行性验证**: 作为2025年最新研究，论文验证了WebGazer在大样本在线读书任务中的可用性，为Exp1A选择开源眼动库而非专有硬件提供了同行实证支持。
+4. **可信度与使用建议**: 学术可信度评为3/5，依据是样本规模可观但分类效能中等且当前可核验引文积累有限；建议把它作为“现实性能上限与可行性边界”证据，而非高准确率方法背书。
 
 **直接转移指数**: ⭐⭐⭐⭐⭐ (5/5)
 
@@ -256,16 +278,23 @@ This study leverages webcam-based eye tracking to model attentional changes (Tas
 
 **作者**: G. D. Jaiyeola, A. Y. Wong, R. L. Bryck, C. Mills et al.  
 **年份**: 2025  
-**会议/期刊**: CHI (15th International Conference on Human Factors in Computing Systems)  
+**会议/期刊**: LAK (15th International Learning Analytics and Knowledge Conference)  
+**Venue全称**: Proceedings of the 15th International Learning Analytics and Knowledge Conference  
+**Venue层级**: 学习分析领域旗舰会议（高水平）  
+**H-index**: N/A（会议不使用期刊H-index口径）  
+**引用数**: 2（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 4/5  
 **关键方法**: Webcam-based eye tracking, Comparative attention/comprehension modeling, Diagnosis-specific models  
 **预测/适配目标**: Task-unrelated thought (TUT) and comprehension prediction  
 **评估指标**: Model performance, Fairness metrics
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **神经多样性公平性的重要警示**: 论文的核心贡献是证明在神经典型人群上训练的通用模型在神经多样性学习者上表现更差，而特定诊断模型表现最佳——这对Exp1A的模型设计和评估提出了明确要求：为不同神经多样性子群开发专用模型，而不是假设单一通用模型。
 2. **认知多维性的实证洞察**: 将TUT（任务无关思想/mind-wandering）和理解作为两个独立的眼动建模目标，展示了注意力的多维本质（不仅是"有/无注意"的二元状态）——这为Exp1A的自适应干预提供了更精细的认知机制理解。
-3. **CHI 2025最新研究的方法论引领**: 作为最新发表的CHI顶会论文，该研究代表了眼动+神经多样性+教育应用的前沿，其特定诊断建模的框架直接契合Exp1A的研究问题，提供了可直接引用的既有标准。
+3. **LAK 2025前沿研究的方法论引领**: 作为学习分析领域旗舰会议的最新论文，该研究代表了眼动+神经多样性+教育应用的前沿，其特定诊断建模的框架直接契合Exp1A的研究问题，提供了可直接引用的既有标准。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是方法论扎实、问题定义前沿且已出现初步引文扩散；建议作为Exp1A“公平性与分群建模”的核心引文，但需补充更长期纵向验证。
 
 **直接转移指数**: ⭐⭐⭐⭐⭐ (5/5)
 
@@ -460,14 +489,21 @@ This review synthesizes the landscape of AI-enabled personalized assistive tools
 **作者**: D. Gaspar-Figueiredo et al.  
 **年份**: 2025  
 **会议/期刊**: Empirical Software Engineering (Springer)  
+**Venue全称**: Empirical Software Engineering  
+**Venue层级**: 软件工程高水平期刊（Q1）  
+**H-index**: 100（Resurchify；另有平台给出85，存在更新时滞）  
+**引用数**: 7（Crossref cited-by，检索日期：2026-03-30）  
+**可信度评级（Academic Trust）**: 4/5  
+**工程可用性评级（Engineering Usability）**: 4/5  
 **关键研究**: 4种奖励模型比较、60名参与者实验  
 **关键发现**: 混合多目标优于单目标 (满意度权重可减少35%不满)
 
-**中文简评** (3句):
+**中文简评** (4句):
 
 1. **奖励函数设计的实证指导**: B002的多目标奖励框架（性能-满意-参与均衡）直接适用于Exp1A的RL自适应决策——眼动数据可被映射为参与度信号（如注视稳定性），与性能（完成率）和满意度（推断的或显性的）结合形成综合奖励。
 2. **用户不满降低的量化目标**: 35%的相对改进幅度为Exp1A的效果预期提供了现实基准——设置25-35%的相对改进为研究的成功指标是可达成且有意义的。
 3. **满意度权重的导设计启示**: 论文强调满意度的关键角色暗示Exp1A应早期（而非事后）整合用户满意度的测量，以便迭代优化奖励权重。
+4. **可信度与使用建议**: 学术可信度评为4/5，依据是期刊层级较高且研究问题与奖励工程高度贴合；建议将其作为Exp1A奖励函数设计的主参考，并在你的任务场景复现实验参数敏感性分析。
 
 **直接转移指数**: ⭐⭐⭐⭐ (4/5)
 
@@ -794,4 +830,3 @@ This study develops models of student e-learning interactions based on system lo
 **文档更新日期**: 2026-03-30  
 **状态**: Keep-High 和 Keep-Medium 详细内容完成；Maybe 列表概览完成  
 **下一步**: 为 Keep-Medium 补充详细摘要和简评；为整体文档编制快速索引
-
