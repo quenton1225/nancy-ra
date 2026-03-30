@@ -1,0 +1,144 @@
+Meeting Minutes of GRF project
+Project duration: Jan 1, 2026 to Dec 31, 2028
+
+P
+ersonality measurement
+•	Big Five
+•	MBTI
+•	Type A/B (acute and relaxed)
+•	Proactivity
+•	Other relevant traits
+Idea 1: First-stage lab experiment
+•	HCI
+•	Parasocial relationship
+•	Anthropomorphic agent
+Pretest
+1.	Personality test
+2.	Neurodiversity inclination test
+(types of visual content preference – colour, figure/text/picture/sound, intensity, speed, length of attention)
+
+
+Experiments
+
+Experiment 1A – Task-based experiment
+Lab or online AI-assisted learning experiment
+•	Response data
+•	Test performance data
+•	Online camera-based eye-tracking data
+Experiment 1B – Interactive experiment
+Individual / in-group learning dynamics, proactiveness, Control, Aggressiveness
+→ Self-achievement + conflict
+
+Post-test
+•	Self-efficacy
+•	Learning effectiveness (LOs)
+•	Learning wellbeing
+
+
+Issues for Experiment 1A (For Brainstorming)
+
+1. Diagnostic Difficulty
+Some types of neurodiversity exist on a spectrum and are not categorical diagnoses.
+It is therefore difficult, and potentially not ethically appropriate, for using AI to diagnose or classify all of them.
+
+We may need to adjust what we want to detect. Instead of detecting specific neurodivergent types, we may focus on the three major categories in management studies: Cognitive, emotional, or behavioral patterns. By doing so we can catch Observable functional needs and state-based variations during task performance
+
+2. Types of Neurodiversity (Preliminary List)
+According to my knowledge, there are too many types of neurodiversity. 
+
+I. Neurodevelopmental / Neurodivergent Conditions
+Typically lifelong differences in cognitive processing.
+•	ADHD (Inattentive / Hyperactive-impulsive / Combined)
+•	Autism Spectrum Condition
+•	Dyslexia
+•	Dyscalculia
+•	Dysgraphia
+•	Dyspraxia (Developmental Coordination Disorder)
+•	Tourette Syndrome
+•	Intellectual Disability
+
+Some shared symptoms within this Category 
+•	Executive function difficulties
+•	Attention regulation variability
+•	Working memory limitations
+•	Slower processing speed particularly under cognitive load.
+•	Cognitive overload sensitivity
+
+II. Mood/mental Disorders
+Episodic or chronic affective conditions.
+•	Major Depressive Disorder
+•	Persistent Depressive Disorder (Dysthymia)
+•	Bipolar I
+•	Bipolar II
+•	Cyclothymic Disorder
+•	Seasonal Affective Disorder
+
+III. Anxiety Disorders
+•	Generalized Anxiety Disorder
+•	Social Anxiety Disorder
+•	Panic Disorder
+•	Agoraphobia
+•	Specific Phobias
+•	Separation Anxiety Disorder
+•	Selective Mutism
+
+Some shared symptoms between Category II and III
+•	Motivation variability
+•	Energy fluctuation
+•	Cognitive slowing
+•	Avoidance patterns
+•	Perfectionism loops
+•	Reassurance-seeking behavior
+•	Sensitivity to cognitive overload
+
+IV. Obsessive-Compulsive & Related Disorders
+•	OCD
+•	Body Dysmorphic Disorder
+•	Hoarding Disorder
+•	Trichotillomania
+
+Some shared symptoms within this Category 
+•	Repetitive checking behaviors
+•	Revision loops
+•	Excessive confirmation requests
+
+🌪️ V. Trauma & Stress-Related Disorders
+•	PTSD
+•	Complex PTSD
+•	Acute Stress Disorder
+•	Adjustment Disorders
+
+Some shared symptoms within this Category 
+•	Hypervigilance
+•	Emotional reactivity
+•	Trigger sensitivity
+
+
+VI. Personality Disorders (High Sensitivity Area)
+Examples:
+•	Borderline Personality Disorder
+•	Avoidant Personality Disorder
+•	Obsessive-Compulsive Personality Disorder
+
+VII. Cognitive & Neurocognitive Conditions
+•	Mild Cognitive Impairment
+•	Traumatic Brain Injury (TBI)
+•	Post-concussion syndrome
+•	Early-stage dementia (research only, highly regulated)
+
+My Thoughts
+1.It is impossible for us to identify and focus on all of the above mentioned special needs users. If we select only some to study, it is theoretically difficult to justify why those specific conditions. Even if we include all of them, it would be difficult to provide personalized or type-specific solutions.
+
+The bad news:
+Many conditions share similar symptoms.
+The good news:
+Many conditions share similar symptoms.
+
+ Because of symptom overlap, we may shift toward a symptom-based or function-based support approach.
+
+2.Instead of labeling or identifying neurodivergent types, we may focus on identifying special needs based on observable functional differences. In management research, we often classify constructs into three domains:
+•	Cognitive
+•	Affective (emotional)
+•	Behavioral
+
+Since cognitive and affective/emotional needs are often latent, whereas behavioral signals are relatively easier to detect, our first step should be to explore how AI can infer users’ underlying cognitive and emotional needs from observable behavioral expressions and provide appropriate adaptive support accordingly.

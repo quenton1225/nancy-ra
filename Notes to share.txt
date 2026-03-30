@@ -1,0 +1,31 @@
+Meeting Minute with Nancy 10 March
+Project duration: Jan 1, 2026 to Dec 31, 2028
+Personality measurement: Big Five, MBTI, Type A/B(acute and relaxed), proactiveness
+Idea 1
+HCI, Parasocial relationship, anthropomorphic agent
+Pretest- (1) proactiveness test; (2) neurodiversity inclination test (types of visual content- colour, figure/text/picture/sound, intensity, speed, length of attention)
+Experiments:
+Experiment 1A- Task based experiment- lab or online AI-assisted learning experiments (response data, test data+ online camera eye-tracking data)
+Experiment 1-B- interactive experiment-dark side of proactiveness
+In group learning dynamic- proactiveness + control+ aggressiveness= self achievement + conflict
+Post test: self-efficacy, learning effectiveness (LOs), learning wellbeing
+
+Theoretical base: First impression theory, halo effect theory
+Theoretical contribution?
+
+Buy samples from Prolific or Credamo
+Experiment 2- field experiment- in the real training, wearable eye-tracker, for attention pattern and their personality/neurodiversity traits
+
+Skill requirements:
+Technopychology, experiment, eye-tracking, Python
+To have a test dataset to try
+
+ 
+ 
+ 
+ 
+Idea 2
+Conference core video- road show/Nasdaq listed companies
+Analyse the persona in video (proactiveness+ appearance-care/fashion) or published photo images in company website, Linkedin, and Facebook, and their relationship with company’s financial performance, ESG performance, and if these linkages varied in traditional versus emerging industries
+
+
