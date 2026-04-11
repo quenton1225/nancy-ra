@@ -1,0 +1,17 @@
+record_id,quality_rigor,quality_transfer,quality_repro_ethics,decision,decision_reason
+PNA002,3,4,3,keep_medium,Recent empirical study on adaptive learning for neurodivergent children.
+PNA003,1,2,2,exclude,Editorial piece not original research.
+PNA004,3,3,4,keep_medium,Established education journal with cited accessibility focus.
+PNA005,3,4,3,keep_medium,Recent autism-focused research in psychiatry journal.
+PNA006,4,4,4,keep_high,Framework paper on cognitive load in online neurodivergent education.
+PNA007,3,4,4,keep_medium,VR intervention for ADHD with implementation strategies.
+PNA008,4,3,4,keep_high,Systematic review on neurodivergent children quality of life.
+PNA009,3,4,5,keep_high,Co-design framework with autistic adults in computing research.
+PNA011,3,3,4,keep_medium,Humanistic approach for autism care in clinical services.
+PNA012,2,3,2,maybe,New IntechOpen chapter; AI-neurodivergent learning differences.
+PNA013,2,3,2,maybe,Speculative design exploration; venue/content mismatch risk.
+PNA014,2,3,2,maybe,Recent chapter on AI-guided teaching; weak validation.
+PNA015,2,2,2,exclude,Metaverse focus with weak adaptive-learning link.
+PNA017,2,2,2,exclude,Brain-on-chip focus with insufficient education impact.
+PNA019,4,4,4,keep_high,High-impact clinical guidance for ADHD/ASD.
+PNA020,4,3,4,keep_medium,Highly cited neurobiology review with indirect transfer.

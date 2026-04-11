@@ -1,0 +1,21 @@
+record_id,quality_rigor,quality_transfer,quality_repro_ethics,decision,decision_reason
+PEA001,3,4,4,keep_high,Prestigious venue; high citation count; broad review scope.
+PEA002,4,4,4,keep_high,Established venue; paradigm-level analysis.
+PEA003,3,3,3,maybe,Low citation and unclear venue quality.
+PEA004,2,2,2,exclude,Low evidence strength and questionable venue credibility.
+PEA005,4,4,4,keep_medium,Recent study with promising adaptive tutoring evidence.
+PEA006,2,2,2,exclude,Questionable publication quality and weak evidence.
+PEA007,4,4,4,keep_high,Strong citations and relevant adaptive assistant design.
+PEA008,4,4,4,keep_high,Comprehensive review with strong citation support.
+PEA009,5,5,4,keep_high,Systematic review with high rigor and top relevance.
+PEA010,4,3,5,keep_high,Strong evidence base; broader sustainability framing.
+PEA011,4,4,4,keep_high,Neuroscience-informed adaptive assessment with strong quality.
+PEA012,3,3,3,maybe,Framework paper; low citation maturity.
+PEA013,4,4,4,keep_high,Comprehensive review with solid methodological framing.
+PEA014,4,4,4,keep_high,Empirical comparison of adaptive vs teacher-led instruction.
+PEA015,1,1,2,exclude,Weak evidence and poor domain fit.
+PEA016,3,4,3,keep_medium,Useful review on adaptive learning styles.
+PEA017,4,4,4,keep_high,Established venue and strong personalized feedback focus.
+PEA018,4,4,4,keep_high,Recent but methodologically strong neuroscience-AI integration.
+PEA019,3,3,3,keep_medium,Relevant ChatGPT education topic with moderate rigor.
+PEA020,2,2,2,exclude,Low evidence maturity and weak venue confidence.

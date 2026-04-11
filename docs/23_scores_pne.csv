@@ -1,0 +1,19 @@
+record_id,quality_rigor,quality_transfer,quality_repro_ethics,decision,decision_reason
+PNE001,2,2,2,maybe,Editorial introduction; literature review without empirical data or methods.
+PNE002,4,3,4,keep_medium,Phenomenological study in PLoS ONE; ADHD in medical students; good venue.
+PNE003,4,4,4,keep_high,VR experiment design; Virtual Reality venue; direct intervention measure.
+PNE004,5,3,4,keep_high,Top neuroscience venue Cortex; large-scale executive function mapping.
+PNE005,3,4,3,keep_medium,Industrial application; manual learning with accessibility; production context.
+PNE006,3,4,3,keep_medium,MIT Press eBook; practical guidance; neurodiversity in children.
+PNE007,4,4,3,keep_high,Systematic review; STEM/STEAM for disabled students; educational relevance.
+PNE008,4,4,4,keep_high,Autism in Adulthood venue; autistic professionals experience; high domain fit.
+PNE009,2,4,2,maybe,Low-impact venue; AI-adaptive platforms without venue credibility validation.
+PNE010,3,2,2,maybe,Theoretical contribution; developmental science; limited direct application.
+PNE011,3,4,5,keep_medium,AI ethics focus; inclusive education framing; ethics journal credibility.
+PNE012,2,3,3,maybe,New venue; emerging innovation focus; limited empirical evidence or citations.
+PNE013,2,4,2,maybe,Very low citations; chatbots and neurodiversity; new journal unproven impact.
+PNE014,3,3,4,keep_medium,Eye-tracking technology; brain sciences venue; children with ADHD/autism.
+PNE015,2,4,2,maybe,Only 2 citations; very recent; higher education STEM; insufficient evidence.
+PNE018,2,3,4,maybe,Thesis/dissertation; autistic women social skills; non-standard research venue.
+PNE019,3,4,3,keep_medium,Design learning focus; experiential simulation intervention; education application.
+PNE020,3,4,2,keep_medium,Systematic review; gamified e-learning for neurodivergent; very recent publication.

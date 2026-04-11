@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>组会汇报 | 53号文档40篇文献综述</title>
+  <style>
+    :root {
+      --bg-1: #f2efe8;
+      --bg-2: #e4ece8;
+      --card: rgba(255, 255, 255, 0.78);
+      --ink: #1d2a32;
+      --muted: #546571;
+      --accent: #0f766e;
+      --accent-2: #b45309;
+      --good: #166534;
+      --warn: #92400e;
+      --bad: #991b1b;
+      --shadow: 0 20px 55px rgba(16, 24, 40, 0.12);
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      color: var(--ink);
+      font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(1200px 700px at 10% -10%, rgba(15, 118, 110, 0.20), transparent 60%),
+        radial-gradient(900px 500px at 95% 10%, rgba(180, 83, 9, 0.18), transparent 60%),
+        linear-gradient(120deg, var(--bg-1), var(--bg-2));
+      overflow: hidden;
+    }
+
+    .deck {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 2.2rem 1.6rem 1.4rem;
+    }
+
+    .slide {
+      display: none;
+      width: min(1200px, 94vw);
+      height: min(690px, 84vh);
+      margin: 0 auto;
+      padding: 1.6rem 1.8rem;
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      animation: fadeIn 0.45s ease;
+      overflow: auto;
+    }
+
+    .slide.active { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1, h2, h3 { margin: 0.1rem 0 0.8rem; }
+    h1 {
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: clamp(1.2rem, 2.4vw, 1.65rem);
+      color: var(--accent);
+    }
+    h3 {
+      font-size: 1.02rem;
+      color: #0e5d57;
+      margin-top: 1rem;
+    }
+    p { margin: 0.45rem 0; line-height: 1.6; }
+    ul { margin: 0.35rem 0 0.65rem 1rem; line-height: 1.55; }
+
+    .tag {
+      display: inline-block;
+      margin: 0 0.45rem 0.45rem 0;
+      padding: 0.22rem 0.58rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: #064e3b;
+      background: rgba(16, 185, 129, 0.13);
+      border: 1px solid rgba(16, 185, 129, 0.34);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.8rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid rgba(15, 118, 110, 0.18);
+      border-radius: 14px;
+      padding: 0.72rem 0.8rem;
+    }
+
+    .kpi {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #0b5a53;
+      margin-bottom: 0.2rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 0.92rem;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 0.5rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.48rem 0.52rem;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.38);
+      vertical-align: top;
+    }
+    th {
+      font-size: 0.82rem;
+      color: #334155;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      background: rgba(15, 118, 110, 0.08);
+    }
+
+    .status-good { color: var(--good); font-weight: 700; }
+    .status-warn { color: var(--warn); font-weight: 700; }
+    .status-bad { color: var(--bad); font-weight: 700; }
+    .muted { color: var(--muted); }
+
+    .timeline {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+    .step {
+      flex: 1;
+      min-width: 180px;
+      padding: 0.65rem 0.75rem;
+      border-radius: 12px;
+      border: 1px solid rgba(14, 116, 144, 0.2);
+      background: rgba(240, 249, 255, 0.72);
+    }
+    .step b { color: #075985; }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      color: #334155;
+      font-size: 0.86rem;
+    }
+
+    button {
+      border: none;
+      border-radius: 999px;
+      padding: 0.36rem 0.78rem;
+      font-size: 0.86rem;
+      background: rgba(15, 118, 110, 0.16);
+      color: #0f4f49;
+      cursor: pointer;
+    }
+    button:hover { background: rgba(15, 118, 110, 0.24); }
+
+    .dots { display: inline-flex; gap: 0.36rem; }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(51, 65, 85, 0.32);
+    }
+    .dot.active { background: #0f766e; }
+
+    .cover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      gap: 0.7rem;
+    }
+
+    .quote {
+      border-left: 4px solid rgba(180, 83, 9, 0.55);
+      padding-left: 0.8rem;
+      margin-top: 0.9rem;
+      color: #4b5563;
+    }
+
+    .mt-9 { margin-top: 0.9rem; }
+
+    @media (max-width: 900px) {
+      .slide {
+        width: 95vw;
+        height: 85vh;
+        padding: 1rem;
+      }
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      table { font-size: 0.86rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <section class="slide active">
+      <div class="cover">
+        <span class="tag">组会汇报</span>
+        <h1>53号文档40篇文献：分类、现状、共性与未来路径</h1>
+        <p class="muted">汇报人角色：学生（我）｜本版基于摘要实读与证据归纳（摘要覆盖 35/40，Crossref+Semantic Scholar 回填）</p>
+        <div>
+          <span class="tag">教育学 × 自适应系统</span>
+          <span class="tag">神经非典型 × 自适应系统</span>
+          <span class="tag">神经非典型 × 教育学</span>
+        </div>
+        <p class="quote">目标不是“堆文献”，而是把文献转成可执行研究路线：识别 → 推断 → 干预 → 验证。</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>1. 我如何组织 subagent 并行工作</h2>
+      <div class="timeline">
+        <div class="step"><b>subagent-A</b><br />读取 education+adaptive（14篇），输出：主题簇、关键发现、迁移启示、风险、趋势。</div>
+        <div class="step"><b>subagent-B</b><br />读取 neurodivergent+adaptive（13篇），输出：识别-推断-干预链路证据与短板。</div>
+        <div class="step"><b>subagent-C</b><br />读取 neurodivergent+education（13篇），输出：包容性教学与系统设计启示。</div>
+      </div>
+      <h3>主代理（我）做的整合工作</h3>
+      <ul>
+        <li>统一三组术语，消除同义表达冲突（如个性化/自适应/适配）。</li>
+        <li>抓取并清洗摘要证据：40篇中25篇拿到Crossref摘要，补充Frontiers/MDPI等可访问全文片段。</li>
+        <li>用同一评估视角重排：证据成熟度、可迁移性、可落地性、方法风险，提炼组会决策问题。</li>
+      </ul>
+      <p class="muted">证据文件：docs/54_crossref_abstracts_40.csv（实读摘要与关键词）</p>
+    </section>
+
+    <section class="slide">
+      <h2>2. 文献池总览（40篇）</h2>
+      <div class="grid-3">
+        <div class="card"><div class="kpi">14</div><div>education+adaptive</div><small class="muted">均分 4.333 | 平均引用 777.4</small></div>
+        <div class="card"><div class="kpi">13</div><div>neurodivergent+adaptive</div><small class="muted">均分 4.231 | 平均引用 147.5</small></div>
+        <div class="card"><div class="kpi">13</div><div>neurodivergent+education</div><small class="muted">均分 4.077 | 平均引用 14.8</small></div>
+      </div>
+      <h3>结构特征</h3>
+      <ul>
+        <li>覆盖平衡：三组数量接近，利于做跨域综合而非单线叙事。</li>
+        <li>成熟度梯度明显：education+adaptive 引用高、框架稳；neurodivergent+education 新而快。</li>
+        <li>证据类型偏综述：约一半为 review/systematic/meta/guideline，利于建框架，弱于定实验参数。</li>
+            <li>本次实读覆盖：35/40 可直接读取摘要；其余5篇受出版商访问限制，已标记为“证据待补”。</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>3. 分类框架：从“主题”转向“研究链路”</h2>
+      <table>
+        <thead>
+          <tr><th>研究链路节点</th><th>核心问题</th><th>主力文献组</th><th>当前成熟度</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>识别（Who）</td>
+            <td>如何识别不同神经认知特征学习者</td>
+            <td>neurodivergent+adaptive</td>
+            <td class="status-warn">中等（临床共识多，教育场景转换不足）</td>
+          </tr>
+          <tr>
+            <td>推断（Why）</td>
+            <td>如何推断其认知负荷、注意力与任务瓶颈</td>
+            <td>neurodivergent+education + neurodivergent+adaptive</td>
+            <td class="status-warn">中等（机制线索已出现，量化证据有限）</td>
+          </tr>
+          <tr>
+            <td>干预（How）</td>
+            <td>系统如何个性化调整任务、节奏、反馈</td>
+            <td>education+adaptive</td>
+            <td class="status-good">较高（方法成熟，但对神经非典型定制不足）</td>
+          </tr>
+          <tr>
+            <td>验证（Works?）</td>
+            <td>短期有效是否能转化为长期学习收益</td>
+            <td>三组均需补强</td>
+            <td class="status-bad">偏弱（纵向/真实场景证据稀缺）</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="slide">
+      <h2>4. 组别A：education+adaptive（14篇）</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>关键贡献</h3>
+          <ul>
+            <li>给出 AI in Education 的宏观框架与阶段演进（R2EA007, R2EA020, PEA002）。</li>
+            <li>高等教育场景方法最成熟，系统化综述质量高（R2EA023, R2EA041）。</li>
+            <li>LLM 教育应用已从“可用性讨论”进入“伦理治理”阶段（R2EA039）。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>局限</h3>
+          <ul>
+            <li>对神经非典型学习者缺乏精细分层，常把学生当“平均人”。</li>
+            <li>高被引多为综述，直接可复现实验流程不足。</li>
+            <li>公平性/隐私/可解释性提得多，工程可执行标准少。</li>
+          </ul>
+        </div>
+      </div>
+      <h3>原文证据（摘要句）</h3>
+      <ul>
+        <li>R2EA023: "This systematic review provides unique findings with an up-to-date examination of artificial intelligence (AI) in higher education (HE) from 2016 to 2022."</li>
+        <li>R2EA016: "The rapid advancement of computing technologies has facilitated the implementation of AIED applications."</li>
+      </ul>
+      <p class="quote">启发：这组最适合做“系统外壳和评价框架”，但核心个体差异模型要从另外两组补上。</p>
+    </section>
+
+    <section class="slide">
+      <h2>5. 组别B：neurodivergent+adaptive（13篇）</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>关键贡献</h3>
+          <ul>
+            <li>ADHD/ASD 识别与干预技术线清晰：ML/DL、VR/AR、可穿戴、诊疗共识。</li>
+            <li>“识别-推断-干预”在医疗/康复端证据较密（R2NA029, R2NA033, R2NA035）。</li>
+            <li>出现与教育技术交叉的信号（R2NA032），具备迁移可能。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>局限</h3>
+          <ul>
+            <li>外推风险：部分研究样本集中于特定人群与地区。</li>
+            <li>真实教学场景不足，多在临床或受控环境。</li>
+            <li>模型可解释性、隐私合规、长期效应证据仍偏弱。</li>
+          </ul>
+        </div>
+      </div>
+      <h3>原文证据（摘要句）</h3>
+      <ul>
+        <li>R2NA026: "There is evidence to suggest that the broad discrepancy in the ratio of males to females with diagnosed ADHD is due, at least in part, to lack of recognition and/or referral bias in females."</li>
+        <li>R2NA033: "In recent years, the application of virtual reality (VR) for therapeutic purposes has escalated dramatically."</li>
+      </ul>
+      <p class="quote">启发：这组可提供“识别和状态估计引擎”，是你们后续自适应策略触发的技术来源。</p>
+    </section>
+
+    <section class="slide">
+      <h2>6. 组别C：neurodivergent+education（13篇）</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>关键贡献</h3>
+          <ul>
+            <li>直接回应“课堂/高校怎么做包容性设计”（R2NE014, R2NE015, R2NE038）。</li>
+            <li>认知负荷、执行功能、学习体验等机制线索开始成形（R2NE019, PNE004）。</li>
+            <li>“差异不是缺陷”的教学哲学更明确（R2NE030, R2NE040）。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>局限</h3>
+          <ul>
+            <li>发表新、引用低，学术共识仍在形成期。</li>
+            <li>纵向研究不足，难回答“短期改善是否可持续”。</li>
+            <li>跨文化样本和资源受限场景证据偏少。</li>
+          </ul>
+        </div>
+      </div>
+      <h3>原文证据（摘要句）</h3>
+      <ul>
+        <li>R2NE038: "A rapid review of supports for neurodivergent students in higher education" 聚焦支持策略与实施障碍。</li>
+        <li>R2NE030: "Peripheral sensorimotor stimming activity ... is widely considered irrelevant to and even distracting from learning."</li>
+      </ul>
+      <p class="quote">启发：这组最接近我们“教育落地问题”，虽然年轻，但正是创新窗口期。</p>
+    </section>
+
+    <section class="slide">
+      <h2>7. 我们发现的共性现象（跨三组）</h2>
+      <div class="grid-2">
+        <div>
+          <h3>现象 1：框架先行，实验滞后</h3>
+          <p>具体框架包括 PRISMA 系统综述（R2EA023: 138篇；R2NA029: 33篇）与 review-of-reviews（R2EA041），以及 AIE 三层框架（R2EA020: development/application/integration）。但实验协议与长期追踪明显不足。</p>
+          <h3>现象 2：技术快于评估</h3>
+          <p>具体技术包括 LLM 教学任务自动化9类（R2EA039）、NLP个性化助教（PEA007）、VR/AR干预（R2NA033）。技术迭代快，但评估多为短期或非受控设计。</p>
+          <h3>现象 3：个体差异被承认，但建模粒度不够</h3>
+          <p>共识层面已强调神经多样性与诊断差异（R2NA026, PNA019），但教学系统里多数仍是群体级适配，而非任务级动态策略。</p>
+        </div>
+        <div>
+          <h3>现象 4：迁移路径存在断层</h3>
+          <p>医疗/康复端有较强效果量（R2NA033: Hedges g = 0.74；DLS g = 1.15），但迁移到学校课堂时缺少同等质量RCT与纵向复现。</p>
+          <h3>现象 5：高等教育是试验场</h3>
+          <p>R2EA023 显示高教AIE研究快速增长且本科样本占比高（72%），说明高教是首发场景；K-12与职业教育证据密度仍不足。</p>
+          <h3>现象 6：包容性从理念走向工程指标</h3>
+          <p>R2NE015、R2NE014、R2NE035表明包容性不再是口号，正在转化为可测指标：外在认知负荷、可访问性、合理便利有效性。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>8. 交叉子领域现状判断（2026）</h2>
+      <table>
+        <thead>
+          <tr><th>维度</th><th>判断</th><th>可核查证据（框架/技术/结果）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>理论成熟度</td><td class="status-good">高</td><td>PRISMA 与 review-of-reviews 已形成主框架：R2EA023（138篇），R2EA041（二级证据整合），R2EA020（三层AIE框架）。</td></tr>
+          <tr><td>工程可实现性</td><td class="status-good">中高</td><td>技术已可运行：VR/AR干预在ASD总体有效（R2NA033: g = 0.74），DLS效果更强（g = 1.15）；NLP助教与自适应路径已有实现（PEA007）。</td></tr>
+          <tr><td>教育落地成熟度</td><td class="status-warn">中等</td><td>高教落地最快（R2EA023: 本科样本72%）；包容性实践有可行方案（R2NE015：录播/可调速等合理便利），但跨学段推广不足。</td></tr>
+          <tr><td>证据完整性</td><td class="status-bad">中低</td><td>现有证据存在结构性缺口：VR证据中受控试验数量较少（R2NA033：受控7 vs 非受控24）；长期追踪和跨文化样本不足。</td></tr>
+          <tr><td>伦理与治理</td><td class="status-warn">中等</td><td>已明确风险但缺执行细则：R2EA039总结LLM教育应用53个用例与伦理挑战；R2EA041呼吁更高伦理、协作与方法严谨性。</td></tr>
+        </tbody>
+      </table>
+      <p class="quote">结论：该交叉领域不是“没框架”，而是“框架多、验证弱”。下一步关键是把框架翻译成可复现实验协议与可部署评估体系。</p>
+    </section>
+
+    <section class="slide">
+      <h2>9. 未来发展（2026-2028）与理由</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>趋势 A</h3>
+          <p><b>从“统一自适应”转向“神经多样性定制自适应”</b></p>
+          <p class="muted">理由：教育端已确认差异性，技术端已有识别能力，供需两端汇合。</p>
+        </div>
+        <div class="card">
+          <h3>趋势 B</h3>
+          <p><b>多模态状态估计进入低门槛部署</b></p>
+          <p class="muted">理由：摄像头/行为日志/交互轨迹可替代昂贵设备，支持课堂级应用。</p>
+        </div>
+        <div class="card">
+          <h3>趋势 C</h3>
+          <p><b>“有效性+公平性+可解释性”三指标将成为评估标准</b></p>
+          <p class="muted">理由：仅准确率不足以通过教育场景的伦理与治理门槛。</p>
+        </div>
+      </div>
+      <h3>我对发展方向的判断</h3>
+      <ul>
+        <li>短期：高教先落地，形成案例与基准。</li>
+        <li>中期：跨场景迁移（高教→K-12→职业）成为关键研究问题。</li>
+        <li>长期：系统将从“辅助学习”演进到“协同学习伙伴”。</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>10. 对我们下一步工作的直接启发</h2>
+      <h3>研究设计建议（与会议路线对齐）</h3>
+      <ol>
+        <li><b>识别层：</b>采用“日志 + 认知负荷信号 + 分群标签”三元输入，先做可解释分类基线（参考R2NE035、R2NA029）。</li>
+        <li><b>推断层：</b>区分长期画像与短期状态：长期用学习者画像，短期用任务内波动触发（参考R2EA020与R2NE019）。</li>
+        <li><b>干预层：</b>先从已证实更稳的策略入手：内容分块、节奏调控、反馈个性化，再逐步增加沉浸式干预（参考PEA007、R2NA033）。</li>
+        <li><b>验证层：</b>把受控对照、随访和公平性指标作为必选项，不再只报告即时准确率。</li>
+      </ol>
+      <h3>最需要补的证据</h3>
+      <ul>
+        <li>长期效果（至少 6-12 周）而非单次任务表现。</li>
+        <li>不同神经特征学习者之间的差异化收益。</li>
+        <li>公平性与隐私约束下的实际可部署性。</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>11. 你可能会问我的3个问题（我先准备答案）</h2>
+      <table>
+        <thead>
+          <tr><th>导师可能提问</th><th>我的回答要点</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>为什么你说这是“窗口期”？</td>
+            <td>三组文献显示：理论成熟 + 工程可行 + 教育需求明确，同时验证证据仍稀缺，正是可创新切入的典型窗口。</td>
+          </tr>
+          <tr>
+            <td>我们到底先做哪一步最稳？</td>
+            <td>先做小而硬的识别-推断原型，用可解释特征驱动干预策略，避免一开始就做复杂大系统。</td>
+          </tr>
+          <tr>
+            <td>这40篇够不够支撑下一阶段？</td>
+            <td>方向决策已足够：当前摘要证据覆盖 35/40（其中 semantic scholar 20、crossref 15），仍有 5 篇缺摘要需优先补全文证据后再做最终定稿。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="slide">
+      <h2>12. 汇报结语</h2>
+      <p><b>一句话总结：</b>我们已经从“找得到文献”走到“能设计研究”，下一步要从框架走向实证。</p>
+      <div class="grid-2 mt-9">
+        <div class="card">
+          <h3>本次交付</h3>
+          <ul>
+            <li>40篇文献三向分类与结构化解读。</li>
+            <li>跨域共性现象与现状分级判断。</li>
+            <li>2026-2028发展预测及研究路线建议。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>会后行动（建议）</h3>
+          <ul>
+            <li>从40篇中锁定15篇“实验参数提取核心文献”。</li>
+            <li>写出实验1的可执行 protocol（变量、任务、指标、伦理）。</li>
+            <li>2周内完成最小可行 demo 与预实验。</li>
+          </ul>
+        </div>
+      </div>
+      <p class="quote">老师，我准备好接受追问。您希望我先展开“实验设计”还是“文献证据链”细节？</p>
+    </section>
+  </main>
+
+  <div class="footer">
+    <button id="prevBtn" aria-label="上一页">上一页</button>
+    <span id="pageInfo">1 / 12</span>
+    <div class="dots" id="dots"></div>
+    <button id="nextBtn" aria-label="下一页">下一页</button>
+  </div>
+
+  <script>
+    (function () {
+      var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+      var pageInfo = document.getElementById('pageInfo');
+      var dotsWrap = document.getElementById('dots');
+      var current = 0;
+
+      slides.forEach(function (_, i) {
+        var d = document.createElement('span');
+        d.className = 'dot' + (i === 0 ? ' active' : '');
+        d.title = '第 ' + (i + 1) + ' 页';
+        dotsWrap.appendChild(d);
+      });
+
+      function render() {
+        slides.forEach(function (s, idx) {
+          s.classList.toggle('active', idx === current);
+        });
+        var dots = dotsWrap.querySelectorAll('.dot');
+        dots.forEach(function (d, idx) {
+          d.classList.toggle('active', idx === current);
+        });
+        pageInfo.textContent = (current + 1) + ' / ' + slides.length;
+      }
+
+      function next() {
+        current = (current + 1) % slides.length;
+        render();
+      }
+
+      function prev() {
+        current = (current - 1 + slides.length) % slides.length;
+        render();
+      }
+
+      document.getElementById('nextBtn').addEventListener('click', next);
+      document.getElementById('prevBtn').addEventListener('click', prev);
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
+          e.preventDefault();
+          next();
+        }
+        if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+          e.preventDefault();
+          prev();
+        }
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

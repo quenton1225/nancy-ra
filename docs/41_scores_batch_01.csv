@@ -1,0 +1,20 @@
+record_id,quality_rigor,quality_transfer,quality_repro_ethics,decision,decision_reason
+R2NE002,2,2,2,maybe,Social work education case; lacking empirical design documentation.
+R2NE003,2,2,1,exclude,Conceptual analysis without empirical data or methods.
+R2NE004,4,4,3,keep_medium,Generative AI for personalized learning; recent 2025; direct relevance.
+R2NE006,4,3,3,keep_medium,Engineering education neurodiversity; Frontiers venue; 55 citations.
+R2NE007,2,2,2,maybe,Encyclopedia entry; review synthesis without original research.
+R2NE008,4,4,3,keep_medium,Maker program intervention; PLoS venue; STEM inclusion focus.
+R2NE009,2,1,2,exclude,Yoga wellness; weak AI education neurodiversity integration.
+R2NE010,3,3,3,keep_medium,STEM PhD student experiences; qualitative; high-quality venue.
+R2NE011,3,2,3,maybe,School distress focus; moderate neurodiversity relevance only.
+R2NE013,2,2,2,maybe,Reflective analysis; insufficient empirical rigor for high rating.
+R2NE014,4,3,4,keep_high,Autism/ADHD inclusion experiences; Higher Education venue; strong ethics.
+R2NE015,4,4,4,keep_high,Lecture capture intervention; experimental design; Higher Education venue.
+R2NE017,3,3,3,keep_medium,Focus group on cognitive load; PLoS ONE; qualitative rigor.
+R2NE019,5,4,4,keep_high,Systematic review; Educational Research Review venue; synthesis quality.
+R2NE020,3,3,3,keep_medium,Educator-student knowledge gap study; International Journal venue; 24 citations.
+R2NE022,3,3,3,keep_medium,STEM group work experiences; qualitative; IJSTE publication.
+R2NE023,3,2,3,maybe,Post-COVID school avoidance; moderate transfer utility for AI education.
+R2NE024,3,3,3,keep_medium,Bilingual autism barriers; Frontiers in Psychology; 28 citations.
+R2NE025,4,4,3,keep_medium,UDL and anonymous technology; Higher Education; recent 2025 publication.

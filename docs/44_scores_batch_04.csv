@@ -1,0 +1,20 @@
+record_id,quality_rigor,quality_transfer,quality_repro_ethics,decision,decision_reason
+R2NA035,5,4,4,keep_high,Systematic review with high citations and comprehensive evidence.
+R2NA036,5,2,3,maybe,Rigorous RCT but addiction focus weakly aligned.
+R2NA037,2,4,2,maybe,Conceptual overview with limited empirical support.
+R2NA038,3,5,2,keep_medium,ASD ICT intervention relevance with moderate quality.
+R2NA039,3,4,2,keep_medium,ASD emotion-education relevance and moderate citations.
+R2NA040,4,4,3,keep_high,Well-cited AI-autism diagnosis review with transfer value.
+R2NA041,4,3,4,keep_medium,Good journal quality with medium practical transfer.
+R2NA042,5,4,4,keep_high,Recent clinical guideline on ADHD cognitive assessment.
+R2NA043,5,4,4,keep_high,High-impact systematic review on VR cognitive training.
+R2NA044,3,5,2,keep_medium,ML autism classification applicability with moderate rigor.
+R2NA045,4,5,4,keep_high,IEEE VR-ASD screening application with strong transfer.
+R2EA001,3,4,3,keep_medium,Gamified learning study with adaptive educational relevance.
+R2EA002,3,3,2,maybe,Generic ML prediction lacking neurodivergent specificity.
+R2EA003,2,4,2,maybe,AI tutoring topic relevant but venue quality uncertain.
+R2EA004,3,4,2,maybe,Conference IoT personalization with limited rigor.
+R2EA005,2,2,1,exclude,School leadership focus not student-level intervention.
+R2EA006,3,4,2,keep_medium,LLM teaching assistants promising but early evidence.
+R2EA007,5,5,4,keep_high,Highly cited foundational AI-in-education review.
+R2EA008,4,4,4,keep_high,AAAI student-modeling paper with strong causal framing.

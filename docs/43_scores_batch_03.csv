@@ -1,0 +1,20 @@
+record_id,quality_rigor,quality_transfer,quality_repro_ethics,decision,decision_reason
+R2NA009,4,4,4,keep_high,Systematic review with strong relevance to assistive technologies.
+R2NA010,3,4,2,maybe,Preprint platform description with limited peer-reviewed validation.
+R2NA021,3,4,3,keep_medium,Recent review covering AR/VR/AI/robotics interventions.
+R2NA012,4,4,4,keep_high,ACM venue and cited wearable-device mental health evidence.
+R2NA014,3,3,3,keep_medium,Qualitative autism social-media use study with moderate transfer.
+R2NA016,2,3,2,maybe,Preprint conceptual framework for accessibility design.
+R2NA019,4,4,4,keep_high,Multi-site VR safety trial with medical publication rigor.
+R2NA022,3,3,3,maybe,Nursing student digital-diversity study with indirect fit.
+R2NA023,2,2,1,exclude,Insufficient peer-review confidence and limited controls.
+R2NA024,2,3,2,maybe,Applied article lacking robust empirical validation.
+R2NA025,2,3,2,maybe,Emerging framework without strong evaluation evidence.
+R2NA026,5,5,4,keep_high,Highly cited expert consensus with strong authority.
+R2NA027,4,4,4,keep_high,Large population evidence on digital accessibility barriers.
+R2NA028,4,4,4,keep_high,High-citation ML feature-selection review for autism.
+R2NA029,4,5,4,keep_high,High-citation AI mental-health review with transferable methods.
+R2NA031,4,4,4,keep_high,Strong AR systems review and design completeness.
+R2NA032,4,4,5,keep_high,CHI work with strong participatory ethics.
+R2NA033,5,4,4,keep_high,Meta-analysis with strong evidence synthesis quality.
+R2NA034,3,4,3,keep_medium,Broad AI mental-health review with moderate depth.

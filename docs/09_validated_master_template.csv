@@ -1,0 +1,1 @@
+record_id,title,authors,year,venue,publication_type,doi,arxiv_id,source_url,citation_count,citation_date,domain_neurodivergent,domain_education,domain_adaptive,study_type,sample_size,population_type,input_signal,ai_method,prediction_target,evaluation_metrics,quality_rigor,quality_transfer,quality_repro_ethics,decision,decision_reason,dedup_group,reviewer,review_date,notes
