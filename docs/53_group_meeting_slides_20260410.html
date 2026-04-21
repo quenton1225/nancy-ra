@@ -230,7 +230,7 @@
       <div class="cover">
         <span class="tag">组会汇报</span>
         <h1>53号文档40篇文献：分类、现状、共性与未来路径</h1>
-        <p class="muted">汇报人角色：学生（我）｜本版基于摘要实读与证据归纳（摘要覆盖 35/40，Crossref+Semantic Scholar 回填）</p>
+        <p class="muted">汇报人角色：学生（我）｜本版基于摘要实读与证据归纳（摘要覆盖 40/40，Crossref+Semantic Scholar+开放来源回填）</p>
         <div>
           <span class="tag">教育学 × 自适应系统</span>
           <span class="tag">神经非典型 × 自适应系统</span>
@@ -250,7 +250,7 @@
       <h3>主代理（我）做的整合工作</h3>
       <ul>
         <li>统一三组术语，消除同义表达冲突（如个性化/自适应/适配）。</li>
-        <li>抓取并清洗摘要证据：40篇中25篇拿到Crossref摘要，补充Frontiers/MDPI等可访问全文片段。</li>
+            <li>抓取并清洗摘要证据：40篇中40篇已形成可核查摘要/全文证据（semantic scholar 20、crossref 15、publisher fulltext 1、repository PDF 2、figshare PDF 1、本地保存页解析 1）。</li>
         <li>用同一评估视角重排：证据成熟度、可迁移性、可落地性、方法风险，提炼组会决策问题。</li>
       </ul>
       <p class="muted">证据文件：docs/54_crossref_abstracts_40.csv（实读摘要与关键词）</p>
@@ -268,7 +268,7 @@
         <li>覆盖平衡：三组数量接近，利于做跨域综合而非单线叙事。</li>
         <li>成熟度梯度明显：education+adaptive 引用高、框架稳；neurodivergent+education 新而快。</li>
         <li>证据类型偏综述：约一半为 review/systematic/meta/guideline，利于建框架，弱于定实验参数。</li>
-            <li>本次实读覆盖：35/40 可直接读取摘要；其余5篇受出版商访问限制，已标记为“证据待补”。</li>
+            <li>本次实读覆盖：40/40 可直接读取摘要；摘要级证据缺口已清零。</li>
       </ul>
     </section>
 
@@ -329,8 +329,8 @@
       </div>
       <h3>原文证据（摘要句）</h3>
       <ul>
-        <li>R2EA023: "This systematic review provides unique findings with an up-to-date examination of artificial intelligence (AI) in higher education (HE) from 2016 to 2022."</li>
-        <li>R2EA016: "The rapid advancement of computing technologies has facilitated the implementation of AIED applications."</li>
+        <li>[E01] R2EA023: "This systematic review ... from 2016 to 2022."（PRISMA，138篇）</li>
+        <li>[E02] R2EA016: "The rapid advancement of computing technologies has facilitated the implementation of AIED applications."</li>
       </ul>
       <p class="quote">启发：这组最适合做“系统外壳和评价框架”，但核心个体差异模型要从另外两组补上。</p>
     </section>
@@ -357,8 +357,8 @@
       </div>
       <h3>原文证据（摘要句）</h3>
       <ul>
-        <li>R2NA026: "There is evidence to suggest that the broad discrepancy in the ratio of males to females with diagnosed ADHD is due, at least in part, to lack of recognition and/or referral bias in females."</li>
-        <li>R2NA033: "In recent years, the application of virtual reality (VR) for therapeutic purposes has escalated dramatically."</li>
+        <li>[E03] R2NA026: 女性ADHD识别偏差与转诊偏差证据。</li>
+        <li>[E04] R2NA033: VR/AR干预总体有效，Hedges g = 0.74；DLS g = 1.15。</li>
       </ul>
       <p class="quote">启发：这组可提供“识别和状态估计引擎”，是你们后续自适应策略触发的技术来源。</p>
     </section>
@@ -385,8 +385,8 @@
       </div>
       <h3>原文证据（摘要句）</h3>
       <ul>
-        <li>R2NE038: "A rapid review of supports for neurodivergent students in higher education" 聚焦支持策略与实施障碍。</li>
-        <li>R2NE030: "Peripheral sensorimotor stimming activity ... is widely considered irrelevant to and even distracting from learning."</li>
+        <li>[E05] R2NE038: 证据总体 modest，强调转衔与制度级神经包容缺口。</li>
+        <li>[E06] R2NE030: 以具身认知重估 stimming 的学习价值，提出教学设计启发式。</li>
       </ul>
       <p class="quote">启发：这组最接近我们“教育落地问题”，虽然年轻，但正是创新窗口期。</p>
     </section>
@@ -420,14 +420,14 @@
           <tr><th>维度</th><th>判断</th><th>可核查证据（框架/技术/结果）</th></tr>
         </thead>
         <tbody>
-          <tr><td>理论成熟度</td><td class="status-good">高</td><td>PRISMA 与 review-of-reviews 已形成主框架：R2EA023（138篇），R2EA041（二级证据整合），R2EA020（三层AIE框架）。</td></tr>
-          <tr><td>工程可实现性</td><td class="status-good">中高</td><td>技术已可运行：VR/AR干预在ASD总体有效（R2NA033: g = 0.74），DLS效果更强（g = 1.15）；NLP助教与自适应路径已有实现（PEA007）。</td></tr>
-          <tr><td>教育落地成熟度</td><td class="status-warn">中等</td><td>高教落地最快（R2EA023: 本科样本72%）；包容性实践有可行方案（R2NE015：录播/可调速等合理便利），但跨学段推广不足。</td></tr>
-          <tr><td>证据完整性</td><td class="status-bad">中低</td><td>现有证据存在结构性缺口：VR证据中受控试验数量较少（R2NA033：受控7 vs 非受控24）；长期追踪和跨文化样本不足。</td></tr>
-          <tr><td>伦理与治理</td><td class="status-warn">中等</td><td>已明确风险但缺执行细则：R2EA039总结LLM教育应用53个用例与伦理挑战；R2EA041呼吁更高伦理、协作与方法严谨性。</td></tr>
+          <tr><td>理论成熟度</td><td class="status-good">高</td><td>[E01][E07] PRISMA 与 review-of-reviews 已形成主框架：R2EA023（138篇），R2EA041（二级证据整合），R2EA020（三层AIE框架）。</td></tr>
+          <tr><td>工程可实现性</td><td class="status-good">中高</td><td>[E04] VR/AR干预在ASD总体有效（g = 0.74），DLS效果更强（g = 1.15）；NLP助教与自适应路径已有实现（PEA007）。</td></tr>
+          <tr><td>教育落地成熟度</td><td class="status-warn">中等</td><td>[E01][E08] 高教落地最快（R2EA023: 本科样本72%）；R2NE015支持录播/可调速等合理便利，但跨学段推广不足。</td></tr>
+          <tr><td>证据完整性</td><td class="status-bad">中低</td><td>[E04][E05] 仍有结构性缺口：受控试验与长期追踪不足，跨文化样本有限。</td></tr>
+          <tr><td>伦理与治理</td><td class="status-warn">中等</td><td>[E09] 已明确风险但缺执行细则：R2EA039总结LLM教育应用与伦理挑战；R2EA041呼吁更高方法严谨性。</td></tr>
         </tbody>
       </table>
-      <p class="quote">结论：该交叉领域不是“没框架”，而是“框架多、验证弱”。下一步关键是把框架翻译成可复现实验协议与可部署评估体系。</p>
+      <p class="quote">结论：该交叉领域不是"没框架"，而是"框架多、验证弱"。下一步关键是把框架翻译成可复现实验协议与可部署评估体系。<br/><br/><b>📌 详细防守版见 docs/59_final_briefing_statement_20260412.md：每个结论都有源数据、风险提示与反驳预案。</b></p>
     </section>
 
     <section class="slide">
@@ -472,33 +472,58 @@
         <li>不同神经特征学习者之间的差异化收益。</li>
         <li>公平性与隐私约束下的实际可部署性。</li>
       </ul>
+      <hr style="margin: 1rem 0; border: none; border-top: 1px solid rgba(148, 163, 184, 0.38);" />
+      <p class="muted"><b>📌 完整防守稿本：</b>详见 docs/59_final_briefing_statement_20260412.md，包含 5 个核心结论的完整论证链条（主张 → 证据 → 风险 → 反驳预案）及组会发言脚本。</p>
     </section>
 
     <section class="slide">
-      <h2>11. 你可能会问我的3个问题（我先准备答案）</h2>
+      <h2>11. 导师追问防守版（结论-证据-风险-反驳）</h2>
       <table>
         <thead>
-          <tr><th>导师可能提问</th><th>我的回答要点</th></tr>
+          <tr><th>结论主张</th><th>证据锚点</th><th>风险提示</th><th>反驳预案</th></tr>
         </thead>
         <tbody>
           <tr>
-            <td>为什么你说这是“窗口期”？</td>
-            <td>三组文献显示：理论成熟 + 工程可行 + 教育需求明确，同时验证证据仍稀缺，正是可创新切入的典型窗口。</td>
+            <td>这是“窗口期”：框架多、落地快、验证弱。</td>
+            <td>[E01][E04][E05]</td>
+            <td>“窗口期”可能被质疑为主观判断。</td>
+            <td>用三维指标拆解：理论成熟度高、工程可实现中高、证据完整性中低（见第8页表格）。</td>
           </tr>
           <tr>
-            <td>我们到底先做哪一步最稳？</td>
-            <td>先做小而硬的识别-推断原型，用可解释特征驱动干预策略，避免一开始就做复杂大系统。</td>
+            <td>先做“识别-推断”最小闭环，再上复杂干预。</td>
+            <td>[E03][E04][E08]</td>
+            <td>可能被追问为何不直接做端到端智能教学系统。</td>
+            <td>现有证据支持先用低成本高收益可及性策略（录播/节奏调控），并以可解释基线降低实施风险。</td>
           </tr>
           <tr>
-            <td>这40篇够不够支撑下一阶段？</td>
-            <td>方向决策已足够：当前摘要证据覆盖 35/40（其中 semantic scholar 20、crossref 15），仍有 5 篇缺摘要需优先补全文证据后再做最终定稿。</td>
+            <td>40篇是否足够支撑下一阶段？</td>
+            <td>[E10]</td>
+            <td>摘要级证据可能被质疑“细节不够”。</td>
+            <td>口径明确区分：摘要覆盖已40/40；全文参数（变量定义/统计检验/页码）正在补全，不混口径。</td>
           </tr>
         </tbody>
       </table>
     </section>
 
     <section class="slide">
-      <h2>12. 汇报结语</h2>
+      <h2>12. 最终口径表（统一发言版本）</h2>
+      <table>
+        <thead>
+          <tr><th>口径项</th><th>统一表述</th><th>证据文件</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>优先池规模</td><td>40篇（14+13+13）</td><td>53, 54</td></tr>
+          <tr><td>摘要证据覆盖</td><td>40/40（无缺口）</td><td>54, 56</td></tr>
+          <tr><td>来源构成</td><td>semantic scholar 20、crossref 15、publisher fulltext 1、repository PDF 2、figshare PDF 1、本地保存页解析 1</td><td>54</td></tr>
+          <tr><td>当前主要风险</td><td>不是“缺摘要”，而是“全文级参数锚点仍有缺口（已完成1篇样板）”</td><td>55, 56, 58</td></tr>
+          <tr><td>下一步重点</td><td>按统一模板补齐其余11篇全文段落+页码/节号</td><td>55, 58</td></tr>
+        </tbody>
+      </table>
+      <p class="quote">统一口径原则：只报已核验证据，不用预测值替代事实值。</p>
+    </section>
+
+    <section class="slide">
+      <h2>13. 汇报结语</h2>
       <p><b>一句话总结：</b>我们已经从“找得到文献”走到“能设计研究”，下一步要从框架走向实证。</p>
       <div class="grid-2 mt-9">
         <div class="card">
@@ -524,7 +549,7 @@
 
   <div class="footer">
     <button id="prevBtn" aria-label="上一页">上一页</button>
-    <span id="pageInfo">1 / 12</span>
+    <span id="pageInfo">1 / 13</span>
     <div class="dots" id="dots"></div>
     <button id="nextBtn" aria-label="下一页">下一页</button>
   </div>
