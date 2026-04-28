@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 865" width="1600" height="865">
+<rect x="0.0" y="0.0" width="1600.0" height="865.0" rx="0" fill="#f6f7f9" stroke="none" opacity="1" />
+<text x="250.0" y="52.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1f2933" text-anchor="start">Reading Gaze Pilot</text>
+<text x="250.0" y="78.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="start">Probe</text>
+<line x1="250.0" y1="100" x2="1350.0" y2="100" stroke="#d9dee7" />
+<rect x="1160.0" y="42.0" width="80.0" height="34.0" rx="6" fill="#23395d" stroke="#23395d" opacity="1" />
+<text x="1200.0" y="63.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#fff" text-anchor="middle">Start</text>
+<rect x="1250.0" y="42.0" width="100.0" height="34.0" rx="6" fill="#7b8794" stroke="#7b8794" opacity="0.45" />
+<text x="1300.0" y="63.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#fff" text-anchor="middle">Export CSV</text>
+<text x="250.0" y="847.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#52606d" text-anchor="start">probe / probe_trial_3</text>
+<rect x="250.0" y="124.0" width="1100.0" height="683.0" rx="8" fill="#fff" stroke="#d9dee7" opacity="1" />
+<text x="274.0" y="166.0" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#1f2933" text-anchor="start">Quick Check</text>
+<text x="274.0" y="210.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#323f4b" text-anchor="start">Just before this screen, were you thinking about something unrelated to the</text>
+<text x="274.0" y="232.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#323f4b" text-anchor="start">reading?</text>
+<rect x="274.0" y="258.0" width="360.0" height="34.0" rx="6" fill="#fff" stroke="#cbd2d9" opacity="1" />
+<text x="286.0" y="280.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="start">No / Yes</text>
+<text x="274.0" y="334.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#323f4b" text-anchor="start">Difficulty</text>
+<line x1="274.0" y1="362.0" x2="634.0" y2="362.0" stroke="#9aa5b1" stroke-width="5" stroke-linecap="round" />
+<text x="274.0" y="410.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#323f4b" text-anchor="start">Familiarity</text>
+<line x1="274.0" y1="438.0" x2="634.0" y2="438.0" stroke="#9aa5b1" stroke-width="5" stroke-linecap="round" />
+<path d="M 938.8 251.9 L 976.1 252.6 L 1000.7 269.9 L 1023.8 282.2 L 1118.3 273.2 L 1124.2 270.2 L 1129.2 267.0 L 1126.9 259.6 L 1103.9 255.6 L 1201.7 256.5 L 1285.0 257.2 L 1337.4 258.4 L 1319.2 253.9 L 1322.0 261.8 L 1279.7 270.3 L 1285.1 268.8 L 1298.4 270.1 L 1282.0 280.7 L 1183.3 265.2 L 1061.2 261.4 L 997.0 254.7 L 949.1 233.9 L 839.4 244.4 L 838.7 226.0 L 801.5 236.0 L 698.9 246.1 L 671.3 254.1 L 738.8 205.5 L 701.6 220.3 L 666.4 235.5 L 612.3 249.6 L 607.7 254.6 L 607.6 258.6 L 584.1 272.0 L 552.3 276.4 L 528.1 279.6 L 494.1 283.7 L 468.2 286.7 L 506.4 296.2 L 542.0 303.8 L 461.0 307.4 L 469.6 303.1 L 479.1 298.8 L 486.4 290.4 L 438.1 302.6 L 398.0 312.9 L 444.7 321.6 L 486.4 328.6 L 466.6 319.2 L 440.0 314.3 L 417.8 309.8 L 446.1 298.0 L 416.7 291.6 L 392.2 286.2 L 393.7 296.9 L 389.4 292.5 L 412.8 295.2 L 407.6 314.9 L 392.4 329.6 L 413.5 327.2 L 402.0 318.3 L 392.4 310.4 L 379.5 305.1 L 384.2 301.4 L 388.7 298.3 L 376.0 323.1 L 465.9 348.9 L 443.9 354.7 L 512.0 361.3 L 569.3 366.2 L 613.7 376.8 L 693.8 364.5 L 759.2 353.2 L 790.4 339.4 L 806.6 336.5 L 779.3 326.6 L 810.2 322.6 L 741.1 317.0 L 666.1 318.9 L 623.6 320.3 L 575.4 315.5 L 513.6 342.5 L 505.3 350.5 L 500.6 357.1 L 477.4 367.8 L 489.9 364.8 L 502.5 361.6 L 504.5 359.1 L 525.1 351.2 L 543.5 344.3 L 563.6 334.2 L 497.1 338.5 L 504.8 318.1 L 446.8 319.8 L 458.8 306.7 L 470.4 295.9 L 489.8 279.5 L 480.5 309.3 L 470.8 335.7 L 462.1 357.3 L 434.6 357.9 L 411.7 357.7 L 372.0 356.8 L 363.3 361.9 L 402.0 358.8 L 420.3 347.1 L 455.9 340.2 L 506.0 328.4 L 534.7 300.1 L 558.9 283.6 L 546.1 287.6 L 550.3 287.4 L 470.8 304.1 L 395.0 314.5 L 331.0 323.5 L 281.6 336.9 L 242.2 348.2 L 243.0 347.5 L 264.9 367.1 L 268.6 371.2 L 290.4 381.4 L 310.8 381.1 L 257.9 392.4 L 243.7 401.7 L 271.9 398.6 L 309.0 385.1 L 341.2 373.0 L 375.0 350.4 L 355.2 357.6 L 383.2 368.2 L 361.0 384.3 L 332.9 402.6 L 308.5 417.9 L 286.0 426.2 L 306.1 416.8 L 310.9 411.9 L 309.9 413.4 L 328.0 402.2 L 354.1 397.9 L 406.7 388.1 L 410.4 379.1 L 393.0 378.6 L 384.5 368.3 L 376.6 359.9 L 350.6 353.6 L 327.1 352.6 L 307.4 352.4 L 259.5 358.9 L 280.6 358.5 L 302.9 352.6 L 321.7 336.1 L 335.5 340.1 L 346.7 352.3 L 353.7 351.9 L 329.2 380.9 L 332.5 408.0 L 328.5 405.5 L 325.2 402.6 L 299.8 385.5 L 306.9 373.7 L 313.5 363.6 L 311.8 349.5 L 300.1 342.2 L 315.1 347.0 L 328.2 351.5 L 336.5 362.2 L 372.2 350.6 L 396.9 330.9 L 417.1 314.2 L 407.2 332.5 L 373.4 358.7 L 365.4 383.1 L 318.6 393.2 L 313.1 396.2 L 309.1 398.1 L 309.0 386.0 L 268.8 377.3 L 235.2 369.6 L 250.3 371.4 L 173.8 381.6 L 214.2 380.3 L 238.5 382.3 L 333.9 415.5 L 437.1 428.4 L 457.2 441.3 L 412.9 426.1 L 483.4 412.9 L 537.4 406.3 L 580.9 400.6 L 474.5 378.4" fill="none" stroke="#2563eb" stroke-width="2" stroke-opacity="0.35" />
+<circle cx="938.8" cy="251.9" r="9" fill="#2563eb" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="938.8" y="255.9" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<circle cx="1103.9" cy="255.6" r="9" fill="#2d60e2" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="1103.9" y="259.6" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<circle cx="1298.4" cy="270.1" r="9" fill="#355eda" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="1298.4" y="274.1" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<circle cx="698.9" cy="246.1" r="9" fill="#3d5bd1" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="698.9" y="250.1" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<circle cx="584.1" cy="272.0" r="9" fill="#4558c9" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="584.1" y="276.0" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<circle cx="469.6" cy="303.1" r="9" fill="#4d56c0" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="469.6" y="307.1" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<circle cx="440.0" cy="314.3" r="9" fill="#5553b8" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="440.0" y="318.3" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">7</text>
+<circle cx="392.4" cy="329.6" r="9" fill="#5d50af" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="392.4" y="333.6" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">8</text>
+<circle cx="465.9" cy="348.9" r="9" fill="#654ea6" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="465.9" y="352.9" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">9</text>
+<circle cx="806.6" cy="336.5" r="9" fill="#6d4b9e" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="806.6" y="340.5" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">10</text>
+<circle cx="505.3" cy="350.5" r="9" fill="#754895" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="505.3" y="354.5" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">11</text>
+<circle cx="563.6" cy="334.2" r="9" fill="#7d468d" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="563.6" y="338.2" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">12</text>
+<circle cx="462.1" cy="357.3" r="9" fill="#844384" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="462.1" y="361.3" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">13</text>
+<circle cx="506.0" cy="328.4" r="9" fill="#8c417c" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="506.0" y="332.4" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">14</text>
+<circle cx="281.6" cy="336.9" r="9" fill="#943e73" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="281.6" y="340.9" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">15</text>
+<circle cx="243.7" cy="401.7" r="9" fill="#9c3b6b" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="243.7" y="405.7" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">16</text>
+<circle cx="332.9" cy="402.6" r="9" fill="#a43962" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="332.9" y="406.6" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">17</text>
+<circle cx="410.4" cy="379.1" r="9" fill="#ac3659" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="410.4" y="383.1" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">18</text>
+<circle cx="280.6" cy="358.5" r="9" fill="#b43351" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="280.6" y="362.5" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">19</text>
+<circle cx="328.5" cy="405.5" r="9" fill="#bc3148" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="328.5" y="409.5" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">20</text>
+<circle cx="328.2" cy="351.5" r="9" fill="#c42e40" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="328.2" y="355.5" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">21</text>
+<circle cx="313.1" cy="396.2" r="9" fill="#cc2b37" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="313.1" y="400.2" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">22</text>
+<circle cx="238.5" cy="382.3" r="9" fill="#d4292f" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="238.5" y="386.3" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">23</text>
+<circle cx="474.5" cy="378.4" r="9" fill="#dc2626" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="474.5" y="382.4" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">24</text>
+<circle cx="938.8" cy="251.9" r="13" fill="none" stroke="#16a34a" stroke-width="4" />
+<text x="954.8" y="239.9" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#166534" text-anchor="start">START</text>
+<circle cx="474.5" cy="378.4" r="13" fill="none" stroke="#dc2626" stroke-width="4" />
+<text x="490.5" y="366.4" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#991b1b" text-anchor="start">END</text>
+<rect x="20.0" y="116.0" width="760.0" height="34.0" rx="6" fill="#ffffff" stroke="#cbd2d9" opacity="0.88" />
+<text x="34.0" y="139.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#1f2933" text-anchor="start">samples=190 duration=4.0s offscreen=0.0% x_sd=267.3 y_sd=50.3</text>
+</svg>

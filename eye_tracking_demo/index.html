@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reading Gaze Pilot</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/webgazer-3.5.3.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <section class="topbar">
+      <div>
+        <h1>Reading Gaze Pilot</h1>
+        <p id="status">Ready</p>
+      </div>
+      <div class="controls">
+        <button id="startBtn" type="button">Start</button>
+        <button id="exportBtn" type="button" disabled>Export CSV</button>
+      </div>
+    </section>
+
+    <section id="setup" class="panel active">
+      <h2>Setup</h2>
+      <label>
+        Participant ID
+        <input id="participantId" type="text" value="P001" autocomplete="off">
+      </label>
+      <p class="note">This pilot records gaze coordinates and task responses locally. It does not save video.</p>
+    </section>
+
+    <section id="calibration" class="panel">
+      <h2>Calibration</h2>
+      <p class="note">Click each target while looking directly at it.</p>
+      <div id="calibrationArea" class="calibration-area"></div>
+    </section>
+
+    <section id="reading" class="panel">
+      <div class="reading-head">
+        <span id="passageCounter">Passage 1 / 3</span>
+        <button id="continueBtn" type="button">Continue</button>
+      </div>
+      <article id="passageText" class="passage"></article>
+    </section>
+
+    <section id="probe" class="panel">
+      <h2>Quick Check</h2>
+      <label>
+        Just before this screen, were you thinking about something unrelated to the reading?
+        <select id="tutAnswer">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </label>
+      <label>
+        How difficult was the passage?
+        <input id="difficulty" type="range" min="1" max="7" value="4">
+      </label>
+      <label>
+        How familiar was the topic?
+        <input id="familiarity" type="range" min="1" max="7" value="4">
+      </label>
+      <button id="probeSubmitBtn" type="button">Next</button>
+    </section>
+
+    <section id="quiz" class="panel">
+      <h2>Comprehension</h2>
+      <div id="quizItems"></div>
+      <button id="quizSubmitBtn" type="button">Finish</button>
+    </section>
+
+    <section id="done" class="panel">
+      <h2>Done</h2>
+      <p class="note">Export the CSV and run the feature extraction script from the README.</p>
+    </section>
+  </main>
+</body>
+</html>

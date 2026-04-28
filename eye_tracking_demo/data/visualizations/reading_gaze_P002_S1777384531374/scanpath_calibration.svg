@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 865" width="1600" height="865">
+<rect x="0.0" y="0.0" width="1600.0" height="865.0" rx="0" fill="#f6f7f9" stroke="none" opacity="1" />
+<text x="250.0" y="52.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1f2933" text-anchor="start">Reading Gaze Pilot</text>
+<text x="250.0" y="78.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="start">Calibration</text>
+<line x1="250.0" y1="100" x2="1350.0" y2="100" stroke="#d9dee7" />
+<rect x="1160.0" y="42.0" width="80.0" height="34.0" rx="6" fill="#23395d" stroke="#23395d" opacity="1" />
+<text x="1200.0" y="63.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#fff" text-anchor="middle">Start</text>
+<rect x="1250.0" y="42.0" width="100.0" height="34.0" rx="6" fill="#7b8794" stroke="#7b8794" opacity="0.45" />
+<text x="1300.0" y="63.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#fff" text-anchor="middle">Export CSV</text>
+<text x="250.0" y="847.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#52606d" text-anchor="start">calibration / calibration</text>
+<rect x="250.0" y="124.0" width="1100.0" height="683.0" rx="8" fill="#fff" stroke="#d9dee7" opacity="1" />
+<text x="274.0" y="164.0" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#1f2933" text-anchor="start">Calibration</text>
+<rect x="274.0" y="190.0" width="1052.0" height="593.0" rx="8" fill="#fbfcfd" stroke="#9aa5b1" opacity="0.9" />
+<circle cx="379.2" cy="249.3" r="17" fill="#fff" stroke="#d64545" stroke-width="3" />
+<text x="379.2" y="254.3" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#d64545" text-anchor="middle">1</text>
+<circle cx="800.0" cy="249.3" r="17" fill="#fff" stroke="#d64545" stroke-width="3" />
+<text x="800.0" y="254.3" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#d64545" text-anchor="middle">2</text>
+<circle cx="1220.8" cy="249.3" r="17" fill="#fff" stroke="#d64545" stroke-width="3" />
+<text x="1220.8" y="254.3" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#d64545" text-anchor="middle">3</text>
+<circle cx="379.2" cy="486.5" r="17" fill="#fff" stroke="#d64545" stroke-width="3" />
+<text x="379.2" y="491.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#d64545" text-anchor="middle">4</text>
+<circle cx="800.0" cy="486.5" r="17" fill="#fff" stroke="#d64545" stroke-width="3" />
+<text x="800.0" y="491.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#d64545" text-anchor="middle">5</text>
+<circle cx="1220.8" cy="486.5" r="17" fill="#fff" stroke="#d64545" stroke-width="3" />
+<text x="1220.8" y="491.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#d64545" text-anchor="middle">6</text>
+<circle cx="379.2" cy="723.7" r="17" fill="#fff" stroke="#d64545" stroke-width="3" />
+<text x="379.2" y="728.7" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#d64545" text-anchor="middle">7</text>
+<circle cx="800.0" cy="723.7" r="17" fill="#fff" stroke="#d64545" stroke-width="3" />
+<text x="800.0" y="728.7" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#d64545" text-anchor="middle">8</text>
+<circle cx="1220.8" cy="723.7" r="17" fill="#fff" stroke="#d64545" stroke-width="3" />
+<text x="1220.8" y="728.7" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#d64545" text-anchor="middle">9</text>
+<path d="M 502.9 497.7 L 500.2 496.6 L 484.2 498.4 L 450.7 507.0 L 412.3 516.8 L 362.6 534.8 L 338.9 546.6 L 230.0 598.0 L 168.2 616.0 L 90.2 633.2 L 58.6 638.9 L 21.6 630.7 L -15.1 662.7 L -98.5 650.8 L -172.0 659.9 L -129.8 644.1 L 241.2 471.6 L 562.9 362.8 L 851.6 252.2 L 1094.1 203.4 L 1356.1 137.7 L 1515.7 112.9 L 1637.8 89.7 L 1730.5 65.4 L 1795.6 59.4 L 1821.1 64.9 L 1837.3 85.2 L 1858.0 77.9 L 1839.2 83.2 L 1827.8 97.1 L 1797.3 94.9 L 1750.2 102.9 L 1669.5 106.8 L 1612.6 106.2 L 1578.7 135.8 L 1523.2 159.4 L 1408.9 246.4 L 1247.0 343.1 L 961.7 438.4 L 825.1 466.0 L 702.7 504.4 L 396.3 533.0 L 302.5 522.1 L 185.6 547.4 L 65.1 572.7 L 104.3 562.0 L 6.5 576.4 L -24.5 572.1 L -14.5 547.0 L -47.5 556.7 L -80.3 593.4 L -106.8 606.1 L -64.6 618.7 L 0.6 600.3 L -0.0 591.2 L -188.1 466.3 L -187.4 283.7 L -384.0 194.4 L -500.9 107.7 L -571.2 213.3 L -444.7 235.2 L -205.2 260.1 L -17.6 292.5 L 312.9 215.4 L 575.3 139.4 L 787.4 90.2 L 973.4 48.9 L 1041.2 41.0 L 1084.0 42.2 L 1074.5 71.6 L 1029.7 87.1 L 1112.5 90.8 L 1075.4 97.5 L 917.4 138.5 L 863.8 165.4 L 743.7 197.1 L 601.5 364.3 L 567.0 355.2 L 566.4 333.1 L 569.2 311.3 L 599.5 273.1 L 670.9 248.1 L 736.1 224.7 L 734.2 201.1 L 731.9 214.9 L 731.0 217.6 L 744.1 206.1 L 706.6 205.2 L 671.0 226.8 L 630.7 223.9 L 586.7 222.6 L 642.0 213.7 L 646.4 215.5 L 590.2 234.0 L 577.9 217.9 L 433.4 259.8 L 448.3 241.0 L 396.5 232.5 L 293.4 268.2 L 349.3 241.8 L 401.3 218.7 L 445.9 188.2 L 536.8 190.1 L 568.5 180.1 L 613.8 154.8 L 650.8 133.9 L 699.6 145.0 L 728.6 154.3 L 762.0 145.5 L 762.1 150.9 L 752.5 158.2 L 765.0 175.6 L 740.6 182.6 L 723.3 189.9 L 753.7 178.2 L 751.5 191.3 L 708.5 200.7 L 568.0 229.2 L 472.0 238.1 L 413.6 245.9 L 422.3 246.8 L 419.1 255.8 L 390.1 256.5 L 370.6 270.4 L 366.2 268.8 L 408.3 258.8 L 450.8 238.3 L 591.7 184.2 L 699.0 147.1 L 847.1 109.1 L 952.0 87.2 L 1027.5 74.9 L 1107.5 57.4 L 1140.0 57.5 L 1158.4 56.1 L 1167.5 56.4 L 1133.8 84.3 L 1116.2 123.2 L 857.5 180.2 L 651.1 252.2 L 546.4 272.1 L 491.3 278.3 L 441.9 294.9 L 378.1 334.3 L 403.6 325.8 L 377.1 364.4 L 364.1 357.4 L 329.8 357.4 L 254.5 403.7 L 222.3 406.6 L 234.9 415.1 L 229.5 431.3 L 343.5 407.8 L 391.2 400.8 L 558.9 367.1 L 701.3 337.7 L 753.4 335.1 L 776.9 336.6 L 804.8 345.0 L 719.9 373.7 L 745.1 364.4 L 612.4 411.1 L 555.3 407.0 L 446.7 440.5 L 358.4 473.5 L 291.1 487.9 L 237.8 498.5 L 320.2 485.0 L 359.5 462.6 L 391.9 464.8 L 420.9 466.1 L 405.7 468.1 L 401.5 489.5 L 419.8 492.9 L 452.2 489.6 L 480.3 477.0 L 548.4 449.3 L 567.7 426.3 L 583.7 430.4 L 533.8 431.6 L 542.1 414.6 L 523.7 402.8 L 515.1 374.8 L 520.7 364.6 L 600.5 350.6 L 723.2 311.6 L 883.6 240.4 L 1027.2 205.1 L 1066.2 214.8 L 1112.4 211.7 L 1150.4 209.5 L 1152.3 214.2 L 1183.6 218.9 L 1200.0 216.1 L 1190.1 227.9 L 1204.1 212.9 L 1183.3 225.2 L 1146.0 271.4 L 1191.7 260.1 L 1163.5 275.5 L 1152.3 276.1 L 1246.7 250.1 L 1335.2 226.8 L 1247.9 243.3 L 1373.4 208.7 L 1324.1 209.7 L 1378.6 195.6 L 1433.6 184.8 L 1468.8 176.6 L 1501.6 168.3 L 1487.7 179.1 L 1475.1 183.9 L 1473.9 191.2 L 1402.0 202.2 L 1381.4 206.5 L 1377.5 215.6 L 1377.8 221.9 L 1365.7 221.1 L 1332.5 222.4 L 1352.3 227.0 L 1198.3 262.8 L 1015.0 369.4 L 947.1 405.5 L 595.9 476.7 L 456.8 487.5 L 339.6 500.0 L 273.9 526.3 L 302.1 517.8 L 241.0 548.6 L 265.6 509.0 L 166.6 568.0 L 69.1 582.0 L 71.2 578.0 L 134.5 537.9 L 188.0 524.6 L 172.5 516.7 L 155.4 489.4 L 143.5 512.5 L 165.1 511.9 L 224.0 473.1 L 213.6 481.6 L 232.4 494.8 L 322.6 490.7 L 376.9 485.6 L 279.1 504.2 L 331.6 476.4 L 377.4 459.0 L 451.2 436.1 L 514.5 413.8 L 627.9 371.6 L 648.3 370.4 L 659.9 334.7 L 668.8 326.4 L 687.9 312.8 L 701.2 326.5 L 702.3 319.4 L 645.7 351.9 L 543.3 373.7 L 469.4 399.6 L 422.5 407.5 L 449.9 428.4 L 413.0 437.5 L 403.9 450.2 L 399.4 453.1 L 522.2 427.7 L 612.2 408.4 L 712.1 378.6 L 711.9 408.1 L 697.2 425.4 L 657.5 448.7 L 626.6 465.9 L 652.0 471.2 L 608.4 479.3 L 656.1 471.3 L 631.9 480.7 L 586.7 514.5 L 613.7 521.2 L 664.1 512.4 L 647.8 506.5 L 638.6 499.1 L 570.9 537.9 L 577.2 538.6 L 632.5 531.0 L 755.8 506.6 L 841.7 501.1 L 897.7 476.9 L 909.6 463.0 L 916.1 463.4 L 943.3 455.7 L 945.5 454.9 L 910.8 462.7 L 868.4 478.9 L 830.7 493.0 L 824.2 480.4 L 790.1 480.6 L 759.0 484.7 L 705.2 497.6 L 677.4 517.9 L 659.3 512.4 L 687.8 503.2 L 700.8 498.9 L 716.4 502.9 L 745.2 502.8 L 799.2 498.7 L 809.2 503.9 L 809.9 510.2 L 868.8 458.9 L 945.5 392.6 L 906.4 408.8 L 991.8 414.7 L 1106.4 424.3 L 1128.0 436.4 L 1167.5 396.4 L 1171.7 435.1 L 1160.6 467.6 L 1165.9 483.9 L 1146.9 514.4 L 1120.9 520.5 L 1104.4 533.3 L 1130.3 512.8 L 1220.5 494.3 L 1306.1 439.8 L 1382.8 418.4 L 1462.7 384.3 L 1429.7 370.7 L 1427.4 376.9 L 1390.6 383.3 L 1357.8 371.8 L 1332.8 370.5 L 1282.1 361.6 L 1311.2 379.3 L 1285.7 391.4 L 1220.3 429.7 L 1147.0 455.5 L 1158.6 473.5 L 1168.2 489.3 L 1178.5 518.1 L 1169.6 534.9 L 1176.9 538.2 L 1194.8 544.3 L 1231.0 526.9 L 1224.6 532.8 L 1213.8 502.2 L 1177.0 514.0 L 1187.9 513.9 L 1202.0 505.7 L 1212.8 495.5 L 1223.6 491.0 L 989.5 555.6 L 762.0 559.7 L 677.2 577.3 L 620.3 581.8 L 539.5 611.5 L 431.7 617.4 L 334.0 638.2 L 365.4 596.3 L 307.0 573.6 L 275.3 595.5 L 334.5 581.9 L 313.3 590.2 L 294.8 596.3 L 332.1 643.9 L 376.2 700.4 L 433.7 673.2 L 463.0 638.6 L 484.7 626.4 L 529.9 597.6 L 492.7 602.9 L 539.9 604.6 L 534.3 600.6 L 555.0 603.1 L 519.1 623.6 L 486.6 665.4 L 412.3 711.0 L 415.9 711.2 L 406.3 722.1 L 365.0 751.0 L 343.1 767.2 L 347.6 777.0 L 354.4 770.5 L 365.7 794.2 L 312.6 778.6 L 250.7 780.2 L 228.9 771.7 L 236.6 750.9 L 245.5 732.5 L 272.2 725.0 L 280.6 715.6 L 288.1 691.5 L 356.9 675.4 L 428.6 669.7 L 567.4 630.0 L 599.1 628.5 L 654.0 650.6 L 731.3 629.3 L 744.0 590.9 L 700.6 593.5 L 724.5 596.6 L 699.9 597.2 L 748.3 632.8 L 788.4 633.2 L 722.5 656.1 L 658.4 685.5 L 695.2 667.1 L 735.4 650.6 L 683.8 604.0 L 720.1 619.3 L 788.2 637.6 L 832.0 669.2 L 830.2 660.3 L 861.8 689.3 L 958.0 687.5 L 994.1 666.2 L 984.2 678.1 L 920.9 693.8 L 914.3 677.0 L 979.9 683.9 L 1061.5 650.1 L 1070.8 672.9 L 1081.0 676.1 L 1139.7 684.0 L 1111.9 663.1 L 1098.3 678.4 L 1105.5 718.9 L 1105.1 691.3 L 1112.9 715.6 L 1153.0 742.4 L 1179.2 749.1 L 1225.1 763.8 L 1241.3 782.0 L 1233.8 802.1 L 1246.4 828.5 L 1223.9 844.6 L 1266.0 835.8 L 1307.0 826.4" fill="none" stroke="#2563eb" stroke-width="2" stroke-opacity="0.35" />
+<circle cx="502.9" cy="497.7" r="9" fill="#2563eb" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="502.9" y="501.7" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<circle cx="1094.1" cy="203.4" r="9" fill="#2d60e2" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="1094.1" y="207.4" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<circle cx="961.7" cy="438.4" r="9" fill="#355eda" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="961.7" y="442.4" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<circle cx="-384.0" cy="194.4" r="9" fill="#3d5bd1" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="-384.0" y="198.4" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<circle cx="743.7" cy="197.1" r="9" fill="#4558c9" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="743.7" y="201.1" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<circle cx="577.9" cy="217.9" r="9" fill="#4d56c0" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="577.9" y="221.9" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<circle cx="723.3" cy="189.9" r="9" fill="#5553b8" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="723.3" y="193.9" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">7</text>
+<circle cx="1107.5" cy="57.4" r="9" fill="#5d50af" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="1107.5" y="61.4" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">8</text>
+<circle cx="229.5" cy="431.3" r="9" fill="#654ea6" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="229.5" y="435.3" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">9</text>
+<circle cx="420.9" cy="466.1" r="9" fill="#6d4b9e" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="420.9" y="470.1" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">10</text>
+<circle cx="1112.4" cy="211.7" r="9" fill="#754895" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="1112.4" y="215.7" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">11</text>
+<circle cx="1468.8" cy="176.6" r="9" fill="#7d468d" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="1468.8" y="180.6" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">12</text>
+<circle cx="273.9" cy="526.3" r="9" fill="#844384" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="273.9" y="530.3" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">13</text>
+<circle cx="331.6" cy="476.4" r="9" fill="#8c417c" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="331.6" y="480.4" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">14</text>
+<circle cx="522.2" cy="427.7" r="9" fill="#943e73" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="522.2" y="431.7" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">15</text>
+<circle cx="755.8" cy="506.6" r="9" fill="#9c3b6b" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="755.8" y="510.6" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">16</text>
+<circle cx="745.2" cy="502.8" r="9" fill="#a43962" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="745.2" y="506.8" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">17</text>
+<circle cx="1306.1" cy="439.8" r="9" fill="#ac3659" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="1306.1" y="443.8" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">18</text>
+<circle cx="1231.0" cy="526.9" r="9" fill="#b43351" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="1231.0" y="530.9" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">19</text>
+<circle cx="313.3" cy="590.2" r="9" fill="#bc3148" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="313.3" y="594.2" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">20</text>
+<circle cx="343.1" cy="767.2" r="9" fill="#c42e40" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="343.1" y="771.2" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">21</text>
+<circle cx="700.6" cy="593.5" r="9" fill="#cc2b37" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="700.6" y="597.5" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">22</text>
+<circle cx="914.3" cy="677.0" r="9" fill="#d4292f" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="914.3" y="681.0" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">23</text>
+<circle cx="1307.0" cy="826.4" r="9" fill="#dc2626" fill-opacity="0.82" stroke="#fff" stroke-width="2" />
+<text x="1307.0" y="830.4" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">24</text>
+<circle cx="502.9" cy="497.7" r="13" fill="none" stroke="#16a34a" stroke-width="4" />
+<text x="518.9" y="485.7" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#166534" text-anchor="start">START</text>
+<circle cx="1307.0" cy="826.4" r="13" fill="none" stroke="#dc2626" stroke-width="4" />
+<text x="1323.0" y="814.4" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#991b1b" text-anchor="start">END</text>
+<rect x="20.0" y="116.0" width="760.0" height="34.0" rx="6" fill="#ffffff" stroke="#cbd2d9" opacity="0.88" />
+<text x="34.0" y="139.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#1f2933" text-anchor="start">samples=435 duration=15.5s offscreen=7.1% x_sd=437.1 y_sd=191.5</text>
+</svg>

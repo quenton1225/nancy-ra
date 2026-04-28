@@ -1,0 +1,4 @@
+trial_id,gaze_samples,reading_duration_ms,valid_gaze_ratio,offscreen_ratio,gaze_dispersion_x,gaze_dispersion_y,probe_tut,difficulty,familiarity
+trial_1,4192,85956.0,1.0,0.0091,271.5823,104.5709,1,4,3
+trial_2,2481,50152.0,1.0,0.002,262.5323,87.5698,1,6,2
+trial_3,1654,32840.0,1.0,0.0067,281.1613,103.2358,1,4,2
