@@ -107,7 +107,13 @@ td.warn-cell { color: #92400e; font-weight: 700; }
 .scanpath { width: 100%; border: 1px solid #d8d7d2; background: #fafaf8; border-radius: 3px; padding: 8px; }
 .scanpath img { width: 100%; display: block; }
 .compact td { padding: 4px 8px; }
-@media print { body { background: #fff; } .page { padding: 0; } .slide { margin: 0 0 20px; page-break-after: always; box-shadow: none; } }
+@page { size: 960px 560px; margin: 0; }
+@media print {
+  html, body { width: 960px; margin: 0 !important; padding: 0 !important; background: #fff !important; }
+  .page { width: 960px !important; margin: 0 !important; padding: 0 !important; }
+  .slide { width: 960px !important; height: 560px !important; min-height: 560px !important; margin: 0 !important; box-shadow: none !important; break-after: page !important; page-break-after: always !important; overflow: hidden !important; }
+  .slide:last-child { break-after: auto !important; page-break-after: auto !important; }
+}
 </style>
 </head>
 <body>
@@ -115,38 +121,38 @@ td.warn-cell { color: #92400e; font-weight: 700; }
 
 <div class="slide slide-title">
   <div class="hd">
-    <span class="snum">1 / 21</span>
+    <span class="snum">1 / 23</span>
     <h1>组会汇报<br><span class="title-subline">SEN/SEND 学习支持需求与普通笔记本过程数据 pilot</span></h1>
     <div class="meta-row">
       <div class="meta-item"><div class="ml">汇报日期</div><div class="mv">2026-04-29</div></div>
       <div class="meta-item"><div class="ml">文献基础</div><div class="mv">SEN/SEND 全文证据 A1-A7/B1 已整理</div></div>
       <div class="meta-item"><div class="ml">技术基础</div><div class="mv">WebGazer MVP + P001-P005 pilot 完成</div></div>
-      <div class="meta-item"><div class="ml">本次目标</div><div class="mv">请导师确认研究路线、第一阶段计划与数据边界</div></div>
+      <div class="meta-item"><div class="ml">本次目标</div><div class="mv">请教授确认研究路线、第一阶段计划与数据边界</div></div>
     </div>
   </div>
 </div>
 
 <div class="slide">
   <div class="hd">
-    <span class="snum">2 / 21</span>
-    <h1>本次希望导师确认什么</h1>
+    <span class="snum">2 / 23</span>
+    <h1>本次希望教授确认什么</h1>
     <div class="sub">这不是最终系统展示，而是研究路线和第一阶段 pilot 设计讨论</div>
   </div>
   <div class="bd">
     <div class="thesis">
-      <p><strong class="accent-blue">核心请求：</strong>请导师判断我们是否可以把项目定位为“普通笔记本过程数据支持学习状态与功能性支持需求理解”，并把 SEN/SEND 放在后续聚焦和伦理框架中，而不是第一阶段的身份分类目标。</p>
+      <p><strong class="accent-blue">核心请求：</strong>请教授判断我们是否可以把项目定位为“普通笔记本过程数据支持学习状态与功能性支持需求理解”，并把 SEN/SEND 放在后续聚焦和伦理框架中，而不是第一阶段的身份分类目标。</p>
     </div>
     <div class="g3 mt16">
       <div class="card blue"><h4>1. 研究定位</h4><p>从“识别 SEN 学生”改为“理解任务中的学习状态与支持需求线索”。</p></div>
       <div class="card green"><h4>2. 第一阶段计划</h4><p>先用普通大学生或混合样本验证 gaze、pointer、scroll、latency 是否有可解释信号。</p></div>
       <div class="card amber"><h4>3. 会后实现优先级</h4><p>先补行为上下文和主观标签，再谈模型；自适应系统放在第三阶段。</p></div>
     </div>
-    <div class="info mt14"><span class="lbl">汇报方式</span>前半部分回答“为什么值得做”；中间展示“普通设备是否可行”；后半部分请导师判断“下一步具体怎么做”。</div>
+    <div class="info mt14"><span class="lbl">汇报方式</span>前半部分回答“为什么值得做”；中间展示“普通设备是否可行”；后半部分请教授判断“下一步具体怎么做”。</div>
   </div>
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">3 / 21</span><h1>术语与伦理边界：不做身份分类</h1><div class="sub">把研究对象从标签转为具体学习支持场景</div></div>
+  <div class="hd"><span class="snum">3 / 23</span><h1>术语与伦理边界：不做身份分类</h1><div class="sub">把研究对象从标签转为具体学习支持场景</div></div>
   <div class="bd">
     <div class="g2">
       <div><h2>不建议的路线</h2><div class="neg"><span class="lbl">风险</span>用眼动和平台数据识别 SEN/SEND 学生，容易被理解成身份分类、监控或标签化。</div><div class="neg"><span class="lbl">方法限制</span>普通 webcam gaze、鼠标、滚动和问卷只能提供任务过程线索，不能直接推出学生类别。</div></div>
@@ -158,7 +164,7 @@ td.warn-cell { color: #92400e; font-weight: 700; }
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">4 / 21</span><h1>SEN/SEND 文献给出的四个支点</h1><div class="sub">用文献证明问题存在，但不夸大到“已经能识别需求”</div></div>
+  <div class="hd"><span class="snum">4 / 23</span><h1>SEN/SEND 文献给出的四个支点</h1><div class="sub">用文献证明问题存在，但不夸大到“已经能识别需求”</div></div>
   <div class="bd-tight">
     <table><tr><th>证据组</th><th>文章</th><th>可讲结论</th><th>本项目如何使用</th></tr><tr><td>支持需求</td><td>A1, A2</td><td>高等教育 learning difficulties 学生需要具体学术、行政和可访问性支持。</td><td>说明研究对象不是抽象 inclusion，而是具体支持需求。</td></tr><tr><td>系统障碍</td><td>A3</td><td>困难来自大学系统、教学实践、技术可及性和支持流程。</td><td>把需求放在学习环境中解释。</td></tr><tr><td>技术可信度</td><td>A4</td><td>SEND 学生可以接受数据化工具，但担心系统失效和错误判断。</td><td>作为隐私、透明、非惩罚性边界。</td></tr><tr><td>过程数据</td><td>A7</td><td>大学生学习过程数据能揭示最终成绩看不到的 SRL 差异。</td><td>支持 gaze、pointer、scroll、latency 作为过程信号。</td></tr></table>
     <div class="thesis mt12"><p><strong class="accent-blue">文献结论：</strong>我们有理由研究“学习支持需求”，也有理由采集“过程数据”；但文献并没有直接证明 webcam gaze + platform logs 已经可以推断 SEN/SEND 大学生需求。</p></div>
@@ -166,7 +172,7 @@ td.warn-cell { color: #92400e; font-weight: 700; }
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">5 / 21</span><h1>研究空白：前人分别做过什么，缺口在哪里</h1><div class="sub">这页用来回答方法论上最关键的问题</div></div>
+  <div class="hd"><span class="snum">5 / 23</span><h1>研究空白：前人分别做过什么，缺口在哪里</h1><div class="sub">这页用来回答方法论上最关键的问题</div></div>
   <div class="bd-tight">
     <table><tr><th>前人方向</th><th>能支持什么</th><th>不能支持什么</th><th>我们怎么接上</th></tr><tr><td>C007 / WebGazer 学习任务</td><td>普通浏览器 gaze 可用于学习任务和状态建模。</td><td>不能直接证明 SEN/SEND 大学生支持需求可以被准确推断。</td><td>复现普通笔记本采集链路。</td></tr><tr><td>A5 / special needs 多模态模型</td><td>多模态和 adaptive education 思路可借鉴。</td><td>对象为 5-18 岁，非大学生真实平台任务。</td><td>借鉴架构语言，不作为 HE 成人证据。</td></tr><tr><td>A7 / 大学生过程数据</td><td>大学学习过程数据能揭示 SRL 差异。</td><td>不是 SEN/SEND 特定群体，也不是 webcam gaze。</td><td>把 gaze + pointer + timing 作为过程数据扩展。</td></tr><tr><td>A1-A4 / SEN/SEND HE 支持</td><td>证明高等教育支持需求和技术可信度问题真实存在。</td><td>没有直接验证 gaze + platform logs 的预测价值。</td><td>把技术路线绑定到支持需求，而不是诊断。</td></tr></table>
     <div class="obs mt12"><span class="lbl">研究空白</span>不是完全没人做过每个零件，而是还缺少一个把普通笔记本眼动、平台交互、大学学习任务和 SEN/SEND 支持需求放在一起的可验证路线。</div>
@@ -174,28 +180,33 @@ td.warn-cell { color: #92400e; font-weight: 700; }
 </div>
 
 <div class="slide slide-section">
-  <div class="hd"><span class="snum">6 / 21</span><div class="sec-tag">Roadmap</div><h1>长期计划必须分段</h1><div class="sec-desc">先证明学习状态线索，再连接支持需求，最后才做自适应系统</div></div>
+  <div class="hd"><span class="snum">6 / 23</span><div class="sec-tag">Roadmap</div><h1>长期计划必须分段</h1><div class="sec-desc">先检验测量是否成立，再检验目标场景是否可迁移</div></div>
   <div class="bd">
-    <div class="g4"><div class="card blue"><h4>阶段 1</h4><p><strong>学习状态线索</strong><br>注意、困惑、压力、支持请求是否能从过程数据中看到。</p></div><div class="card green"><h4>阶段 2</h4><p><strong>支持需求映射</strong><br>哪些状态对应哪些支持偏好，SEN/SEND 学生是否有特殊模式。</p></div><div class="card amber"><h4>阶段 3</h4><p><strong>自适应支持原型</strong><br>摘要、提示、术语解释、更多时间、任务分步。</p></div><div class="card purple"><h4>阶段 4</h4><p><strong>效果评估</strong><br>支持是否改善理解、负荷、体验、公平性和信任。</p></div></div>
-    <div class="warn mt18"><span class="lbl">当前组会只确认第一小段</span>本次不承诺已经能训练模型，也不承诺已经能识别 SEN/SEND 学生。我们只确认第一阶段 pilot 是否合理，以及会后该补哪些数据字段。</div>
+    <div class="g4"><div class="card blue"><h4>阶段 1</h4><p><strong>Measurement feasibility</strong><br>普通/混合样本中，过程数据能否反映学习状态线索。</p></div><div class="card green"><h4>阶段 2</h4><p><strong>Reliability & transfer check</strong><br>小规模 SEN/SEND 或高支持需求样本中，信号质量和舒适度是否仍可接受。</p></div><div class="card amber"><h4>阶段 3</h4><p><strong>Support needs mapping</strong><br>状态线索如何连接支持偏好、支持经历、访谈和共设计。</p></div><div class="card purple"><h4>阶段 4</h4><p><strong>Adaptive prototype & evaluation</strong><br>只有前面成立后，才做自适应支持和效果评估。</p></div></div>
+    <div class="warn mt18"><span class="lbl">当前组会只确认第一小段</span>本次不承诺已经能识别 SEN/SEND 学生，也不默认普通样本可以外推。我们需要先确认测量命题和提前风险测试是否合理。</div>
   </div>
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">7 / 21</span><h1>第一阶段小计划：先验证学习状态线索</h1><div class="sub">这是大规模计划的第一小段，目标要足够小、足够可验证</div></div>
+  <div class="hd"><span class="snum">7 / 23</span><h1>第一阶段核心命题：必须可以被推翻</h1><div class="sub">避免把研究做成技术清单或纯探索性描述</div></div>
+  <div class="bd-tight"><div class="thesis"><p><strong class="accent-blue">可证伪命题：</strong>在控制校准质量和任务条件后，普通笔记本可采集的 gaze、pointer、scroll、response latency 与 probe/self-report 组合，能稳定反映阅读/学习任务中的困惑、注意波动、认知负荷和支持请求等状态线索。</p></div><div class="g2 mt14"><div><h2>如果命题成立</h2><table class="compact"><tr><th>状态</th><th>应观察到的过程差异</th></tr><tr><td>高困惑/高负荷</td><td>更长停顿、更多回看、更长答题延迟、更多改答案。</td></tr><tr><td>注意波动</td><td>offscreen 增加、valid gaze 下降或 AOI 停留更分散；但必须排除校准失败。</td></tr><tr><td>支持需求较高</td><td>更常请求提示、摘要、更多时间，或 post-task 支持需求评分更高。</td></tr></table></div><div><h2>如果命题不成立</h2><table class="compact"><tr><th>结果</th><th>含义</th></tr><tr><td>特征与 probe/问卷无稳定关系</td><td>第一阶段命题不成立，不能进入模型化支持。</td></tr><tr><td>gaze 被眼镜、头动、光照主导</td><td>gaze 降级为辅助通道，interaction/self-report 成为主通道。</td></tr><tr><td>普通样本有效但目标场景不可用</td><td>不能声称可迁移到 SEN/SEND，需要重设技术路线。</td></tr></table></div></div></div>
+</div>
+
+<div class="slide">
+  <div class="hd"><span class="snum">8 / 23</span><h1>第一阶段小计划：先验证学习状态线索</h1><div class="sub">这是大规模计划的第一小段，目标要足够小、足够可验证</div></div>
   <div class="bd-tight">
     <div class="g2">
-      <div><h2>第一阶段怎么做</h2><div class="go-row pass"><div class="go-icon">1</div><div class="go-main"><div class="go-cond">样本</div><div class="go-val">普通大学生或混合样本，不强制要求 SEN/SEND 身份。</div></div></div><div class="go-row pass"><div class="go-icon">2</div><div class="go-main"><div class="go-cond">任务</div><div class="go-val">短文本阅读或学习材料任务，配合 thought probe 和理解题。</div></div></div><div class="go-row pass"><div class="go-icon">3</div><div class="go-main"><div class="go-cond">数据</div><div class="go-val">gaze、pointer、scroll、response latency、AOI、calibration quality。</div></div></div><div class="go-row pending"><div class="go-icon">4</div><div class="go-main"><div class="go-cond">分析</div><div class="go-val">classification 用明确标签，clustering 用于探索行为模式。</div></div></div></div>
-      <div><h2>第一阶段成功标准</h2><table><tr><th>标准</th><th>具体含义</th></tr><tr><td>数据可采</td><td>普通笔记本能稳定采 gaze + interaction logs。</td></tr><tr><td>状态有信号</td><td>部分特征与 probe、主观评分或任务表现有关。</td></tr><tr><td>解释可行</td><td>AOI、回看、停顿、请求支持能被非技术导师理解。</td></tr><tr><td>风险可控</td><td>不保存网页视频，不做诊断，不做身份分类。</td></tr></table></div>
+      <div><h2>第一阶段怎么做</h2><div class="go-row pass"><div class="go-icon">1</div><div class="go-main"><div class="go-cond">样本</div><div class="go-val">普通大学生或混合样本，不强制要求 SEN/SEND 身份。</div></div></div><div class="go-row pass"><div class="go-icon">2</div><div class="go-main"><div class="go-cond">任务</div><div class="go-val">短文本阅读或学习材料任务，配合 thought probe、理解题和支持偏好。</div></div></div><div class="go-row pass"><div class="go-icon">3</div><div class="go-main"><div class="go-cond">数据</div><div class="go-val">gaze、pointer、scroll、response latency、AOI、calibration quality。</div></div></div><div class="go-row pending"><div class="go-icon">4</div><div class="go-main"><div class="go-cond">提前风险测试</div><div class="go-val">加入眼镜、头动、光照、自然坐姿和摄像头不适反馈。</div></div></div></div>
+      <div><h2>第一阶段成功标准</h2><table><tr><th>标准</th><th>具体含义</th></tr><tr><td>数据可采</td><td>普通笔记本能稳定采 gaze + interaction logs。</td></tr><tr><td>状态有信号</td><td>部分特征与 probe、主观评分或任务表现有关。</td></tr><tr><td>风险可见</td><td>知道 gaze 在眼镜、头动、光照和摄像头舒适度下何时失效。</td></tr><tr><td>有降级方案</td><td>gaze 不稳定时，转向 interaction logs + self-report/probe。</td></tr></table></div>
     </div>
     <div class="thesis mt10"><p><strong class="accent-blue">第一阶段问题：</strong>不是“谁是 SEN 学生”，而是“这些过程数据能否反映注意、困惑、压力和支持请求等学习状态线索”。</p></div>
   </div>
 </div>
 
-<div class="slide slide-section"><div class="hd"><span class="snum">8 / 21</span><div class="sec-tag">Feasibility Proof</div><h1>普通笔记本眼动 MVP 已经跑通</h1><div class="sec-desc">它证明采集链路可行，但还不是正式测量工具</div></div></div>
+<div class="slide slide-section"><div class="hd"><span class="snum">9 / 23</span><div class="sec-tag">Feasibility Proof</div><h1>普通笔记本眼动 MVP 已经跑通</h1><div class="sec-desc">它证明采集链路可行，但还不是正式测量工具</div></div></div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">9 / 21</span><h1>WebGazer MVP：从任务到可视化的闭环</h1><div class="sub">browser task · raw CSV · trial features · scanpath</div></div>
+  <div class="hd"><span class="snum">10 / 23</span><h1>WebGazer MVP：从任务到可视化的闭环</h1><div class="sub">browser task · raw CSV · trial features · scanpath</div></div>
   <div class="bd">
     <div class="g2">
       <div><h2>任务流程</h2><div class="tl"><div class="tl-item done"><div class="tl-stage">Step 1</div><div class="tl-title">匿名 participant/session 输入</div><div class="tl-desc">避免采集诊断身份，保留可重复实验编号。</div></div><div class="tl-item done"><div class="tl-stage">Step 2</div><div class="tl-title">WebGazer calibration</div><div class="tl-desc">9 个校准点，启动普通摄像头 tracking。</div></div><div class="tl-item done"><div class="tl-stage">Step 3</div><div class="tl-title">Reading + probe + quiz</div><div class="tl-desc">阅读过程、thought probe 和理解题都写入长格式 CSV。</div></div><div class="tl-item done"><div class="tl-stage">Step 4</div><div class="tl-title">Feature extraction + scanpath</div><div class="tl-desc">生成 trial-level features 与每阶段 scanpath SVG。</div></div></div></div>
@@ -205,7 +216,7 @@ td.warn-cell { color: #92400e; font-weight: 700; }
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">10 / 21</span><h1>P001-P005：五样本质量结果</h1><div class="sub">四个样本接近 48-50Hz · P002 在眼镜/转头条件下降低</div></div>
+  <div class="hd"><span class="snum">11 / 23</span><h1>P001-P005：五样本质量结果</h1><div class="sub">四个样本接近 48-50Hz · P002 在眼镜/转头条件下降低</div></div>
   <div class="bd-tight">
     <table><tr><th>样本</th><th>条件</th><th class="c">gaze rows</th><th class="c">平均采样率</th><th class="c">offscreen</th><th class="c">理解题</th></tr><tr><td><strong>P001</strong></td><td>受试者 1 早期基线，正常光照</td><td class="num">8494</td><td class="c best">50.0Hz</td><td class="c">0.0274</td><td class="c best">3/3</td></tr><tr><td><strong>P002</strong></td><td>受试者 1，戴眼镜并持续转头</td><td class="num warn-cell">3419</td><td class="c warn-cell">27.4Hz</td><td class="c">0.0140</td><td class="c">2/3</td></tr><tr><td><strong>P003</strong></td><td>受试者 2，正常光，不戴眼镜，尽量不转头</td><td class="num">12915</td><td class="c best">49.6Hz</td><td class="c">0.0132</td><td class="c">2/3</td></tr><tr><td><strong>P004</strong></td><td>受试者 2，略暗/逆光，不戴眼镜，尽量不转头</td><td class="num">6225</td><td class="c best">50.0Hz</td><td class="c">0.0050</td><td class="c">2/3</td></tr><tr><td><strong>P005</strong></td><td>受试者 1 严格基线，不戴眼镜，正常光，尽量不转头</td><td class="num">5614</td><td class="c best">47.6Hz</td><td class="c">0.0082</td><td class="c best">3/3</td></tr></table>
     <div class="g3 mt14"><div class="card green"><h4>P005 是干净 baseline</h4><p>严格正常条件，不戴眼镜、正常光、尽量不转头；TUT=0/3，理解题 3/3。</p></div><div class="card amber"><h4>P002 是压力测试</h4><p>同一受试者戴眼镜并持续转头，平均采样率降到 27.4Hz。</p></div><div class="card blue"><h4>下一步需要上下文</h4><p>眼镜、头动、光照、校准质量不能再只写在文件名或日志里。</p></div></div>
@@ -213,55 +224,60 @@ td.warn-cell { color: #92400e; font-weight: 700; }
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">11 / 21</span><h1>P005：严格正常条件 baseline</h1><div class="sub">代表性 scanpath · 与 P002 形成清楚的条件对比</div></div>
+  <div class="hd"><span class="snum">12 / 23</span><h1>P005：严格正常条件 baseline</h1><div class="sub">代表性 scanpath · 与 P002 形成清楚的条件对比</div></div>
   <div class="bd-tight"><div class="gw"><div><div class="scanpath"><img src="../eye_tracking_demo/data/visualizations/reading_gaze_P005_S1777388229181/scanpath_reading_trial_1.svg" alt="P005 reading trial 1 scanpath"></div><div class="ann">图：P005 reading trial 1 scanpath。用于展示普通笔记本眼动可以形成可解释的阅读轨迹。</div></div><div><h2>关键数字</h2><div class="bignums"><div class="bignum-block"><div class="bignum green">47.6</div><div class="bignumlbl">avg Hz</div></div><div class="bignum-block"><div class="bignum blue">3/3</div><div class="bignumlbl">quiz correct</div></div><div class="bignum-block"><div class="bignum amber">0/3</div><div class="bignumlbl">TUT positive</div></div></div><div class="pos"><span class="lbl">为什么选 P005</span>P005 是同一受试者在最严格正常条件下的样本，适合作为“系统在理想使用条件下是否可行”的展示图。</div><div class="warn mt10"><span class="lbl">和 P002 的对比</span>P002 同一受试者但戴眼镜并持续转头，采样率 27.4Hz；P005 回到 47.6Hz。这说明下一版必须记录眼镜、头动、光照和坐姿。</div></div></div></div>
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">12 / 21</span><h1>从 pilot 得到的真正结论</h1><div class="sub">可行，但解释力依赖上下文字段</div></div>
+  <div class="hd"><span class="snum">13 / 23</span><h1>从 pilot 得到的真正结论</h1><div class="sub">可行，但解释力依赖上下文字段</div></div>
   <div class="bd"><div class="g2"><div><h2>可以说什么</h2><div class="pos"><span class="lbl">结论 1</span>普通笔记本 webcam eye tracking 足够支撑小规模 feasibility pilot。</div><div class="pos"><span class="lbl">结论 2</span>采集、CSV、feature extraction、scanpath 的技术链路已经跑通。</div><div class="pos"><span class="lbl">结论 3</span>样本条件会影响数据质量，尤其是眼镜和头动。</div></div><div><h2>不能说什么</h2><div class="neg"><span class="lbl">边界 1</span>不能说 gaze 已经能诊断学生类别。</div><div class="neg"><span class="lbl">边界 2</span>不能说当前样本量足够训练模型。</div><div class="neg"><span class="lbl">边界 3</span>不能只靠裸 gaze 坐标解释学习状态。</div></div></div><div class="thesis mt14"><p><strong class="accent-blue">下一步核心：</strong>不是多收敏感数据，而是补足可解释上下文：鼠标、滚动、响应时间、AOI、校准质量、环境条件和支持偏好。</p></div></div>
 </div>
 
-<div class="slide slide-section"><div class="hd"><span class="snum">13 / 21</span><div class="sec-tag">Task Design</div><h1>下一版页面上到底做什么活动？</h1><div class="sec-desc">这需要导师决策，因为它决定研究贡献方向</div></div></div>
+<div class="slide">
+  <div class="hd"><span class="snum">14 / 23</span><h1>关键风险：可靠性和外推不能默认成立</h1><div class="sub">把别人指出的风险变成第一阶段提前验证策略</div></div>
+  <div class="bd-tight"><table><tr><th>风险</th><th>为什么严重</th><th>第一阶段怎么提前处理</th></tr><tr><td>WebGazer 对眼镜、头动、摄像头舒适度敏感</td><td>P002 已显示戴眼镜+频繁转头时采样率从约 50Hz 降到 27.4Hz。</td><td>加入 reliability stress test：眼镜、头动、不同光照、自然坐姿、摄像头不适反馈。</td></tr><tr><td>SEN/SEND 群体可用性未知</td><td>目标用户可能有头动特征、注视模式差异，或对摄像头更不舒服。</td><td>早期加入小规模自愿披露/高支持需求样本，只测可靠性和接受度，不做分类。</td></tr><tr><td>普通样本发现未必能外推</td><td>普通大学生状态线索不等于 SEN/SEND 支持需求。</td><td>明确 Stage 1 只证明 measurement feasibility；transfer 是后续独立检验问题。</td></tr></table><div class="thesis mt14"><p><strong class="accent-blue">提前决策规则：</strong>如果 gaze 在关键使用条件下质量不稳定，本项目不强行坚持“眼动主导”，而转向 gaze + interaction + self-report 的低风险多通道过程数据框架。</p></div></div>
+</div>
+
+<div class="slide slide-section"><div class="hd"><span class="snum">15 / 23</span><div class="sec-tag">Task Design</div><h1>下一版页面上到底做什么活动？</h1><div class="sec-desc">这需要教授决策，因为它决定研究贡献方向</div></div></div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">14 / 21</span><h1>候选任务：阅读、学习支持、小游戏</h1><div class="sub">建议先做阅读理解 + probe + 支持偏好，第二版再加入可选支持工具</div></div>
-  <div class="bd-tight"><table><tr><th>方案</th><th>页面活动</th><th>优点</th><th>风险/不足</th><th>建议</th></tr><tr><td>A. 阅读理解</td><td>短文本阅读、TUT/困惑 probe、理解题</td><td>最接近 C007，眼动解释直接，AOI 清楚。</td><td>可能偏认知心理，不够像真实课程平台。</td><td><span class="b bg">第一版推荐</span></td></tr><tr><td>B. 学习材料 + 支持选择</td><td>阅读材料后可选择摘要、提示、更多时间、术语解释</td><td>更贴近 functional support needs，可直接观察支持偏好。</td><td>页面设计和因果解释更复杂。</td><td><span class="b by">第二版推进</span></td></tr><tr><td>C. 轻量小游戏</td><td>简单规则学习、注意或记忆任务</td><td>可控性强，数据干净。</td><td>与高等教育学习支持距离较远，生态效度弱。</td><td><span class="b bs">不作主线</span></td></tr></table><div class="g2 mt14"><div class="pos"><span class="lbl">默认建议</span>第一版继续用短文本阅读理解，但加入 support preference，让它不只是认知任务，也开始连接“需要什么支持”。</div><div class="info"><span class="lbl">请导师判断</span>是否接受“先阅读、再支持选择”的渐进路线，还是更希望直接进入真实课程材料或写作任务。</div></div></div>
+  <div class="hd"><span class="snum">16 / 23</span><h1>候选任务：阅读、学习支持、小游戏</h1><div class="sub">建议先做阅读理解 + probe + 支持偏好，第二版再加入可选支持工具</div></div>
+  <div class="bd-tight"><table><tr><th>方案</th><th>页面活动</th><th>优点</th><th>风险/不足</th><th>建议</th></tr><tr><td>A. 阅读理解</td><td>短文本阅读、TUT/困惑 probe、理解题</td><td>最接近 C007，眼动解释直接，AOI 清楚。</td><td>可能偏认知心理，不够像真实课程平台。</td><td><span class="b bg">第一版推荐</span></td></tr><tr><td>B. 学习材料 + 支持选择</td><td>阅读材料后可选择摘要、提示、更多时间、术语解释</td><td>更贴近 functional support needs，可直接观察支持偏好。</td><td>页面设计和因果解释更复杂。</td><td><span class="b by">第二版推进</span></td></tr><tr><td>C. 轻量小游戏</td><td>简单规则学习、注意或记忆任务</td><td>可控性强，数据干净。</td><td>与高等教育学习支持距离较远，生态效度弱。</td><td><span class="b bs">不作主线</span></td></tr></table><div class="g2 mt14"><div class="pos"><span class="lbl">默认建议</span>第一版继续用短文本阅读理解，但加入 support preference，让它不只是认知任务，也开始连接“需要什么支持”。</div><div class="info"><span class="lbl">请教授判断</span>是否接受“先阅读、再支持选择”的渐进路线，还是更希望直接进入真实课程材料或写作任务。</div></div></div>
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">15 / 21</span><h1>页面风格：低认知负担的学习平台，而不是游戏化页面</h1><div class="sub">页面设计本身会影响 gaze 和行为解释</div></div>
+  <div class="hd"><span class="snum">17 / 23</span><h1>页面风格：低认知负担的学习平台，而不是游戏化页面</h1><div class="sub">页面设计本身会影响 gaze 和行为解释</div></div>
   <div class="bd"><div class="g2"><div><h2>建议风格</h2><div class="go-row pass"><div class="go-icon">1</div><div class="go-main"><div class="go-cond">安静、可访问、低刺激</div><div class="go-val">避免把页面做成压力测试或娱乐小游戏。</div></div></div><div class="go-row pass"><div class="go-icon">2</div><div class="go-main"><div class="go-cond">区域稳定</div><div class="go-val">文本区、题目区、选项区、按钮区位置固定，方便 AOI 定义。</div></div></div><div class="go-row pass"><div class="go-icon">3</div><div class="go-main"><div class="go-cond">一屏一件事</div><div class="go-val">减少 UI 变化对 gaze 解释的干扰。</div></div></div></div><div><h2>需要确认</h2><div class="card blue"><h4>真实课程感</h4><p>是否用接近 LMS 的页面风格，让任务更像大学学习场景？</p></div><div class="card amber mt10"><h4>支持工具入口</h4><p>第一版是否只询问支持偏好，还是允许点击“摘要/提示/更多时间”？</p></div><div class="card purple mt10"><h4>可访问性</h4><p>字号、行距、按钮大小、颜色对比度是否需要提前设为可访问标准？</p></div></div></div><div class="warn mt12"><span class="lbl">向受试者说明</span>数据用途是学习支持研究，不是能力评判；支持选项是可选帮助，不是系统对学生的判断。</div></div>
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">16 / 21</span><h1>关键概念与记录口径</h1><div class="sub">把 TUT、困惑 probe、AOI 和环境字段变成可操作定义</div></div>
+  <div class="hd"><span class="snum">18 / 23</span><h1>关键概念与记录口径</h1><div class="sub">把 TUT、困惑 probe、AOI 和环境字段变成可操作定义</div></div>
   <div class="bd-tight"><div class="g2"><div><h2>三个核心概念</h2><table class="compact"><tr><th>概念</th><th>操作定义</th><th>记录方式</th></tr><tr><td>TUT</td><td>Task-Unrelated Thought，任务无关想法；例如刚才阅读时注意离开文本、想到别的事情。</td><td>每段后自陈：yes/no + 可选 1-5 程度。</td></tr><tr><td>困惑 probe</td><td>刚才是否有不理解、卡住、需要回看或不知道怎么答的时刻。</td><td>每段后自陈：none/slight/moderate/high + 可选困惑位置。</td></tr><tr><td>AOI</td><td>Area of Interest，预先定义的页面区域，如文本、题目、选项、支持按钮。</td><td>系统自动保存区域矩形，并把 gaze/pointer 映射到 <code>aoi_id</code>。</td></tr></table></div><div><h2>上下文字段怎么记</h2><table class="compact"><tr><th>字段</th><th>建议格式</th><th>说明</th></tr><tr><td><code>lighting_condition</code></td><td><code>normal</code> / <code>dim</code> / <code>backlit</code> / <code>uneven</code></td><td>研究者开始前手动选择；必要时加 <code>good/medium/poor</code> 质量评分。</td></tr><tr><td><code>head_movement</code></td><td><code>none</code> / <code>slight</code> / <code>frequent</code></td><td>研究者观察记录；不是简单 yes/no，因为轻微头动和频繁转头影响不同。</td></tr><tr><td><code>wearing_glasses</code></td><td><code>yes</code> / <code>no</code> / <code>unknown</code></td><td>适合二值记录；可加反光备注。</td></tr><tr><td><code>researcher_help_event</code></td><td>时间戳 + 帮助类型</td><td>例如解释题意、提醒坐姿、处理技术问题。</td></tr></table></div></div><div class="info mt12"><span class="lbl">记录原则</span>能自动记录的自动记录；不能自动可靠判断的，用固定选项手动记录；自由文本只作为补充，不作为主要分析字段。</div></div>
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">17 / 21</span><h1>Pre/Post 问卷：给过程数据提供解释标签</h1><div class="sub">问卷不是附属材料，而是判断学习状态线索是否可信的关键参照</div></div>
+  <div class="hd"><span class="snum">19 / 23</span><h1>Pre/Post 问卷：给过程数据提供解释标签</h1><div class="sub">问卷不是附属材料，而是判断学习状态线索是否可信的关键参照</div></div>
   <div class="bd-tight"><div class="g2"><div><h2>Pre-task 问卷：进入任务前</h2><table class="compact"><tr><th>领域</th><th>希望收集的信息</th><th>用途</th></tr><tr><td>学习背景</td><td>专业阶段、材料熟悉度、相关先验知识</td><td>解释阅读速度和理解差异。</td></tr><tr><td>当前状态</td><td>疲劳、压力、注意力自评、睡眠或精神状态</td><td>作为状态分类或聚类的参照标签。</td></tr><tr><td>技术与隐私</td><td>对 webcam tracking、数据使用和系统判断的信任度</td><td>呼应 A4 的技术可信度问题。</td></tr><tr><td>支持经历</td><td>是否常用摘要、延时、术语解释、分步提示等支持</td><td>建立 support preference baseline。</td></tr></table></div><div><h2>Post-task 问卷：完成任务后</h2><table class="compact"><tr><th>领域</th><th>希望收集的信息</th><th>用途</th></tr><tr><td>任务体验</td><td>主观难度、认知负荷、困惑点、注意力波动</td><td>验证 gaze/pointer/latency 是否对应真实体验。</td></tr><tr><td>支持需求</td><td>希望获得哪类支持、是否觉得某类支持有帮助</td><td>连接第一阶段状态线索与第二阶段支持需求。</td></tr><tr><td>可访问性</td><td>字体、行距、按钮、页面节奏、说明是否清楚</td><td>改进页面风格和 AOI 设计。</td></tr><tr><td>开放反馈</td><td>哪里不舒服、哪里误导、哪里希望系统不要判断</td><td>提前发现伦理和信任风险。</td></tr></table></div></div><div class="warn mt12"><span class="lbl">边界</span>SEN/SEND 或 disability 信息只应作为可选、自愿披露项；第一阶段问卷重点是学习状态、支持偏好和技术接受度，不把问卷做成诊断筛查。</div></div>
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">18 / 21</span><h1>第一批字段：学生在页面上的行为过程</h1><div class="sub">给非技术导师看的字段解释：收什么、中文含义是什么、为什么收</div></div>
+  <div class="hd"><span class="snum">20 / 23</span><h1>第一批字段：学生在页面上的行为过程</h1><div class="sub">给非技术教授看的字段解释：收什么、中文含义是什么、为什么收</div></div>
   <div class="bd-tight"><table class="compact"><tr><th>技术字段</th><th>中文含义</th><th>为什么收</th><th>例子</th></tr><tr><td><code>pointer_move</code>, <code>mouse_x/y</code></td><td>鼠标移动到哪里</td><td>判断是否用鼠标辅助阅读，是否在选项间犹豫。</td><td>鼠标停在某个选项上但迟迟不点。</td></tr><tr><td><code>click</code>, <code>pointer_down/up</code></td><td>点击了哪里、什么时候点</td><td>判断选择行为和页面互动。</td><td>点击“下一题”前停顿很久。</td></tr><tr><td><code>scroll_y</code>, <code>delta_y</code></td><td>页面滚动位置和方向</td><td>判断跳读、回看、停留位置。</td><td>多次向上滚回文本说明在回看。</td></tr><tr><td><code>response_latency_ms</code></td><td>题目出现到回答的时间</td><td>比只看答对/答错更能反映犹豫和负荷。</td><td>答对但反应很慢，可能仍然吃力。</td></tr><tr><td><code>answer_changed</code></td><td>是否改过答案</td><td>反映不确定性和自我修正。</td><td>先选 A，后改成 C。</td></tr></table><div class="info mt12"><span class="lbl">解释方式</span>这些字段不判断学生身份，只帮助解释“学生如何完成这个任务”。</div></div>
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">19 / 21</span><h1>第二批字段：眼动数据是否可信、看的是哪里</h1><div class="sub">把裸 gaze 坐标翻译成可解释的学习行为</div></div>
+  <div class="hd"><span class="snum">21 / 23</span><h1>第二批字段：眼动数据是否可信、看的是哪里</h1><div class="sub">把裸 gaze 坐标翻译成可解释的学习行为</div></div>
   <div class="bd-tight"><table class="compact"><tr><th>技术字段</th><th>中文含义</th><th>为什么收</th><th>例子</th></tr><tr><td><code>gaze_x</code>, <code>gaze_y</code></td><td>眼睛估计看的屏幕坐标</td><td>原始眼动数据。</td><td>视线集中在题干还是选项。</td></tr><tr><td><code>valid_gaze</code></td><td>当前眼动点是否有效</td><td>避免把坏数据当成行为差异。</td><td>摄像头没抓到眼睛时标记无效。</td></tr><tr><td><code>offscreen</code></td><td>视线是否跑出屏幕</td><td>区分分心、转头和 tracking 失败。</td><td>频繁 offscreen 可能是转头或校准差。</td></tr><tr><td><code>aoi_id</code>, <code>aoi_type</code></td><td>当前区域属于文本、题目、选项还是按钮</td><td>把坐标翻译成“看了哪里”。</td><td>看选项区时间很长。</td></tr><tr><td><code>calibration_error_px</code></td><td>校准误差大小</td><td>判断该轮眼动能不能信。</td><td>误差太大则降权或剔除。</td></tr></table><div class="warn mt12"><span class="lbl">关键边界</span>眼动质量字段是为了保护解释可靠性，不是为了把追踪失败解释成学习能力问题。</div></div>
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">20 / 21</span><h1>第三、四批字段：实验上下文与支持需求</h1><div class="sub">让数据差异可以解释，也让自适应系统有后续入口</div></div>
+  <div class="hd"><span class="snum">22 / 23</span><h1>第三、四批字段：实验上下文与支持需求</h1><div class="sub">让数据差异可以解释，也让自适应系统有后续入口</div></div>
   <div class="bd-tight"><div class="g2"><div><h2>实验上下文</h2><table class="compact"><tr><th>字段</th><th>中文含义</th><th>建议格式</th></tr><tr><td><code>lighting_condition</code></td><td>光照情况</td><td><code>normal</code>/<code>dim</code>/<code>backlit</code>/<code>uneven</code> + 质量评分。</td></tr><tr><td><code>wearing_glasses</code></td><td>是否戴眼镜</td><td><code>yes</code>/<code>no</code>/<code>unknown</code>，可补充反光说明。</td></tr><tr><td><code>head_movement</code></td><td>头动情况</td><td><code>none</code>/<code>slight</code>/<code>frequent</code>，由研究者观察记录。</td></tr><tr><td><code>fatigue</code></td><td>主观疲劳程度</td><td>1-5 Likert 或 low/medium/high。</td></tr><tr><td><code>researcher_help_event</code></td><td>研究者是否提示</td><td>时间戳 + 帮助类型，例如解释题意或提醒坐姿。</td></tr></table></div><div><h2>支持需求与主观感受</h2><table class="compact"><tr><th>字段</th><th>中文含义</th><th>建议格式</th></tr><tr><td><code>preferred_support</code></td><td>希望得到哪类支持</td><td>多选：摘要、提示、更多时间、术语解释、分步。</td></tr><tr><td><code>support_option_used</code></td><td>是否使用支持工具</td><td>系统自动记录点击与时间戳。</td></tr><tr><td><code>support_helpful_rating</code></td><td>支持是否有帮助</td><td>1-5 Likert + 可选原因。</td></tr><tr><td><code>instruction_clarity</code></td><td>是否理解任务说明</td><td>1-5 Likert，低分触发开放反馈。</td></tr><tr><td><code>tech_trust_rating</code></td><td>是否信任系统</td><td>1-5 Likert，对应 A4 技术可信度问题。</td></tr></table></div></div><div class="ev mt12"><span class="lbl">Zoom 辅助材料</span>Zoom 录音录像只作为单独同意、单独保存的辅助材料；主 CSV 只记录编号和研究者干预事件。</div></div>
 </div>
 
 <div class="slide">
-  <div class="hd"><span class="snum">21 / 21</span><h1>需要导师确认的问题</h1><div class="sub">把讨论收束到研究路线、任务活动和会后实现</div></div>
-  <div class="bd"><div class="g2"><div><h2>研究路线</h2><div class="go-row blue"><div class="go-icon">1</div><div class="go-main"><div class="go-cond">是否同意外部定位</div><div class="go-val">SEN/SEND / functional support needs，而不是 neurodivergent 身份识别。</div></div></div><div class="go-row blue"><div class="go-icon">2</div><div class="go-main"><div class="go-cond">是否同意阶段划分</div><div class="go-val">第一阶段先验证学习状态线索，自适应系统放在第三阶段。</div></div></div><div class="go-row blue"><div class="go-icon">3</div><div class="go-main"><div class="go-cond">是否同意分析口径</div><div class="go-val">classification/clustering 用于状态或模式，不用于学生身份分类。</div></div></div></div><div><h2>会后实现</h2><div class="go-row pass"><div class="go-icon">4</div><div class="go-main"><div class="go-cond">下一版任务活动</div><div class="go-val">是否先采用短文本阅读理解 + TUT/困惑 probe + 支持偏好询问。</div></div></div><div class="go-row pass"><div class="go-icon">5</div><div class="go-main"><div class="go-cond">关键定义和记录口径</div><div class="go-val">是否同意 TUT、困惑、AOI、光照、头动按固定选项记录。</div></div></div><div class="go-row pass"><div class="go-icon">6</div><div class="go-main"><div class="go-cond">Pre/Post 问卷领域</div><div class="go-val">是否同意收集学习背景、当前状态、支持偏好、技术信任和任务后体验。</div></div></div></div></div><div class="thesis mt14"><p><strong class="accent-blue">会后优先级：</strong>更新 data collection protocol、pre/post questionnaire 和 demo schema，做 richer-context pilot；只有当状态标签和过程信号关系稳定后，再进入模型和自适应支持原型。</p></div></div>
+  <div class="hd"><span class="snum">23 / 23</span><h1>需要教授确认的问题</h1><div class="sub">把讨论收束到研究命题、风险测试和会后实现</div></div>
+  <div class="bd"><div class="g2"><div><h2>研究路线</h2><div class="go-row blue"><div class="go-icon">1</div><div class="go-main"><div class="go-cond">是否同意核心命题</div><div class="go-val">第一阶段检验过程数据能否反映学习状态线索，而不是识别 SEN/SEND 学生。</div></div></div><div class="go-row blue"><div class="go-icon">2</div><div class="go-main"><div class="go-cond">是否同意外推边界</div><div class="go-val">普通样本结果不能默认迁移到 SEN/SEND；transfer 需要独立验证。</div></div></div><div class="go-row blue"><div class="go-icon">3</div><div class="go-main"><div class="go-cond">是否同意阶段划分</div><div class="go-val">measurement feasibility -> reliability/transfer -> support mapping -> adaptive evaluation。</div></div></div></div><div><h2>会后实现</h2><div class="go-row pass"><div class="go-icon">4</div><div class="go-main"><div class="go-cond">提前风险测试</div><div class="go-val">是否加入 WebGazer reliability/acceptability stress test：眼镜、头动、光照、摄像头不适。</div></div></div><div class="go-row pass"><div class="go-icon">5</div><div class="go-main"><div class="go-cond">gaze 降级规则</div><div class="go-val">如果 gaze 质量不稳定，是否同意以 interaction logs + self-report/probe 作为主路径。</div></div></div><div class="go-row pass"><div class="go-icon">6</div><div class="go-main"><div class="go-cond">下一版任务活动</div><div class="go-val">是否先采用短文本阅读理解 + TUT/困惑 probe + 支持偏好询问。</div></div></div></div></div><div class="thesis mt14"><p><strong class="accent-blue">会后优先级：</strong>更新 data collection protocol、pre/post questionnaire 和 demo schema，做 richer-context pilot；同时把可靠性、可接受度和降级规则写进第一阶段方案。</p></div></div>
 </div>
 
 </div>
