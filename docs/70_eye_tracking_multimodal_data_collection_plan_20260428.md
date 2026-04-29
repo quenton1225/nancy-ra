@@ -2,7 +2,7 @@
 
 **日期**: 2026-04-28  
 **对应 demo**: `eye_tracking_demo/`  
-**状态**: 规划文档；暂不改采集页面
+**状态**: 初版规划文档；已由 `79_next_eye_tracking_data_collection_schema_20260429.md` 进一步细化，暂不改采集页面
 
 ## 1. 目标
 

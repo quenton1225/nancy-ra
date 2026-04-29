@@ -1,5 +1,7 @@
 # 组会前剩余任务计划
 
+> **状态提示（2026-04-29）**: 本文是 2026-04-28 的旧行动清单，部分任务已经完成，内容已过时。当前进度以 `71_next_meeting_progress_audit_20260428.md` 为准；中文汇报框架见 `78_next_meeting_brief_20260429.md`；下一版数据采集计划见 `79_next_eye_tracking_data_collection_schema_20260429.md`；正式 PPT 草稿将使用 `80_` 前缀。
+
 **日期**: 2026-04-28  
 **对应总计划**: `61_next_meeting_dual_deliverable_plan_20260428.md`  
 **进度审计**: `71_next_meeting_progress_audit_20260428.md`  

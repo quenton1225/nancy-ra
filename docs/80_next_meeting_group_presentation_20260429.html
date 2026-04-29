@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>组会汇报 · SEN/SEND 文献补充与普通笔记本眼动 MVP</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, "Helvetica Neue", Arial, "Microsoft YaHei", sans-serif; background: #e8e7e3; color: #1a1a1a; line-height: 1.6; }
+.page { width: 960px; margin: 0 auto; padding: 40px 0 72px; }
+.slide { width: 960px; min-height: 560px; background: #fff; border: 1px solid #d0cfc9; box-shadow: 0 2px 8px rgba(0,0,0,.10); margin-bottom: 48px; overflow: hidden; display: flex; flex-direction: column; }
+.hd { padding: 22px 40px 18px; background: #1e293b; position: relative; flex-shrink: 0; }
+.hd h1 { font-size: 20px; font-weight: 600; color: #fff; letter-spacing: -.2px; }
+.hd .sub { font-size: 12px; color: rgba(255,255,255,.50); margin-top: 4px; font-weight: 400; }
+.hd .snum { position: absolute; top: 12px; right: 18px; font-size: 11px; color: rgba(255,255,255,.30); font-weight: 400; letter-spacing: 1px; }
+.slide-title .hd { min-height: 380px; display: flex; flex-direction: column; justify-content: center; }
+.slide-title .hd h1 { font-size: 26px; max-width: 840px; line-height: 1.35; }
+.title-subline { font-weight: 300; font-size: 20px; }
+.meta-row { margin-top: 28px; display: flex; gap: 28px; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,.15); padding-top: 20px; }
+.meta-item .ml { font-size: 10px; letter-spacing: 1.2px; color: rgba(255,255,255,.35); text-transform: uppercase; }
+.meta-item .mv { font-size: 13px; color: rgba(255,255,255,.80); margin-top: 3px; font-weight: 500; }
+.slide-section .hd { min-height: 180px; display: flex; flex-direction: column; justify-content: center; background: #0f172a; }
+.slide-section .hd h1 { font-size: 28px; font-weight: 700; }
+.sec-tag { font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,.35); margin-bottom: 10px; }
+.sec-desc { font-size: 13px; color: rgba(255,255,255,.55); margin-top: 10px; font-weight: 400; }
+.bd { padding: 24px 40px 28px; flex: 1; }
+.bd-tight { padding: 16px 40px 22px; flex: 1; }
+h2 { font-size: 14px; color: #1e293b; margin-bottom: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .4px; }
+h3 { font-size: 13px; color: #334155; margin-bottom: 6px; font-weight: 700; }
+h4 { font-size: 13px; color: #1e293b; font-weight: 700; margin-bottom: 6px; }
+p { font-size: 13px; color: #374151; margin-bottom: 8px; }
+ul, ol { padding-left: 18px; margin-bottom: 8px; }
+li { font-size: 13px; color: #374151; margin-bottom: 4px; line-height: 1.55; }
+strong { color: #1e293b; }
+code { background: #f1f1ee; padding: 1px 5px; border-radius: 2px; font-family: "Consolas", monospace; font-size: 11.5px; color: #334155; border: 1px solid #e0dfd8; }
+hr { border: none; border-top: 1px solid #e5e4df; margin: 12px 0; }
+.ev, .warn, .neg, .pos, .info, .obs { padding: 9px 13px; margin: 8px 0; font-size: 13px; line-height: 1.55; border-left: 3px solid; }
+.ev { background: #f8f9fc; border-color: #6b7280; }
+.warn { background: #fefce8; border-color: #ca8a04; }
+.neg { background: #fef2f2; border-color: #dc2626; }
+.pos { background: #f0fdf4; border-color: #16a34a; }
+.info { background: #f0f9ff; border-color: #0284c7; }
+.obs { background: #faf5ff; border-color: #7c3aed; }
+.lbl { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 3px; color: #6b7280; }
+.neg .lbl { color: #dc2626; } .pos .lbl { color: #16a34a; } .warn .lbl { color: #ca8a04; } .info .lbl { color: #0284c7; } .obs .lbl { color: #7c3aed; }
+.thesis { background: #1e293b; border-radius: 4px; padding: 14px 18px; margin: 10px 0; }
+.thesis p { color: #e2e8f0; font-size: 13px; font-weight: 500; line-height: 1.65; margin-bottom: 0; }
+.accent-blue { color: #93c5fd; }
+.accent-amber { color: #fde68a; }
+.mt10 { margin-top: 10px; }
+.mt14 { margin-top: 14px; }
+.mt16 { margin-top: 16px; }
+.mt18 { margin-top: 18px; }
+.bd-top20 { padding-top: 20px; }
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 8px 0; }
+th { background: #1e293b; color: #e2e8f0; padding: 6px 10px; text-align: left; font-weight: 600; font-size: 11.5px; }
+td { padding: 5px 10px; border-bottom: 1px solid #e8e7e2; vertical-align: middle; }
+tr:nth-child(even) { background: #fafaf8; }
+td.c, th.c { text-align: center; }
+td.num { font-weight: 700; color: #1e293b; text-align: right; font-family: monospace; }
+td.best { background: #f0fdf4 !important; font-weight: 700; color: #166534; }
+td.warn-cell { color: #92400e; font-weight: 700; }
+td.null { color: #9ca3af; font-style: italic; }
+.b { display: inline-block; padding: 1px 7px; border-radius: 2px; font-size: 11px; font-weight: 700; border: 1px solid; }
+.bg { background: #f0fdf4; color: #166534; border-color: #86efac; }
+.br { background: #fef2f2; color: #b91c1c; border-color: #fca5a5; }
+.by { background: #fefce8; color: #854d0e; border-color: #fde047; }
+.bb { background: #eff6ff; color: #1d4ed8; border-color: #93c5fd; }
+.bs { background: #f9fafb; color: #374151; border-color: #d1d5db; }
+.bv { background: #faf5ff; color: #6d28d9; border-color: #c4b5fd; }
+.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 8px 0; }
+.g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 8px 0; }
+.gw { display: grid; grid-template-columns: 1.45fr 1fr; gap: 16px; margin: 8px 0; }
+.gnw { display: grid; grid-template-columns: 1fr 1.55fr; gap: 16px; margin: 8px 0; }
+.card { background: #fafaf8; border: 1px solid #d8d7d2; border-radius: 3px; padding: 12px; }
+.card h4 { font-size: 12.5px; color: #1e293b; font-weight: 700; margin-bottom: 6px; }
+.card p, .card li { font-size: 12.5px; color: #4b5563; }
+.card.green { background: #f0fdf4; border-color: #86efac; }
+.card.red { background: #fef2f2; border-color: #fca5a5; }
+.card.amber { background: #fefce8; border-color: #fde047; }
+.card.purple { background: #faf5ff; border-color: #c4b5fd; }
+.card.blue { background: #eff6ff; border-color: #93c5fd; }
+.bignums { display: flex; gap: 22px; margin: 10px 0; flex-wrap: wrap; align-items: flex-end; }
+.bignum-block { text-align: center; min-width: 80px; }
+.bignum { font-size: 40px; font-weight: 800; color: #1e293b; line-height: 1; }
+.bignum.green { color: #166534; } .bignum.blue { color: #1d4ed8; } .bignum.amber { color: #92400e; } .bignum.red { color: #b91c1c; }
+.bignumlbl { font-size: 10.5px; color: #6b7280; text-transform: uppercase; letter-spacing: .5px; margin-top: 4px; }
+.tl { border-left: 2px solid #d1d5db; padding-left: 20px; margin: 10px 0; }
+.tl-item { margin-bottom: 12px; position: relative; }
+.tl-item::before { content: ""; position: absolute; left: -25px; top: 5px; width: 8px; height: 8px; border-radius: 50%; background: #94a3b8; border: 2px solid #fff; }
+.tl-item.done::before { background: #16a34a; } .tl-item.now::before { background: #dc2626; } .tl-item.next::before { background: #d97706; }
+.tl-stage { font-size: 10px; font-weight: 700; color: #6b7280; letter-spacing: .5px; text-transform: uppercase; }
+.tl-title { font-size: 13px; font-weight: 700; color: #1e293b; }
+.tl-desc { font-size: 12px; color: #6b7280; }
+.go-row { display: flex; align-items: flex-start; gap: 8px; padding: 6px 9px; border-radius: 2px; margin-bottom: 5px; border: 1px solid; }
+.go-row.pass { background: #f0fdf4; border-color: #86efac; }
+.go-row.pending { background: #fefce8; border-color: #fde047; }
+.go-row.blue { background: #eff6ff; border-color: #93c5fd; }
+.go-icon { width: 18px; height: 18px; border-radius: 50%; background: #1e293b; color: #fff; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.go-main { flex: 1; }
+.go-cond { font-size: 11.5px; font-weight: 700; color: #1e293b; }
+.go-val { font-size: 11.5px; color: #4b5563; margin-top: 1px; }
+.ann { font-size: 11px; color: #9ca3af; font-style: italic; margin-top: 3px; }
+.scanpath { width: 100%; border: 1px solid #d8d7d2; background: #fafaf8; border-radius: 3px; padding: 8px; }
+.scanpath img { width: 100%; display: block; }
+@media print { body { background: #fff; } .page { padding: 0; } .slide { margin: 0 0 20px; page-break-after: always; box-shadow: none; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="slide slide-title">
+  <div class="hd">
+    <span class="snum">1 / 12</span>
+    <h1>组会汇报<br><span class="title-subline">SEN/SEND 文献补充 · 普通笔记本眼动 MVP · 下一步研究定位</span></h1>
+    <div class="meta-row">
+      <div class="meta-item"><div class="ml">汇报日期</div><div class="mv">2026-04-29</div></div>
+      <div class="meta-item"><div class="ml">文献状态</div><div class="mv">SEN/SEND 检索、摘要筛选、A1-A7/B1 全文证据完成</div></div>
+      <div class="meta-item"><div class="ml">眼动状态</div><div class="mv">WebGazer MVP + P001-P005 五样本闭环完成</div></div>
+      <div class="meta-item"><div class="ml">本次目标</div><div class="mv">确认研究表述、汇报 feasibility proof、锁定会后改进方向</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="slide slide-section">
+  <div class="hd">
+    <span class="snum">2 / 12</span>
+    <div class="sec-tag">Overview</div>
+    <h1>本次汇报只讲一条主线</h1>
+    <div class="sec-desc">从敏感身份标签，转向任务过程中的学习状态与功能性支持需求</div>
+  </div>
+  <div class="bd">
+    <div class="thesis">
+      <p><strong class="accent-blue">核心定位：</strong>本项目不诊断学生身份，而是探索能否通过眼动、交互和响应过程信号，理解学生在特定学习任务中的学习状态和支持需求。</p>
+    </div>
+    <div class="g3 mt16">
+      <div class="card blue">
+        <h4><span class="b bb">Part A</span> 术语与文献</h4>
+        <p>从 <code>neurodivergent</code> 外部表述转向 <code>SEN/SEND</code>、learning difficulties 和 functional support needs。</p>
+      </div>
+      <div class="card green">
+        <h4><span class="b bg">Part B</span> 技术可行性</h4>
+        <p>普通笔记本 webcam + WebGazer 可以完成小规模阅读任务采集、CSV 导出、feature extraction 和 scanpath 可视化。</p>
+      </div>
+      <div class="card amber">
+        <h4><span class="b by">Part C</span> 下一步</h4>
+        <p>组会后再实现更完整的信息采集：pointer、scroll、latency、AOI、校准质量和 Zoom 辅助记录。</p>
+      </div>
+    </div>
+    <div class="ev mt14">
+      <span class="lbl">汇报逻辑</span>
+      文献负责证明“为什么这个问题值得做、应该怎样表述”；pilot 负责证明“普通设备能不能先跑通”；下一版 schema 负责说明“怎样让数据可解释”。
+    </div>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="hd">
+    <span class="snum">3 / 12</span>
+    <h1>术语重定位：从身份标签到支持需求</h1>
+    <div class="sub">导师提醒后的关键调整 · 外部口径更稳</div>
+  </div>
+  <div class="bd">
+    <div class="g2">
+      <div>
+        <h2>原有风险</h2>
+        <div class="neg">
+          <span class="lbl">问题</span>
+          如果把 <code>neurodivergent</code> 放在项目标题或研究问题中心，容易被理解成“识别/分类学生身份”。这在学校语境和伦理语境中都比较敏感。
+        </div>
+        <div class="warn mt10">
+          <span class="lbl">保留方式</span>
+          <code>neurodivergent</code> 仍可作为内部检索词，因为 HCI、accessibility 和 learning analytics 文献仍大量使用；但不建议作为对外主语。
+        </div>
+      </div>
+      <div>
+        <h2>新表述</h2>
+        <div class="pos">
+          <span class="lbl">建议口径</span>
+          <strong>SEN/SEND</strong>、students with learning difficulties、students with disabilities、functional learning needs、functional support needs。
+        </div>
+        <div class="info mt10">
+          <span class="lbl">组会句子</span>
+          我们不是要判断学生“是谁”，而是要判断学生在某个学习任务中“现在可能需要什么支持”。
+        </div>
+      </div>
+    </div>
+    <hr>
+    <table>
+      <tr><th>层面</th><th>不建议强调</th><th>建议强调</th></tr>
+      <tr><td>研究对象</td><td>诊断身份或 neurodivergent 分类</td><td>学习困难、可访问性障碍、支持需求</td></tr>
+      <tr><td>数据解释</td><td>用 gaze 直接判断学生类别</td><td>用过程信号辅助理解任务状态</td></tr>
+      <tr><td>系统目的</td><td>监控或判定学生</td><td>提供更及时、更匹配的学习支持</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="hd">
+    <span class="snum">4 / 12</span>
+    <h1>SEN/SEND 文献补充：四个可讲结论</h1>
+    <div class="sub">A1-A4/A7 是本次组会最稳的证据核心</div>
+  </div>
+  <div class="bd-tight">
+    <div class="g2">
+      <div>
+        <h2>证据表</h2>
+        <table>
+          <tr><th>证据组</th><th>文章</th><th>组会可讲结论</th></tr>
+          <tr><td>支持需求</td><td>A1, A2</td><td>高等教育中的 learning difficulties 学生需要具体学术和行政支持。</td></tr>
+          <tr><td>系统障碍</td><td>A3</td><td>困难不只来自学生个人，也来自大学系统、教学实践和技术可及性。</td></tr>
+          <tr><td>技术可信度</td><td>A4</td><td>SEND 学生可以接受数据化工具，但担心系统失效和错误判断。</td></tr>
+          <tr><td>过程数据</td><td>A7</td><td>学习过程数据能揭示最终成绩看不到的 self-regulated learning 差异。</td></tr>
+        </table>
+      </div>
+      <div>
+        <h2>一句话解释</h2>
+        <div class="pos">
+          <span class="lbl">文献支撑</span>
+          新文献支持一个更安全也更有研究价值的方向：研究目标不是学生分类，而是面向 SEN/SEND 与 functional support needs 的学习过程支持。
+        </div>
+        <div class="warn mt10">
+          <span class="lbl">伦理边界</span>
+          A4 尤其提醒：任何数据化工具都必须可靠、透明、非惩罚性。眼动和交互日志只能作为支持线索，不能作为惩罚或诊断依据。
+        </div>
+        <div class="ev mt10">
+          <span class="lbl">方法启发</span>
+          A7 给了我们方法论理由：过程数据不一定改变最终成绩，但能揭示学习调节过程差异。这正好支持 gaze + mouse + timing 的路线。
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slide slide-section">
+  <div class="hd">
+    <span class="snum">5 / 12</span>
+    <div class="sec-tag">Part B · Feasibility Proof</div>
+    <h1>普通笔记本眼动 MVP 已经跑通</h1>
+    <div class="sec-desc">目标不是正式测量工具，而是证明采集、分析、可视化链路可行</div>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="hd">
+    <span class="snum">6 / 12</span>
+    <h1>WebGazer MVP：从任务到可视化的闭环</h1>
+    <div class="sub">browser task · raw CSV · trial features · scanpath</div>
+  </div>
+  <div class="bd">
+    <div class="g2">
+      <div>
+        <h2>任务流程</h2>
+        <div class="tl">
+          <div class="tl-item done"><div class="tl-stage">Step 1</div><div class="tl-title">匿名 participant/session 输入</div><div class="tl-desc">避免采集诊断身份，保留可重复实验编号。</div></div>
+          <div class="tl-item done"><div class="tl-stage">Step 2</div><div class="tl-title">WebGazer calibration</div><div class="tl-desc">9 个校准点，启动普通摄像头 tracking。</div></div>
+          <div class="tl-item done"><div class="tl-stage">Step 3</div><div class="tl-title">Reading + TUT probe + quiz</div><div class="tl-desc">阅读过程、thought probe 和理解题都写入长格式 CSV。</div></div>
+          <div class="tl-item done"><div class="tl-stage">Step 4</div><div class="tl-title">Feature extraction + scanpath</div><div class="tl-desc">生成 trial-level features 与每阶段 scanpath SVG。</div></div>
+        </div>
+      </div>
+      <div>
+        <h2>已完成产物</h2>
+        <div class="bignums">
+          <div class="bignum-block"><div class="bignum green">5</div><div class="bignumlbl">pilot 样本</div></div>
+          <div class="bignum-block"><div class="bignum blue">25k+</div><div class="bignumlbl">gaze rows</div></div>
+          <div class="bignum-block"><div class="bignum amber">40</div><div class="bignumlbl">scanpath SVGs</div></div>
+        </div>
+        <div class="pos mt10">
+          <span class="lbl">可展示结论</span>
+          五个样本都完成了完整浏览器任务，并生成 raw CSV、trial-level feature table 和 scanpath visualizations。
+        </div>
+        <div class="warn mt10">
+          <span class="lbl">边界</span>
+          这是 feasibility proof，不是已经验证过的正式测量工具；目前不能训练模型，也不能做强因果判断。
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="hd">
+    <span class="snum">7 / 12</span>
+    <h1>P001-P005：五样本质量结果</h1>
+    <div class="sub">四个样本接近 48-50Hz · P002 在眼镜/转头条件下降低</div>
+  </div>
+  <div class="bd-tight">
+    <table>
+      <tr><th>样本</th><th>条件</th><th class="c">gaze rows</th><th class="c">平均采样率</th><th class="c">offscreen</th><th class="c">理解题</th></tr>
+      <tr><td><strong>P001</strong></td><td>受试者 1 早期基线，正常光照</td><td class="num">8494</td><td class="c best">50.0Hz</td><td class="c">0.0274</td><td class="c best">3/3</td></tr>
+      <tr><td><strong>P002</strong></td><td>受试者 1，戴眼镜并持续转头</td><td class="num warn-cell">3419</td><td class="c warn-cell">27.4Hz</td><td class="c">0.0140</td><td class="c">2/3</td></tr>
+      <tr><td><strong>P003</strong></td><td>受试者 2，正常光，不戴眼镜，尽量不转头</td><td class="num">12915</td><td class="c best">49.6Hz</td><td class="c">0.0132</td><td class="c">2/3</td></tr>
+      <tr><td><strong>P004</strong></td><td>受试者 2，略暗/逆光，不戴眼镜，尽量不转头</td><td class="num">6225</td><td class="c best">50.0Hz</td><td class="c">0.0050</td><td class="c">2/3</td></tr>
+      <tr><td><strong>P005</strong></td><td>受试者 1 严格基线，不戴眼镜，正常光，尽量不转头</td><td class="num">5614</td><td class="c best">47.6Hz</td><td class="c">0.0082</td><td class="c best">3/3</td></tr>
+    </table>
+    <div class="g3 mt14">
+      <div class="card green"><h4>P005 是最干净 baseline</h4><p>严格正常条件、不戴眼镜、正常光、尽量不转头；TUT=0/3，理解题 3/3。</p></div>
+      <div class="card amber"><h4>P002 是压力测试</h4><p>同一受试者戴眼镜并持续转头，平均采样率降到 27.4Hz。</p></div>
+      <div class="card blue"><h4>P004 是光照提示</h4><p>略暗/逆光没有让 tracking 崩溃，但还不能说光照没有影响。</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="hd">
+    <span class="snum">8 / 12</span>
+    <h1>P005：严格正常条件 baseline</h1>
+    <div class="sub">代表性 scanpath · 与 P002 形成清楚的条件对比</div>
+  </div>
+  <div class="bd-tight">
+    <div class="gw">
+      <div>
+        <div class="scanpath">
+          <img src="../eye_tracking_demo/data/visualizations/reading_gaze_P005_S1777388229181/scanpath_reading_trial_1.svg" alt="P005 reading trial 1 scanpath">
+        </div>
+        <div class="ann">图：P005 reading trial 1 scanpath。用于展示普通笔记本眼动可以形成可解释的阅读轨迹。</div>
+      </div>
+      <div>
+        <h2>关键数字</h2>
+        <div class="bignums">
+          <div class="bignum-block"><div class="bignum green">47.6</div><div class="bignumlbl">avg Hz</div></div>
+          <div class="bignum-block"><div class="bignum blue">3/3</div><div class="bignumlbl">quiz correct</div></div>
+          <div class="bignum-block"><div class="bignum amber">0/3</div><div class="bignumlbl">TUT positive</div></div>
+        </div>
+        <div class="pos">
+          <span class="lbl">为什么选 P005</span>
+          P005 是同一受试者在最严格正常条件下的样本，因此适合作为“系统在理想使用条件下是否可行”的展示图。
+        </div>
+        <div class="warn mt10">
+          <span class="lbl">和 P002 的对比</span>
+          P002 同一受试者但戴眼镜并持续转头，采样率 27.4Hz；P005 回到 47.6Hz。这是下一版必须记录眼镜、头动、光照和坐姿的直接理由。
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="hd">
+    <span class="snum">9 / 12</span>
+    <h1>从 pilot 得到的真正结论</h1>
+    <div class="sub">可行，但解释力依赖上下文字段</div>
+  </div>
+  <div class="bd">
+    <div class="g2">
+      <div>
+        <h2>可以说什么</h2>
+        <div class="pos"><span class="lbl">结论 1</span>普通笔记本 webcam eye tracking 足够支撑小规模 feasibility pilot。</div>
+        <div class="pos"><span class="lbl">结论 2</span>采集、CSV、feature extraction、scanpath 的技术链路已经跑通。</div>
+        <div class="pos"><span class="lbl">结论 3</span>样本条件会影响数据质量，尤其是眼镜和头动。</div>
+      </div>
+      <div>
+        <h2>不能说什么</h2>
+        <div class="neg"><span class="lbl">边界 1</span>不能说 gaze 已经能诊断学生类别。</div>
+        <div class="neg"><span class="lbl">边界 2</span>不能说当前样本量足够训练模型。</div>
+        <div class="neg"><span class="lbl">边界 3</span>不能只靠裸 gaze 坐标解释学习状态。</div>
+      </div>
+    </div>
+    <hr>
+    <div class="thesis">
+      <p><strong class="accent-blue">下一步的核心不是多收敏感数据，</strong>而是把行为上下文补足：鼠标、滚动、响应时间、AOI、校准质量、光照、眼镜、头动和研究者干预记录。</p>
+    </div>
+  </div>
+</div>
+
+<div class="slide slide-section">
+  <div class="hd">
+    <span class="snum">10 / 12</span>
+    <div class="sec-tag">Part C · Next Step</div>
+    <h1>会后再推进信息采集改进</h1>
+    <div class="sec-desc">组会前只需要讲清楚 schema，不需要现在实现</div>
+  </div>
+  <div class="bd bd-top20">
+    <div class="g3">
+      <div class="card blue"><h4>第一批字段</h4><p>pointer/mouse、scroll/wheel、response latency、AOI snapshots、calibration quality。</p></div>
+      <div class="card amber"><h4>第二批字段</h4><p>lighting、glasses、head movement、posture、fatigue、viewport、camera/browser context。</p></div>
+      <div class="card purple"><h4>远程实验辅助</h4><p>Zoom 录音录像只作为独立辅助材料：单独同意、单独保存、只在 CSV 中记录编号和干预事件。</p></div>
+    </div>
+    <div class="ev mt16">
+      <span class="lbl">核心原则</span>
+      不收网页端视频、不收截图、不收诊断身份；但把行为上下文补足，让 gaze 数据可以被解释。
+    </div>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="hd">
+    <span class="snum">11 / 12</span>
+    <h1>需要导师组确认的三个问题</h1>
+    <div class="sub">把讨论聚焦到定位、伦理边界和下一步方法</div>
+  </div>
+  <div class="bd">
+    <div class="g3">
+      <div class="card blue">
+        <h4>问题 1：研究定位</h4>
+        <p>是否同意把外部表述定位为 SEN/SEND / functional support needs，而不是 neurodivergent 身份识别？</p>
+      </div>
+      <div class="card green">
+        <h4>问题 2：技术路线</h4>
+        <p>是否同意普通笔记本 webcam eye tracking 先作为 feasibility proof，再做小规模 controlled pilot？</p>
+      </div>
+      <div class="card amber">
+        <h4>问题 3：数据边界</h4>
+        <p>是否同意下一版只补低风险行为上下文，Zoom 录制作为独立辅助材料，而不进入主数据表？</p>
+      </div>
+    </div>
+    <div class="info mt18">
+      <span class="lbl">希望得到的决策</span>
+      如果上述方向成立，会后优先做 revised data collection protocol + richer-context pilot，而不是马上训练模型。
+    </div>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="hd">
+    <span class="snum">12 / 12</span>
+    <h1>会后推进路径</h1>
+    <div class="sub">有明确收敛路径，不是无限扩展</div>
+  </div>
+  <div class="bd">
+    <div class="g2">
+      <div>
+        <h2>短期：下一版采集</h2>
+        <div class="go-row pass"><div class="go-icon">1</div><div class="go-main"><div class="go-cond">实现第一批低风险字段</div><div class="go-val">pointer、scroll、latency、AOI、calibration quality。</div></div></div>
+        <div class="go-row pass"><div class="go-icon">2</div><div class="go-main"><div class="go-cond">更新 feature extraction</div><div class="go-val">从 raw event log 聚合出 dwell、latency、idle、answer change 等 trial-level features。</div></div></div>
+        <div class="go-row pending"><div class="go-icon">3</div><div class="go-main"><div class="go-cond">做小规模 controlled pilot</div><div class="go-val">先控制光照、眼镜、头动、设备，再扩大样本。</div></div></div>
+      </div>
+      <div>
+        <h2>中期：研究问题收窄</h2>
+        <div class="tl">
+          <div class="tl-item now"><div class="tl-stage">当前组会</div><div class="tl-title">确认定位</div><div class="tl-desc">学习状态与功能性支持需求，而不是身份分类。</div></div>
+          <div class="tl-item next"><div class="tl-stage">会后 1-2 周</div><div class="tl-title">升级采集协议</div><div class="tl-desc">把 79 schema 实现到 demo 和分析脚本。</div></div>
+          <div class="tl-item next"><div class="tl-stage">随后</div><div class="tl-title">richer-context pilot</div><div class="tl-desc">用更完整的行为上下文检验哪些信号最有解释力。</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="thesis mt14">
+      <p><strong class="accent-blue">最终收束：</strong>这次组会要证明“方向和 demo 可行”；会后再证明“哪些过程信号真正有解释力”。</p>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

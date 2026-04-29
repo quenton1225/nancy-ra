@@ -2,15 +2,15 @@
 
 **日期**: 2026-04-28  
 **对应总计划**: `61_next_meeting_dual_deliverable_plan_20260428.md`  
-**结论**: 组会前已经具备可汇报的两条主线材料；眼动 pilot 已扩展到 5 个样本和 2 组受试条件，还差 SEN 人工筛选和下一版采集字段实现。
+**结论**: 组会前已经具备可汇报的两条主线材料；眼动 pilot 已扩展到 5 个样本和 2 组受试条件，SEN/SEND 优先候选已完成摘要筛选、A1-A7/B1 全文提取和组会证据表，中文 meeting brief 与下一版采集 schema 已完成；还差正式 slides 或把采集字段实现到 demo。
 
 ## 1. 总体判断
 
 | 主线 | 当前完成度 | 组会可讲程度 | 还差什么 |
 | --- | ---: | --- | --- |
-| SEN/SEND 术语替换与增量检索 | 约 70% | 可以汇报检索策略、OpenAlex 增量和术语口径 | 人工摘要筛选、Google Scholar/ACM 手动补充、形成 SEN addendum evidence set |
-| 普通笔记本眼动最小复现 | 约 92% | 可以现场展示 demo、P001-P005 五样本分析和 scanpath 图 | 补多模态行为字段、形成更稳的质量门槛 |
-| 组会汇报材料整合 | 约 60% | 已有分散证据 | 需要整理成 5-8 页 slides 或 1 页 meeting brief |
+| SEN/SEND 术语替换与增量检索 | 约 88% | 可以汇报检索策略、OpenAlex 增量、摘要筛选、A1-A7/B1 全文判断和组会证据表 | Google Scholar 手动补充、最终 brief/slides 整合 |
+| 普通笔记本眼动最小复现 | 约 94% | 可以现场展示 demo、P001-P005 五样本分析、scanpath 图和下一版数据 schema | 把多模态行为字段实现到 demo，形成更稳的质量门槛 |
+| 组会汇报材料整合 | 约 90% | 中文 `78_next_meeting_brief_20260429.md` 已完成，可拆成 5-8 页 slides | 还差正式 slides 或口头讲稿微调 |
 
 ## 2. GO-61-A: SEN/SEND 增量检索状态
 
@@ -24,6 +24,9 @@
 | 采集日志 | `64_round3_sen_collection_log.md` | 完成 |
 | 新旧文献池 delta review | `65_sen_delta_review_20260428.md/csv` | 完成，124 条 DOI/title 新候选 |
 | 组会口径摘要 | `66_sen_search_summary_for_meeting_20260428.md` | 完成 |
+| 摘要级筛选与下载清单 | `75_sen_addendum_abstract_screening_20260429.md` | 完成，21 篇优先候选去重判断 |
+| A1-A7/B1 全文证据提取 | `76_sen_fulltext_evidence_extraction_20260429.md` | 完成 |
+| 组会文献证据表 | `77_next_meeting_literature_evidence_table_20260429.md` | 完成，可直接放入 brief/slides |
 
 ### 2.2 当前结果
 
@@ -36,8 +39,8 @@
 
 | 优先级 | 任务 | 目标输出 | 是否必须在组会前完成 |
 | --- | --- | --- | --- |
-| 高 | 人工读 1 条 `screen_first` + 23 条 `screen_second` 摘要 | keep/maybe/exclude 清单 | 建议完成 |
-| 高 | 对 `66` 中 8 组候选做摘要级判断 | SEN addendum 初版 | 建议完成 |
+| 已完成 | 人工读 1 条 `screen_first` + 23 条 `screen_second` 摘要 | `75_sen_addendum_abstract_screening_20260429.md` | 已完成 |
+| 已完成 | 对 A1-A7/B1 做全文级 evidence extraction | `76_sen_fulltext_evidence_extraction_20260429.md`, `77_next_meeting_literature_evidence_table_20260429.md` | 已完成 |
 | 中 | Google Scholar 手动抽查 3 个 SEN 查询 | 手动补充候选表 | 可部分完成 |
 | 中 | ACM / 机构访问补全文 | 新增全文或截图式访问记录 | 可延后 |
 | 低 | 将确认 keep 的新增文献并入后续 evidence set | `SEN addendum evidence set` | 可会后完成 |
@@ -60,6 +63,7 @@
 | P003/P004 condition pilots | `72_eye_tracking_four_sample_comparison_20260428.md` | 完成，受试者 2 正常光照与略暗逆光对比 |
 | P005 strict baseline pilot | `73_eye_tracking_five_sample_comparison_20260428.md` | 完成，受试者 1 不戴眼镜、正常光、严格避免转头基线 |
 | 多模态采集规划 | `70_eye_tracking_multimodal_data_collection_plan_20260428.md` | 完成，尚未实现 |
+| 下一版采集 schema | `79_next_eye_tracking_data_collection_schema_20260429.md` | 完成，包含 pointer/scroll/latency/AOI/calibration/Zoom 辅助记录 |
 
 ### 3.2 当前结果
 
@@ -88,8 +92,8 @@
 
 ### 必做
 
-1. 完成 SEN 候选的摘要人工筛选，至少把 `screen_first` 和 `screen_second` 分成 keep/maybe/exclude。
-2. 把 P001-P005 的 feature table 和 scanpath 图整理成一页结果。
+1. 把 P001-P005 的 feature table 和 scanpath 图整理成一页结果。
+2. 把 `77_next_meeting_literature_evidence_table_20260429.md` 和五样本眼动结果整合成最终 meeting brief/slides。
 3. 明确下一版必须记录光照、眼镜、转头/坐姿、重复顺序和校准质量。
 4. 准备清楚口径: 本项目不是诊断学生，而是推断任务中的学习状态和支持需求。
 
@@ -107,4 +111,4 @@
 
 ## 5. 当前可直接汇报的一句话
 
-> 组会前的两件事已经从计划推进到可展示证据：SEN/SEND 术语增量检索已得到 130 条候选和 24 条优先人工筛选对象；普通笔记本 WebGazer MVP 已完成，并通过 P001-P005 五个样本验证了采集、特征提取和 scanpath 可视化闭环。P005 是目前最严格的正常条件基线，P002 显示眼镜和持续转头会降低采样密度，P004 显示略暗逆光没有导致追踪崩溃但可能改变阅读行为。下一步重点不是马上建模型，而是补摘要人工筛选，并把光照、眼镜、坐姿、响应时间、AOI 和校准质量纳入采集。
+> 组会前的两件事已经从计划推进到可展示证据：SEN/SEND 术语增量检索已得到 130 条候选，并完成了优先候选摘要筛选、A1-A7/B1 全文提取、组会文献证据表和中文 meeting brief；普通笔记本 WebGazer MVP 已完成，并通过 P001-P005 五个样本验证了采集、特征提取和 scanpath 可视化闭环。P005 是目前最严格的正常条件基线，P002 显示眼镜和持续转头会降低采样密度，P004 显示略暗逆光没有导致追踪崩溃但可能改变阅读行为。下一版采集 schema 已明确优先补鼠标、滚动、响应时间、AOI、校准质量，以及 Zoom 远程实验的独立辅助记录。下一步重点不是马上建模型，而是把 brief 拆成 slides 或把采集 schema 实现到 demo。
